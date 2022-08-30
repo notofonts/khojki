@@ -440,6 +440,10 @@ value = (
 );
 },
 {
+name = "Use Typo Metrics";
+value = 1;
+},
+{
 name = description;
 value = "Designed by Juan Bruce";
 },
@@ -462,10 +466,6 @@ value = "Noto is a trademark of Google LLC.";
 {
 name = versionString;
 value = "Version 2.002";
-},
-{
-name = "Use Typo Metrics";
-value = 1;
 },
 {
 name = Axes;
@@ -540,6 +540,10 @@ ascender = 760;
 capHeight = 714;
 customParameters = (
 {
+name = typoAscender;
+value = 1409;
+},
+{
 name = typoDescender;
 value = -447;
 },
@@ -549,7 +553,7 @@ value = 0;
 },
 {
 name = winAscent;
-value = 1409;
+value = 1613;
 },
 {
 name = winDescent;
@@ -657,6 +661,10 @@ ascender = 760;
 capHeight = 714;
 customParameters = (
 {
+name = typoAscender;
+value = 1409;
+},
+{
 name = typoDescender;
 value = -447;
 },
@@ -666,7 +674,7 @@ value = 0;
 },
 {
 name = winAscent;
-value = 1409;
+value = 1613;
 },
 {
 name = winDescent;
@@ -819,7 +827,7 @@ nodes = (
 width = 600;
 }
 );
-note = .notdef;
+note = ".notdef";
 },
 {
 glyphname = NULL;
@@ -68150,7 +68158,6 @@ lastChange = "2020-12-02 21:56:54 +0000";
 layers = (
 {
 backgroundImage = {
-crop = "{{0, 0}, {0, 0}}";
 imagePath = "../../../Desktop/T Y P E/TYPEFACE Design/G O O G L E/Khojki Serif/–Khojki SERIF/CASE STUDY/05. Sindhi Paheli IQBAL (Harvard)/Index.png";
 transform = "{8.47858, 0, 0, 8.75666, 830, -52}";
 };
@@ -68526,7 +68533,6 @@ width = 1039;
 },
 {
 backgroundImage = {
-crop = "{{0, 0}, {0, 0}}";
 imagePath = "../../../Desktop/T Y P E/TYPEFACE Design/G O O G L E/Khojki Serif/–Khojki SERIF/CASE STUDY/05. Sindhi Paheli IQBAL (Harvard)/Index.png";
 transform = "{8.47858, 0, 0, 8.75666, 830, -52}";
 };
