@@ -13,6 +13,12 @@
             "only": "NotoSansKhojki-Regular.ttf"
         },
         {
+            "input": "𑈕𑈶𑈷",
+            "expectation": "kj_TTHA=0+500|Nukta_Shadda.ns=0@-19,100+0",
+            "note": "Where's my Shadda Nukta ligature gone?!",
+            "only": "NotoSansKhojki-Regular.ttf"
+        },
+        {
             "input": "𑈈𑈶𑈾",
             "expectation": "kj_KA=0+773|Nukta=0@-170,0+0|u1123E=0@-130,320+0",
             "note": "Issue #1396",
@@ -91,7 +97,7 @@
             "only": "NotoSansKhojki-Regular.ttf"
         },
         {
-            "expectation": "kj_TTHA=0+500|kj_vs_O=0+250|Shadda=0@-4,240+0|NullMark=0+0|u1123E=0@-24,240+0",
+            "expectation": "kj_TTHA=0+500|kj_vs_O=0+250|Shadda=0@-4,240+0|u1123E=0@-24,240+0",
             "input": "𑈕𑈷𑈲𑈾",
             "note": "Added by SIESTA",
             "only": "NotoSansKhojki-Regular.ttf"
@@ -337,7 +343,7 @@
             "only": "NotoSansKhojki-Regular.ttf"
         },
         {
-            "expectation": "kj_BA=0+950|kj_vs_AI.ns=0@24,0+0|kj_PA=2+586|LLU=3+752|kj_AA=5+1128|kj_vs_AU=5+250|Nukta=5@89,320+0|NullMark=5+0|Anusvara=5@92,263+0",
+            "expectation": "kj_BA=0+950|kj_vs_AI.ns=0@24,0+0|kj_PA=2+586|LLU=3+752|kj_AA=5+1128|kj_vs_AU=5+250|Nukta=5@89,320+0|Anusvara=5@92,263+0",
             "input": "𑈡𑈱𑈟𑈫𑈯𑈁𑈶𑈳𑈴",
             "note": "Added by SIESTA",
             "only": "NotoSansKhojki-Regular.ttf"
