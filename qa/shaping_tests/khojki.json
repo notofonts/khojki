@@ -7,6 +7,12 @@
             "only": "NotoSerifKhojki-Regular.ttf"
         },
         {
+            "input": "𑈈𑈵‍𑈩𑈶 𑈈𑈵𑈩𑈶",
+            "expectation": "kj_KA=0+773|virama=0+293|space=0+0|kj_SA=3+791|Nukta=3@-139,20+0|space=5+260|KSSA=6+676",
+            "note": "Issue #2",
+            "only": "NotoSansKhojki-Regular.ttf"
+        },
+        {
             "input": "𑈈𑈶𑈾",
             "expectation": "kj_KA=0+773|Nukta=0@-170,0+0|u1123E=0@-130,320+0",
             "note": "Issue #1396",
