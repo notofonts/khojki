@@ -440,10 +440,6 @@ value = (
 );
 },
 {
-name = "Don't use Production Names";
-value = 1;
-},
-{
 name = description;
 value = "Designed by Juan Bruce";
 },
@@ -65539,9 +65535,8 @@ script = khoj;
 },
 {
 color = 10;
-export = 0;
 glyphname = "reph-gujarati";
-lastChange = "2022-04-15 21:56:04 +0000";
+lastChange = "2022-08-30 09:09:36 +0000";
 layers = (
 {
 anchors = (
@@ -65745,9 +65740,8 @@ subCategory = Nonspacing;
 },
 {
 color = 10;
-export = 0;
 glyphname = "rakar-gujarati";
-lastChange = "2022-04-15 21:56:04 +0000";
+lastChange = "2022-08-30 09:09:49 +0000";
 layers = (
 {
 anchors = (
