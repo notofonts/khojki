@@ -14,15 +14,7 @@ Fontbakery version: 0.8.10
 
 
 * 🔥 **FAIL** PANOSE family type is not the same across this family. In order to fix this, please make sure that the panose.bFamilyType value is the same in the OS/2 table of all of this family font files. [code: inconsistency]
-</div></details><br></div></details><details><summary><b>[11] NotoSerifKhojki-Bold.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
-
-
-* 🔥 **FAIL** OS/2.usWinAscent value should be equal or greater than 1613, but got 1409 instead [code: ascent]
-</div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 Metrics match hhea Metrics. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/os2_metrics_match_hhea">com.google.fonts/check/os2_metrics_match_hhea</a>)</summary><div>
-
-
-* 🔥 **FAIL** OS/2 sTypoAscender (760) and hhea ascent (1409) must be equal. [code: ascender]
-</div></details><details><summary>⚠ <b>WARN:</b> Check font follows the Google Fonts vertical metric schema (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/vertical_metrics">com.google.fonts/check/vertical_metrics</a>)</summary><div>
+</div></details><br></div></details><details><summary><b>[9] NotoSerifKhojki-Bold.ttf</b></summary><div><details><summary>⚠ <b>WARN:</b> Check font follows the Google Fonts vertical metric schema (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/vertical_metrics">com.google.fonts/check/vertical_metrics</a>)</summary><div>
 
 
 * ⚠ **WARN** We recommend the absolute sum of the hhea metrics should be between 1.2-1.5x of the font's upm. This font has 1.856x (1856) [code: bad-hhea-range]
@@ -117,9 +109,9 @@ The following glyphs do not have the recommended number of contours:
 
 	* a (U+0061): X=265.0,Y=-1.5 (should be at baseline 0?)
 
-	* f (U+0066): X=417.0,Y=759.5 (should be at ascender 760?) 
+	* f (U+0066): X=310.0,Y=712.0 (should be at cap-height 714?) 
 
-	* And 51 more.
+	* And 36 more.
 
 Use -F or --full-lists to disable shortening of long lists. [code: found-misalignments]
 </div></details><details><summary>⚠ <b>WARN:</b> Do outlines contain any jaggy segments? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_jaggy_segments">com.google.fonts/check/outline_jaggy_segments</a>)</summary><div>
@@ -146,15 +138,7 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-misalig
 	* h (U+0068): L<<252.0,309.0>--<253.0,118.0>> 
 
 	* And sterling (U+00A3): L<<428.0,346.0>--<270.0,347.0>> [code: found-semi-vertical]
-</div></details><br></div></details><details><summary><b>[9] NotoSerifKhojki-Regular.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
-
-
-* 🔥 **FAIL** OS/2.usWinAscent value should be equal or greater than 1613, but got 1409 instead [code: ascent]
-</div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 Metrics match hhea Metrics. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/os2_metrics_match_hhea">com.google.fonts/check/os2_metrics_match_hhea</a>)</summary><div>
-
-
-* 🔥 **FAIL** OS/2 sTypoAscender (760) and hhea ascent (1409) must be equal. [code: ascender]
-</div></details><details><summary>⚠ <b>WARN:</b> Check font follows the Google Fonts vertical metric schema (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/vertical_metrics">com.google.fonts/check/vertical_metrics</a>)</summary><div>
+</div></details><br></div></details><details><summary><b>[7] NotoSerifKhojki-Regular.ttf</b></summary><div><details><summary>⚠ <b>WARN:</b> Check font follows the Google Fonts vertical metric schema (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/vertical_metrics">com.google.fonts/check/vertical_metrics</a>)</summary><div>
 
 
 * ⚠ **WARN** We recommend the absolute sum of the hhea metrics should be between 1.2-1.5x of the font's upm. This font has 1.856x (1856) [code: bad-hhea-range]
@@ -231,13 +215,9 @@ The following glyphs do not have the recommended number of contours:
 
 * ⚠ **WARN** The following glyphs have on-curve points which have potentially incorrect y coordinates:
 
-	* parenleft (U+0028): X=284.0,Y=758.0 (should be at ascender 760?)
-
 	* parenleft (U+0028): X=284.0,Y=715.0 (should be at cap-height 714?)
 
 	* parenright (U+0029): X=117.0,Y=715.0 (should be at cap-height 714?)
-
-	* parenright (U+0029): X=117.0,Y=758.0 (should be at ascender 760?)
 
 	* three (U+0033): X=334.5,Y=1.0 (should be at baseline 0?)
 
@@ -249,12 +229,16 @@ The following glyphs do not have the recommended number of contours:
 
 	* c (U+0063): X=360.0,Y=535.0 (should be at x-height 536?)
 
-	* g (U+0067): X=161.0,Y=-0.5 (should be at baseline 0?) 
+	* g (U+0067): X=161.0,Y=-0.5 (should be at baseline 0?)
 
-	* And 43 more.
+	* q (U+0071): X=412.5,Y=0.5 (should be at baseline 0?)
+
+	* sterling (U+00A3): X=77.0,Y=1.0 (should be at baseline 0?) 
+
+	* And 35 more.
 
 Use -F or --full-lists to disable shortening of long lists. [code: found-misalignments]
-</div></details><br></div></details><details><summary><b>[12] NotoSerifKhojki[wght].ttf</b></summary><div><details><summary>💔 <b>ERROR:</b> Check font names are correct (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/font_names">com.google.fonts/check/font_names</a>)</summary><div>
+</div></details><br></div></details><details><summary><b>[10] NotoSerifKhojki[wght].ttf</b></summary><div><details><summary>💔 <b>ERROR:</b> Check font names are correct (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/font_names">com.google.fonts/check/font_names</a>)</summary><div>
 
 
 * 💔 **ERROR** The condition <FontBakeryCondition:expected_font_names> had an error: KeyError: 'fvar'
@@ -266,14 +250,6 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-misalig
 
 
 * 💔 **ERROR** The condition <FontBakeryCondition:expected_font_names> had an error: KeyError: 'fvar'
-</div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
-
-
-* 🔥 **FAIL** OS/2.usWinAscent value should be equal or greater than 1613, but got 1409 instead [code: ascent]
-</div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 Metrics match hhea Metrics. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/os2_metrics_match_hhea">com.google.fonts/check/os2_metrics_match_hhea</a>)</summary><div>
-
-
-* 🔥 **FAIL** OS/2 sTypoAscender (760) and hhea ascent (1409) must be equal. [code: ascender]
 </div></details><details><summary>⚠ <b>WARN:</b> Check font follows the Google Fonts vertical metric schema (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/vertical_metrics">com.google.fonts/check/vertical_metrics</a>)</summary><div>
 
 
@@ -331,13 +307,9 @@ Use -F or --full-lists to disable shortening of long lists.
 
 * ⚠ **WARN** The following glyphs have on-curve points which have potentially incorrect y coordinates:
 
-	* parenleft (U+0028): X=284.0,Y=758.0 (should be at ascender 760?)
-
 	* parenleft (U+0028): X=284.0,Y=715.0 (should be at cap-height 714?)
 
 	* parenright (U+0029): X=117.0,Y=715.0 (should be at cap-height 714?)
-
-	* parenright (U+0029): X=117.0,Y=758.0 (should be at ascender 760?)
 
 	* three (U+0033): X=334.5,Y=1.0 (should be at baseline 0?)
 
@@ -349,9 +321,13 @@ Use -F or --full-lists to disable shortening of long lists.
 
 	* c (U+0063): X=360.0,Y=535.0 (should be at x-height 536?)
 
-	* f (U+0066): X=381.5,Y=761.0 (should be at ascender 760?) 
+	* f (U+0066): X=331.0,Y=712.5 (should be at cap-height 714?)
 
-	* And 53 more.
+	* g (U+0067): X=161.0,Y=-0.5 (should be at baseline 0?)
+
+	* h (U+0068): X=66.5,Y=713.5 (should be at cap-height 714?) 
+
+	* And 44 more.
 
 Use -F or --full-lists to disable shortening of long lists. [code: found-misalignments]
 </div></details><br></div></details>
@@ -359,8 +335,8 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-misalig
 
 | 💔 ERROR | 🔥 FAIL | ⚠ WARN | 💤 SKIP | ℹ INFO | 🍞 PASS | 🔎 DEBUG |
 |:-----:|:----:|:----:|:----:|:----:|:----:|:----:|
-| 3 | 9 | 23 | 321 | 20 | 275 | 0 |
-| 0% | 1% | 4% | 49% | 3% | 42% | 0% |
+| 3 | 3 | 23 | 321 | 20 | 281 | 0 |
+| 0% | 0% | 4% | 49% | 3% | 43% | 0% |
 
 **Note:** The following loglevels were omitted in this report:
 * **SKIP**
