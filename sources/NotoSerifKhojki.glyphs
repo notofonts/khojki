@@ -868,34 +868,6 @@ category = Separator;
 subCategory = Space;
 },
 {
-glyphname = punctuationspace;
-lastChange = "2020-12-02 21:56:54 +0000";
-layers = (
-{
-components = (
-{
-name = wordseparator;
-transform = "{1, 0, 0, 1, 16, 0}";
-}
-);
-layerId = "0717401B-DDB5-4983-85F2-A81AFE530D5E";
-width = 299;
-},
-{
-components = (
-{
-name = wordseparator;
-transform = "{1, 0, 0, 1, 25, 0}";
-}
-);
-layerId = "A430B39A-257A-41FC-BEA9-652C696FFEF7";
-width = 332;
-}
-);
-widthMetricsKey = period;
-unicode = 2008;
-},
-{
 glyphname = uni00A0;
 lastChange = "2020-12-02 21:56:54 +0000";
 layers = (
