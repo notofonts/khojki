@@ -14,7 +14,7 @@ code = "a-khoj aa-khoj aaMatra-khoj ai-khoj au-khoj b_ra-khoj ba-khoj bba-khoj b
 name = BASES;
 }
 );
-copyright = "Copyright 2020-2022 Google LLC. All Rights Reserved.";
+copyright = "Copyright 2022 The Noto Project Authors (https://github.com/notofonts/khojki)";
 customParameters = (
 {
 name = glyphOrder;
@@ -445,11 +445,11 @@ value = "Designed by Juan Bruce";
 },
 {
 name = license;
-value = "This Font Software is licensed under the SIL Open Font License, Version 1.1. This Font Software is distributed on an \"AS IS\" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the SIL Open Font License for the specific language, permissions and limitations governing your use of this Font Software.";
+value = "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://scripts.sil.org/OFL";
 },
 {
 name = licenseURL;
-value = "http://scripts.sil.org/OFL";
+value = "https://scripts.sil.org/OFL";
 },
 {
 name = vendorID;
@@ -462,6 +462,10 @@ value = "Noto is a trademark of Google LLC.";
 {
 name = versionString;
 value = "Version 2.002";
+},
+{
+name = "Use Typo Metrics";
+value = 1;
 },
 {
 name = Axes;
@@ -815,7 +819,7 @@ nodes = (
 width = 600;
 }
 );
-note = ".notdef";
+note = .notdef;
 },
 {
 glyphname = NULL;
@@ -68146,6 +68150,7 @@ lastChange = "2020-12-02 21:56:54 +0000";
 layers = (
 {
 backgroundImage = {
+crop = "{{0, 0}, {0, 0}}";
 imagePath = "../../../Desktop/T Y P E/TYPEFACE Design/G O O G L E/Khojki Serif/–Khojki SERIF/CASE STUDY/05. Sindhi Paheli IQBAL (Harvard)/Index.png";
 transform = "{8.47858, 0, 0, 8.75666, 830, -52}";
 };
@@ -68521,6 +68526,7 @@ width = 1039;
 },
 {
 backgroundImage = {
+crop = "{{0, 0}, {0, 0}}";
 imagePath = "../../../Desktop/T Y P E/TYPEFACE Design/G O O G L E/Khojki Serif/–Khojki SERIF/CASE STUDY/05. Sindhi Paheli IQBAL (Harvard)/Index.png";
 transform = "{8.47858, 0, 0, 8.75666, 830, -52}";
 };
