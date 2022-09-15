@@ -1,5 +1,5 @@
 {
-.appVersion = "3109";
+.appVersion = "3134";
 DisplayStrings = (
 "/Nukta_Shadda.ns/kj_CHA/kj_BA"
 );
@@ -306,7 +306,7 @@ code = "lookup Akhand {\012    lookupflag MarkAttachmentType @abovemarks;\012   
 name = akhn;
 },
 {
-code = "lookupflag MarkAttachmentType @U;\012sub [BHRA MRA kj_DHA kj_GGA kj_JJA kj_KHA] kj_vs_U.ns' by U.alt;\012sub [kj_TTA kj_TTHA] kj_vs_U.ns' by U.alt2;\012sub [KSSA GNA] kj_vs_U.ns' by U.alt3;\012sub kj_NA YA.alt' by YA.alt2;\012sub [kj_JA kj_TA kj_LA]' YA.alt' by YA.alt3;\012sub [YA.alt YA.alt2] kj_vs_U.ns' by U.alt2;\012";
+code = "lookupflag MarkAttachmentType @U;\012sub [BHRA MRA kj_DHA kj_GGA kj_JJA kj_KHA] kj_vs_U.ns' by U.alt;\012sub [kj_TTA kj_TTHA] kj_vs_U.ns' by U.alt2;\012sub [KSSA GNA] kj_vs_U.ns' by U.alt3;\012sub kj_NA YA.alt' by YA.alt2;\012sub [kj_JA kj_TA kj_LA] YA.alt' by YA.alt3;\012sub [YA.alt YA.alt2] kj_vs_U.ns' by U.alt2;\012";
 name = blws;
 },
 {
