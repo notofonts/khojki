@@ -1,6 +1,11 @@
 {
     "tests": [
         {
+            "input": "𑈙𑈯𑈧𑈵𑈥",
+            "expectation": "TU=0+689|kj_LA=2+640|YA.alt3=2+511",
+            "note": "Don't delete JA/TA/LA before YA"
+        },
+        {
             "input": "𑈈𑈶𑈾",
             "expectation": "kakhoj=0+772|Nukta_sukunkhoj=0@-316,-64+0",
             "note": "Issue #5",
