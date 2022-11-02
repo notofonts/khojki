@@ -1,5 +1,8 @@
 {
 .appVersion = "3109";
+DisplayStrings = (
+"/ra_iMatra-khoj"
+);
 classes = (
 {
 code = "iMatra-khoj iiMatra-khoj uMatra-khoj";
@@ -465,7 +468,7 @@ value = "Noto is a trademark of Google LLC.";
 },
 {
 name = versionString;
-value = "Version 2.002";
+value = "Version 2.003";
 },
 {
 name = Axes;
@@ -53780,7 +53783,7 @@ category = Letter;
 {
 color = 1;
 glyphname = "ra_iMatra-khoj";
-lastChange = "2020-12-02 21:56:54 +0000";
+lastChange = "2022-11-02 12:17:53 +0000";
 layers = (
 {
 anchors = (
@@ -53802,15 +53805,6 @@ paths = (
 {
 closed = 1;
 nodes = (
-"124 562 OFFCURVE",
-"128 502 OFFCURVE",
-"133 435 CURVE SMOOTH",
-"140 354 OFFCURVE",
-"146 264 OFFCURVE",
-"165 200 CURVE SMOOTH",
-"213 34 OFFCURVE",
-"337 -84 OFFCURVE",
-"494 -84 CURVE SMOOTH",
 "570 -84 OFFCURVE",
 "644 -56 OFFCURVE",
 "644 -10 CURVE SMOOTH",
@@ -53840,7 +53834,16 @@ nodes = (
 "51 646 CURVE SMOOTH",
 "82 646 OFFCURVE",
 "102 630 OFFCURVE",
-"113 596 CURVE SMOOTH"
+"113 596 CURVE SMOOTH",
+"124 562 OFFCURVE",
+"128 502 OFFCURVE",
+"133 435 CURVE SMOOTH",
+"140 354 OFFCURVE",
+"146 264 OFFCURVE",
+"165 200 CURVE SMOOTH",
+"213 34 OFFCURVE",
+"337 -84 OFFCURVE",
+"494 -84 CURVE SMOOTH"
 );
 },
 {
@@ -75462,5 +75465,5 @@ kerning = {
 manufacturerURL = "http://www.google.com/get/noto/";
 unitsPerEm = 1000;
 versionMajor = 2;
-versionMinor = 2;
+versionMinor = 3;
 }
