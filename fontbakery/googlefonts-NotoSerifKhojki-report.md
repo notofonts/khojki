@@ -159,7 +159,7 @@ The following glyphs do not have the recommended number of contours:
 
 	* f (U+0066): X=310.0,Y=712.0 (should be at cap-height 714?) 
 
-	* And 36 more.
+	* And 35 more.
 
 Use -F or --full-lists to disable shortening of long lists. [code: found-misalignments]
 </div></details><details><summary>⚠ <b>WARN:</b> Do outlines contain any jaggy segments? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_jaggy_segments">com.google.fonts/check/outline_jaggy_segments</a>)</summary><div>
