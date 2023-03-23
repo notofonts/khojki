@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+<head>
+    
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>GFR - Text</title>
+    
+    <style type="text/css">
+    
+        html{
+	  font-family: sans-serif;
+	}
+    @font-face {
+        font-family: "Adobe NotDef";
+        src: url(https://cdn.jsdelivr.net/gh/adobe-fonts/adobe-notdef/AND-Regular.ttf);
+    }
+	.box-title{
+	  width: 100%;
+	  font-size: 8pt;
+	  font-weight: 700;
+	  border-top: 1px solid black;
+	  padding-top: 5px;
+	  margin-bottom: 10pt;
+	  display: block;
+	}
+	.box{
+	  margin-bottom: 20pt;
+	  width: 100%;
+	  float: left;
+	}
+	.box-text{
+	}
+	
+	#nav{
+	  position: fixed;
+	  right: 20px;
+	  z-index: 100;
+	}
+	#font-toggle{
+	}
+	.nav-item{
+		display: block;
+		cursor: pointer;
+		-webkit-user-select: none; /* Safari */        
+		-moz-user-select: none; /* Firefox */
+			-ms-user-select: none; /* IE10+/Edge */
+		user-select: none; /* Standard */
+		text-align: center;
+		color: white;
+		background-color: black;
+		display: block;
+		font-size: 9pt;
+		padding: 5px;
+		margin: 2px;
+	}
+	.tooltip {
+	position: relative;
+	display: inline-block;
+	border-bottom: 1px dotted black;
+	}
+
+	.tooltip .tooltiptext {
+	font-family: sans-serif;
+	visibility: hidden;
+	width: 500px;
+	background-color: black;
+	color: #fff;
+	text-align: left;
+	font-size: 12pt;
+	line-height: 15pt;
+	border-radius: 6px;
+	padding: 5px 0;
+
+	/* Position the tooltip */
+	position: absolute;
+	z-index: 1;
+	}
+
+	.tooltip:hover .tooltiptext {
+	padding: 10px;
+	visibility: visible;
+	}
+	.tooltipleft {
+		float:left;
+		width: 249px;
+	}
+	.tooltipright {
+		float:right;
+		width:250px;
+	}
+
+			/* Stuff needed for the table differ */
+            body {
+                font-family: Helvetica;
+            }
+            .node {
+                font-family: courier;
+                cursor: pointer;
+                position: relative;
+                left: 30px;
+                padding: 5px;
+                display: block;
+                border: 1px dashed grey;
+            }
+            .header {
+            font-weight: bold;
+            }
+            .attrib-old{
+                color: red;
+                cursor: text;
+            }
+            .attrib-new{
+                color: green;
+                cursor: text;
+            }
+            .leaf {
+            font-weight: bold;
+            }
+            .old .cell .new {
+            	display:  none;
+            }
+            .new .cell .old {
+            	display:  none;
+            }
+            .both .cell .old {
+            	opacity: 0.75;
+            	color:  red;
+            }
+            .both .cell .new {
+            	opacity: 0.75;
+            	position: absolute;
+            	top: 0;
+            	color:  green;
+            }
+			.spacer {
+				display:block;
+				float:left;
+				width:100%;
+			}
+
+	  
+	    @font-face{
+    src: url(old-NotoSerifKhojki[wght].ttf);
+    font-family: "old Noto Serif Khojki";
+    font-weight: 400 700;
+    
+    font-style: normal;
+}
+	  
+
+	  
+	    @font-face{
+    src: url(new-NotoSerifKhojki[wght].ttf);
+    font-family: "new Noto Serif Khojki";
+    font-weight: 400 700;
+    
+    font-style: normal;
+}
+	  
+
+	  
+
+	  
+	    .old-Regular{
+    font-family: "old Noto Serif Khojki", "Adobe NotDef";
+    font-weight: 400.0;
+    
+    font-style: normal;
+}
+	  
+	    .old-Medium{
+    font-family: "old Noto Serif Khojki", "Adobe NotDef";
+    font-weight: 500.0;
+    
+    font-style: normal;
+}
+	  
+	    .old-SemiBold{
+    font-family: "old Noto Serif Khojki", "Adobe NotDef";
+    font-weight: 600.0;
+    
+    font-style: normal;
+}
+	  
+	    .old-Bold{
+    font-family: "old Noto Serif Khojki", "Adobe NotDef";
+    font-weight: 700.0;
+    
+    font-style: normal;
+}
+	  
+
+	  
+	    .new-Regular{
+    font-family: "new Noto Serif Khojki", "Adobe NotDef";
+    font-weight: 400.0;
+    
+    font-style: normal;
+}
+	  
+	    .new-Medium{
+    font-family: "new Noto Serif Khojki", "Adobe NotDef";
+    font-weight: 500.0;
+    
+    font-style: normal;
+}
+	  
+	    .new-SemiBold{
+    font-family: "new Noto Serif Khojki", "Adobe NotDef";
+    font-weight: 600.0;
+    
+    font-style: normal;
+}
+	  
+	    .new-Bold{
+    font-family: "new Noto Serif Khojki", "Adobe NotDef";
+    font-weight: 700.0;
+    
+    font-style: normal;
+}
+	  
+
+	  
+	
+    </style>
+</head>
+<body>
+    <div id="nav">
+		
+			<div class="nav-item" id="font-toggle">old</div>
+		
+		
+	</div>
+    <div id="content">
+	<h2>
+<b>Text</b>
+</h2>
+	
+  
+    <div class="box">
+      <div class="box-title">old-Regular 20pt</div>
+	<div class="box-text old-Regular" dir="auto" style="font-size: 20pt">217 10 - 1948 10, . (1948), " — – ' ; 360 ‐ : / ‘‘ = ~ 50 ? ?] [ 𑈩𑈦𑈨𑈤 𑈞𑈪 𑈥𑈙𑈵𑈦𑈺𑈐𑈊𑈙𑈭𑈺𑈩𑈶𑈬𑈞𑈵𑈙𑈭𑈞𑈵𑈥𑈬𑈥𑈩𑈵𑈨𑈬𑈙𑈞𑈵𑈙𑈵𑈦𑈵𑈥𑈬𑈘𑈬𑈴𑈺𑈁𑈝𑈬𑈦𑈪𑈵𑈺𑈤𑈬𑈞𑈨𑈟𑈦𑈭𑈨𑈬𑈦𑈩𑈵𑈥𑈺𑈩𑈦𑈵𑈨𑈰𑈩𑈶𑈬𑈤𑈟𑈭𑈺𑈩𑈛𑈩 𑈩𑈦𑈵𑈨𑈰𑈺𑈤𑈬𑈞𑈨𑈬𑈪𑈵𑈺𑈩𑈵𑈨𑈙𑈞𑈵𑈙𑈵𑈦𑈬𑈪𑈵𑈺𑈩𑈤𑈯𑈙𑈵𑈟𑈞𑈷𑈬𑈪𑈵𑈺𑈨𑈦𑈵𑈙𑈞𑈵𑈙𑈰𑈺𑈀𑈟𑈭𑈺𑈎,𑈺𑈊𑈳𑈦𑈨𑈛𑈵𑈦𑈭𑈩𑈶𑈬𑈺𑈀𑈝𑈭𑈈𑈬𑈦𑈛𑈵𑈦𑈭𑈩𑈶𑈬𑈺𑈎𑈺𑈩𑈤𑈬𑈞𑈬𑈪𑈵𑈺𑈄𑈨𑈺𑈨𑈦𑈵𑈙𑈞𑈵𑈙𑈰𑈸𑈺𑈄𑈙𑈰𑈺𑈩𑈦𑈵𑈨𑈰𑈺𑈎𑈰𑈙𑈞 𑈀𑈩𑈵𑈥𑈬𑈴𑈺𑈀𑈣𑈭𑈌𑈲𑈩𑈶𑈘𑈬𑈥𑈬𑈴𑈺𑈞 𑈨𑈭𑈝𑈰𑈪𑈵𑈺𑈩𑈤𑈈𑈵𑈩𑈶𑈴𑈺𑈩𑈦𑈵𑈨𑈰𑈟𑈭𑈺𑈙𑈯𑈧𑈵𑈥𑈬𑈪𑈵𑈺𑈩𑈤𑈬𑈞𑈬𑈩𑈶𑈵𑈎𑈺𑈨𑈦𑈵𑈙𑈞𑈵𑈙𑈰𑈸𑈺𑈀𑈟𑈭𑈺𑈎𑈺𑈨𑈭𑈞𑈱𑈨𑈺𑈈𑈤𑈟𑈭𑈺𑈣𑈰𑈛𑈴𑈺𑈨𑈭𑈝𑈰𑈪𑈵𑈺𑈙𑈯𑈧𑈵𑈥𑈴𑈺𑈩𑈴𑈦𑈈𑈵𑈩𑈶𑈘𑈤𑈨𑈬𑈟𑈵𑈙𑈯𑈴𑈺𑈀𑈦𑈵𑈪𑈞𑈵𑈙𑈭𑈸𑈺𑈀𑈩𑈵𑈥𑈬𑈪 𑈞𑈺𑈈𑈩𑈵𑈥𑈬𑈟𑈭𑈺𑈨𑈵𑈥𑈈𑈵𑈙𑈭𑈊𑈙𑈰𑈺𑈟𑈬𑈦𑈭𑈨𑈬𑈦𑈭𑈈𑈰𑈺𑈎𑈺𑈐𑈮𑈨𑈞𑈰,𑈺𑈊𑈵𑈦𑈭𑈪𑈰,𑈺𑈟𑈙𑈵𑈦𑈨𑈵𑈥𑈨𑈪𑈬𑈦𑈰𑈺𑈎𑈺𑈩𑈵𑈨𑈰𑈏𑈷𑈥𑈬𑈺𑈪𑈩𑈵𑈙𑈈𑈵𑈩𑈶𑈰𑈟𑈲𑈞𑈯𑈐𑈵𑈓𑈬𑈩𑈵𑈥𑈙𑈰,𑈺𑈞𑈺𑈨𑈬𑈺𑈈𑈩𑈵𑈥𑈬𑈟𑈭𑈺𑈉𑈵𑈥𑈬𑈙𑈭𑈴𑈺𑈩𑈤𑈷𑈬𑈞𑈴𑈺𑈨𑈬𑈈𑈵𑈦𑈬𑈞𑈵𑈙𑈯𑈴𑈺𑈈𑈲𑈟𑈭𑈺𑈩𑈶𑈈𑈵𑈩𑈶𑈵𑈥𑈙𑈭𑈸𑈺𑈄𑈙𑈬𑈪𑈈𑈵𑈪𑈩𑈵𑈙𑈈𑈵𑈩𑈶𑈰𑈟𑈬𑈈𑈵𑈦𑈤𑈘𑈬𑈞𑈭𑈺𑈨𑈭𑈦𑈯𑈝𑈵𑈥𑈺𑈟𑈵𑈦𑈙𑈵𑈥𑈰𑈈𑈤𑈟𑈭𑈐𑈞𑈪𑈵𑈺𑈨𑈭𑈝𑈭𑈩𑈴𑈦𑈈𑈵𑈩𑈶𑈘𑈴𑈺𑈩𑈴𑈝𑈙𑈷𑈰𑈸 𑈟𑈵𑈦𑈙𑈵𑈥𑈰𑈈𑈤𑈟𑈭𑈺𑈤𑈞𑈵𑈙𑈨𑈵𑈥𑈬𑈣𑈭𑈨𑈵𑈥𑈈𑈵𑈙𑈵𑈥𑈲𑈪𑈵𑈺𑈀𑈝𑈭𑈈𑈬𑈦𑈴𑈺𑈩𑈴𑈝𑈙𑈷𑈰𑈸𑈺𑈩𑈮𑈤𑈬𑈨𑈵𑈥𑈨𑈝𑈬𑈞𑈴𑈺𑈀𑈨𑈭𑈊𑈘𑈥𑈷,𑈺𑈈𑈰𑈞𑈬𑈟𑈭𑈺𑈩𑈴𑈎𑈬𑈦𑈤𑈬𑈝𑈵𑈥𑈤𑈰𑈞𑈺𑈨𑈭𑈎𑈬𑈦𑈬𑈘𑈬𑈴𑈺𑈩𑈯𑈎𑈞𑈬𑈞𑈬𑈴𑈺𑈎𑈺𑈁𑈛𑈬𑈞𑈟𑈵𑈦𑈛𑈬𑈞𑈬𑈦𑈵𑈚𑈴𑈺𑈨𑈭𑈞𑈱𑈨𑈺𑈪𑈩𑈵𑈙𑈈𑈵𑈩𑈶𑈰𑈟𑈴𑈺𑈈𑈭𑈩𑈶𑈵𑈎𑈛𑈟𑈭𑈺𑈐𑈞𑈪𑈵,𑈺𑈩𑈵𑈨𑈮𑈥𑈤𑈞𑈵𑈙𑈨𑈵𑈥𑈩𑈴𑈌𑈬𑈦𑈘𑈬𑈦𑈵𑈚𑈴𑈺𑈀𑈝𑈭𑈈𑈬𑈦𑈰𑈩𑈵𑈤𑈭𑈞𑈵𑈺𑈀𑈦𑈵𑈪𑈭𑈩𑈶𑈵𑈥𑈙𑈰𑈸 𑈟𑈵𑈦𑈙𑈵𑈥𑈰𑈈𑈤𑈰𑈨𑈺𑈐𑈞𑈪𑈵,𑈺𑈩𑈬𑈤𑈬𑈐𑈭𑈈𑈙𑈵𑈨𑈬𑈙𑈵,𑈺𑈩𑈬𑈤𑈬𑈐𑈭𑈈𑈩𑈯𑈦𑈈𑈵𑈩𑈶𑈬𑈥𑈬𑈺𑈀𑈝𑈭𑈈𑈬𑈦𑈴𑈺𑈩𑈞𑈵𑈝𑈬𑈦𑈥𑈙𑈭;𑈺𑈀𑈩𑈳𑈺𑈪𑈭𑈺𑈦𑈬𑈩𑈶𑈵𑈔𑈵𑈦𑈭𑈥𑈟𑈵𑈦𑈥𑈬𑈩𑈰𑈞𑈺𑈁𑈞𑈵𑈙𑈬𑈦𑈬𑈩𑈶𑈵𑈔𑈵𑈦𑈭𑈥𑈩𑈪𑈥𑈲𑈊𑈰𑈺𑈞𑈺𑈎𑈺𑈟𑈵𑈦𑈙𑈵𑈥𑈰𑈈𑈴𑈺𑈦𑈬𑈐𑈵𑈥𑈩𑈵𑈥𑈺𑈩𑈴𑈌𑈔𑈞𑈩𑈴𑈩𑈬𑈝𑈞𑈬𑈞𑈯𑈦𑈯𑈟𑈤𑈵,𑈺𑈩𑈵𑈨𑈮𑈥𑈬𑈨𑈭𑈣𑈬𑈐𑈵𑈥𑈬𑈦𑈵𑈚𑈭𑈈𑈩𑈬𑈤𑈬𑈐𑈭𑈈𑈩𑈬𑈴𑈩𑈵𑈈𑈵𑈦𑈭𑈙𑈭𑈈𑈬𑈝𑈭𑈈𑈬𑈦𑈬𑈘𑈬𑈴𑈺𑈟𑈵𑈦𑈙𑈭𑈩𑈶𑈵𑈕𑈬𑈥𑈱,𑈺𑈩𑈵𑈨𑈮𑈥𑈨𑈵𑈥𑈈𑈵𑈙𑈭𑈙𑈵𑈨𑈩𑈵𑈥𑈺𑈃𑈞𑈵𑈤𑈯𑈈𑈵𑈙𑈺{𑈩𑈦𑈵𑈨𑈬𑈴𑈊𑈮𑈘}𑈺𑈨𑈭𑈈𑈬𑈩𑈬𑈦𑈵𑈚𑈴𑈺𑈎𑈺𑈩𑈴𑈩𑈭𑈝𑈷𑈭𑈴𑈺𑈀𑈦𑈵𑈪𑈙𑈭𑈸 𑈩𑈦𑈵𑈨𑈰𑈺𑈤𑈬𑈞𑈨𑈬𑈪𑈵𑈺𑈩𑈵𑈨𑈙𑈞𑈵𑈙𑈵𑈦𑈬𑈪𑈵𑈺𑈩𑈤𑈯𑈙𑈵𑈟𑈞𑈷𑈬𑈪𑈵𑈺𑈨𑈦𑈵𑈙𑈞𑈵𑈙𑈰𑈺𑈀𑈟𑈭𑈺𑈎,𑈺𑈊𑈳𑈦𑈨𑈛𑈵𑈦𑈭𑈩𑈶𑈬𑈺𑈀𑈝𑈭𑈈𑈬𑈦𑈛𑈵𑈦𑈭𑈩𑈶𑈬𑈺𑈎𑈺𑈩𑈤𑈬𑈞𑈬𑈪𑈵𑈺𑈄𑈨𑈺𑈨𑈦𑈵𑈙𑈞𑈵𑈙𑈰𑈸𑈺𑈄𑈙𑈰𑈺𑈩𑈦𑈵𑈨𑈰𑈺𑈎𑈰𑈙𑈞𑈬𑈙𑈦𑈵𑈈𑈩𑈶𑈈𑈵𑈙𑈭𑈣𑈵𑈥𑈬𑈴𑈺𑈩𑈯𑈩𑈤𑈵𑈟𑈞𑈷𑈬𑈪𑈵𑈺𑈩𑈞𑈵𑈙𑈭𑈸𑈺𑈀𑈟𑈭𑈺𑈎,𑈺𑈩𑈦𑈵𑈨𑈰𑈟𑈭𑈺𑈡𑈞𑈵𑈝𑈯𑈙𑈵𑈨𑈣𑈬𑈨𑈞𑈥𑈬𑈺𑈟𑈦𑈩𑈵𑈟𑈦𑈴𑈺𑈨𑈵𑈥𑈨𑈪𑈦𑈞𑈵𑈙𑈯𑈸 |</div>
+    </div>
+  
+    <div class="box">
+      <div class="box-title">old-Medium 20pt</div>
+	<div class="box-text old-Medium" dir="auto" style="font-size: 20pt">217 10 - 1948 10, . (1948), " — – ' ; 360 ‐ : / ‘‘ = ~ 50 ? ?] [ 𑈩𑈦𑈨𑈤 𑈞𑈪 𑈥𑈙𑈵𑈦𑈺𑈐𑈊𑈙𑈭𑈺𑈩𑈶𑈬𑈞𑈵𑈙𑈭𑈞𑈵𑈥𑈬𑈥𑈩𑈵𑈨𑈬𑈙𑈞𑈵𑈙𑈵𑈦𑈵𑈥𑈬𑈘𑈬𑈴𑈺𑈁𑈝𑈬𑈦𑈪𑈵𑈺𑈤𑈬𑈞𑈨𑈟𑈦𑈭𑈨𑈬𑈦𑈩𑈵𑈥𑈺𑈩𑈦𑈵𑈨𑈰𑈩𑈶𑈬𑈤𑈟𑈭𑈺𑈩𑈛𑈩 𑈩𑈦𑈵𑈨𑈰𑈺𑈤𑈬𑈞𑈨𑈬𑈪𑈵𑈺𑈩𑈵𑈨𑈙𑈞𑈵𑈙𑈵𑈦𑈬𑈪𑈵𑈺𑈩𑈤𑈯𑈙𑈵𑈟𑈞𑈷𑈬𑈪𑈵𑈺𑈨𑈦𑈵𑈙𑈞𑈵𑈙𑈰𑈺𑈀𑈟𑈭𑈺𑈎,𑈺𑈊𑈳𑈦𑈨𑈛𑈵𑈦𑈭𑈩𑈶𑈬𑈺𑈀𑈝𑈭𑈈𑈬𑈦𑈛𑈵𑈦𑈭𑈩𑈶𑈬𑈺𑈎𑈺𑈩𑈤𑈬𑈞𑈬𑈪𑈵𑈺𑈄𑈨𑈺𑈨𑈦𑈵𑈙𑈞𑈵𑈙𑈰𑈸𑈺𑈄𑈙𑈰𑈺𑈩𑈦𑈵𑈨𑈰𑈺𑈎𑈰𑈙𑈞 𑈀𑈩𑈵𑈥𑈬𑈴𑈺𑈀𑈣𑈭𑈌𑈲𑈩𑈶𑈘𑈬𑈥𑈬𑈴𑈺𑈞 𑈨𑈭𑈝𑈰𑈪𑈵𑈺𑈩𑈤𑈈𑈵𑈩𑈶𑈴𑈺𑈩𑈦𑈵𑈨𑈰𑈟𑈭𑈺𑈙𑈯𑈧𑈵𑈥𑈬𑈪𑈵𑈺𑈩𑈤𑈬𑈞𑈬𑈩𑈶𑈵𑈎𑈺𑈨𑈦𑈵𑈙𑈞𑈵𑈙𑈰𑈸𑈺𑈀𑈟𑈭𑈺𑈎𑈺𑈨𑈭𑈞𑈱𑈨𑈺𑈈𑈤𑈟𑈭𑈺𑈣𑈰𑈛𑈴𑈺𑈨𑈭𑈝𑈰𑈪𑈵𑈺𑈙𑈯𑈧𑈵𑈥𑈴𑈺𑈩𑈴𑈦𑈈𑈵𑈩𑈶𑈘𑈤𑈨𑈬𑈟𑈵𑈙𑈯𑈴𑈺𑈀𑈦𑈵𑈪𑈞𑈵𑈙𑈭𑈸𑈺𑈀𑈩𑈵𑈥𑈬𑈪 𑈞𑈺𑈈𑈩𑈵𑈥𑈬𑈟𑈭𑈺𑈨𑈵𑈥𑈈𑈵𑈙𑈭𑈊𑈙𑈰𑈺𑈟𑈬𑈦𑈭𑈨𑈬𑈦𑈭𑈈𑈰𑈺𑈎𑈺𑈐𑈮𑈨𑈞𑈰,𑈺𑈊𑈵𑈦𑈭𑈪𑈰,𑈺𑈟𑈙𑈵𑈦𑈨𑈵𑈥𑈨𑈪𑈬𑈦𑈰𑈺𑈎𑈺𑈩𑈵𑈨𑈰𑈏𑈷𑈥𑈬𑈺𑈪𑈩𑈵𑈙𑈈𑈵𑈩𑈶𑈰𑈟𑈲𑈞𑈯𑈐𑈵𑈓𑈬𑈩𑈵𑈥𑈙𑈰,𑈺𑈞𑈺𑈨𑈬𑈺𑈈𑈩𑈵𑈥𑈬𑈟𑈭𑈺𑈉𑈵𑈥𑈬𑈙𑈭𑈴𑈺𑈩𑈤𑈷𑈬𑈞𑈴𑈺𑈨𑈬𑈈𑈵𑈦𑈬𑈞𑈵𑈙𑈯𑈴𑈺𑈈𑈲𑈟𑈭𑈺𑈩𑈶𑈈𑈵𑈩𑈶𑈵𑈥𑈙𑈭𑈸𑈺𑈄𑈙𑈬𑈪𑈈𑈵𑈪𑈩𑈵𑈙𑈈𑈵𑈩𑈶𑈰𑈟𑈬𑈈𑈵𑈦𑈤𑈘𑈬𑈞𑈭𑈺𑈨𑈭𑈦𑈯𑈝𑈵𑈥𑈺𑈟𑈵𑈦𑈙𑈵𑈥𑈰𑈈𑈤𑈟𑈭𑈐𑈞𑈪𑈵𑈺𑈨𑈭𑈝𑈭𑈩𑈴𑈦𑈈𑈵𑈩𑈶𑈘𑈴𑈺𑈩𑈴𑈝𑈙𑈷𑈰𑈸 𑈟𑈵𑈦𑈙𑈵𑈥𑈰𑈈𑈤𑈟𑈭𑈺𑈤𑈞𑈵𑈙𑈨𑈵𑈥𑈬𑈣𑈭𑈨𑈵𑈥𑈈𑈵𑈙𑈵𑈥𑈲𑈪𑈵𑈺𑈀𑈝𑈭𑈈𑈬𑈦𑈴𑈺𑈩𑈴𑈝𑈙𑈷𑈰𑈸𑈺𑈩𑈮𑈤𑈬𑈨𑈵𑈥𑈨𑈝𑈬𑈞𑈴𑈺𑈀𑈨𑈭𑈊𑈘𑈥𑈷,𑈺𑈈𑈰𑈞𑈬𑈟𑈭𑈺𑈩𑈴𑈎𑈬𑈦𑈤𑈬𑈝𑈵𑈥𑈤𑈰𑈞𑈺𑈨𑈭𑈎𑈬𑈦𑈬𑈘𑈬𑈴𑈺𑈩𑈯𑈎𑈞𑈬𑈞𑈬𑈴𑈺𑈎𑈺𑈁𑈛𑈬𑈞𑈟𑈵𑈦𑈛𑈬𑈞𑈬𑈦𑈵𑈚𑈴𑈺𑈨𑈭𑈞𑈱𑈨𑈺𑈪𑈩𑈵𑈙𑈈𑈵𑈩𑈶𑈰𑈟𑈴𑈺𑈈𑈭𑈩𑈶𑈵𑈎𑈛𑈟𑈭𑈺𑈐𑈞𑈪𑈵,𑈺𑈩𑈵𑈨𑈮𑈥𑈤𑈞𑈵𑈙𑈨𑈵𑈥𑈩𑈴𑈌𑈬𑈦𑈘𑈬𑈦𑈵𑈚𑈴𑈺𑈀𑈝𑈭𑈈𑈬𑈦𑈰𑈩𑈵𑈤𑈭𑈞𑈵𑈺𑈀𑈦𑈵𑈪𑈭𑈩𑈶𑈵𑈥𑈙𑈰𑈸 𑈟𑈵𑈦𑈙𑈵𑈥𑈰𑈈𑈤𑈰𑈨𑈺𑈐𑈞𑈪𑈵,𑈺𑈩𑈬𑈤𑈬𑈐𑈭𑈈𑈙𑈵𑈨𑈬𑈙𑈵,𑈺𑈩𑈬𑈤𑈬𑈐𑈭𑈈𑈩𑈯𑈦𑈈𑈵𑈩𑈶𑈬𑈥𑈬𑈺𑈀𑈝𑈭𑈈𑈬𑈦𑈴𑈺𑈩𑈞𑈵𑈝𑈬𑈦𑈥𑈙𑈭;𑈺𑈀𑈩𑈳𑈺𑈪𑈭𑈺𑈦𑈬𑈩𑈶𑈵𑈔𑈵𑈦𑈭𑈥𑈟𑈵𑈦𑈥𑈬𑈩𑈰𑈞𑈺𑈁𑈞𑈵𑈙𑈬𑈦𑈬𑈩𑈶𑈵𑈔𑈵𑈦𑈭𑈥𑈩𑈪𑈥𑈲𑈊𑈰𑈺𑈞𑈺𑈎𑈺𑈟𑈵𑈦𑈙𑈵𑈥𑈰𑈈𑈴𑈺𑈦𑈬𑈐𑈵𑈥𑈩𑈵𑈥𑈺𑈩𑈴𑈌𑈔𑈞𑈩𑈴𑈩𑈬𑈝𑈞𑈬𑈞𑈯𑈦𑈯𑈟𑈤𑈵,𑈺𑈩𑈵𑈨𑈮𑈥𑈬𑈨𑈭𑈣𑈬𑈐𑈵𑈥𑈬𑈦𑈵𑈚𑈭𑈈𑈩𑈬𑈤𑈬𑈐𑈭𑈈𑈩𑈬𑈴𑈩𑈵𑈈𑈵𑈦𑈭𑈙𑈭𑈈𑈬𑈝𑈭𑈈𑈬𑈦𑈬𑈘𑈬𑈴𑈺𑈟𑈵𑈦𑈙𑈭𑈩𑈶𑈵𑈕𑈬𑈥𑈱,𑈺𑈩𑈵𑈨𑈮𑈥𑈨𑈵𑈥𑈈𑈵𑈙𑈭𑈙𑈵𑈨𑈩𑈵𑈥𑈺𑈃𑈞𑈵𑈤𑈯𑈈𑈵𑈙𑈺{𑈩𑈦𑈵𑈨𑈬𑈴𑈊𑈮𑈘}𑈺𑈨𑈭𑈈𑈬𑈩𑈬𑈦𑈵𑈚𑈴𑈺𑈎𑈺𑈩𑈴𑈩𑈭𑈝𑈷𑈭𑈴𑈺𑈀𑈦𑈵𑈪𑈙𑈭𑈸 𑈩𑈦𑈵𑈨𑈰𑈺𑈤𑈬𑈞𑈨𑈬𑈪𑈵𑈺𑈩𑈵𑈨𑈙𑈞𑈵𑈙𑈵𑈦𑈬𑈪𑈵𑈺𑈩𑈤𑈯𑈙𑈵𑈟𑈞𑈷𑈬𑈪𑈵𑈺𑈨𑈦𑈵𑈙𑈞𑈵𑈙𑈰𑈺𑈀𑈟𑈭𑈺𑈎,𑈺𑈊𑈳𑈦𑈨𑈛𑈵𑈦𑈭𑈩𑈶𑈬𑈺𑈀𑈝𑈭𑈈𑈬𑈦𑈛𑈵𑈦𑈭𑈩𑈶𑈬𑈺𑈎𑈺𑈩𑈤𑈬𑈞𑈬𑈪𑈵𑈺𑈄𑈨𑈺𑈨𑈦𑈵𑈙𑈞𑈵𑈙𑈰𑈸𑈺𑈄𑈙𑈰𑈺𑈩𑈦𑈵𑈨𑈰𑈺𑈎𑈰𑈙𑈞𑈬𑈙𑈦𑈵𑈈𑈩𑈶𑈈𑈵𑈙𑈭𑈣𑈵𑈥𑈬𑈴𑈺𑈩𑈯𑈩𑈤𑈵𑈟𑈞𑈷𑈬𑈪𑈵𑈺𑈩𑈞𑈵𑈙𑈭𑈸𑈺𑈀𑈟𑈭𑈺𑈎,𑈺𑈩𑈦𑈵𑈨𑈰𑈟𑈭𑈺𑈡𑈞𑈵𑈝𑈯𑈙𑈵𑈨𑈣𑈬𑈨𑈞𑈥𑈬𑈺𑈟𑈦𑈩𑈵𑈟𑈦𑈴𑈺𑈨𑈵𑈥𑈨𑈪𑈦𑈞𑈵𑈙𑈯𑈸 |</div>
+    </div>
+  
+    <div class="box">
+      <div class="box-title">old-SemiBold 20pt</div>
+	<div class="box-text old-SemiBold" dir="auto" style="font-size: 20pt">217 10 - 1948 10, . (1948), " — – ' ; 360 ‐ : / ‘‘ = ~ 50 ? ?] [ 𑈩𑈦𑈨𑈤 𑈞𑈪 𑈥𑈙𑈵𑈦𑈺𑈐𑈊𑈙𑈭𑈺𑈩𑈶𑈬𑈞𑈵𑈙𑈭𑈞𑈵𑈥𑈬𑈥𑈩𑈵𑈨𑈬𑈙𑈞𑈵𑈙𑈵𑈦𑈵𑈥𑈬𑈘𑈬𑈴𑈺𑈁𑈝𑈬𑈦𑈪𑈵𑈺𑈤𑈬𑈞𑈨𑈟𑈦𑈭𑈨𑈬𑈦𑈩𑈵𑈥𑈺𑈩𑈦𑈵𑈨𑈰𑈩𑈶𑈬𑈤𑈟𑈭𑈺𑈩𑈛𑈩 𑈩𑈦𑈵𑈨𑈰𑈺𑈤𑈬𑈞𑈨𑈬𑈪𑈵𑈺𑈩𑈵𑈨𑈙𑈞𑈵𑈙𑈵𑈦𑈬𑈪𑈵𑈺𑈩𑈤𑈯𑈙𑈵𑈟𑈞𑈷𑈬𑈪𑈵𑈺𑈨𑈦𑈵𑈙𑈞𑈵𑈙𑈰𑈺𑈀𑈟𑈭𑈺𑈎,𑈺𑈊𑈳𑈦𑈨𑈛𑈵𑈦𑈭𑈩𑈶𑈬𑈺𑈀𑈝𑈭𑈈𑈬𑈦𑈛𑈵𑈦𑈭𑈩𑈶𑈬𑈺𑈎𑈺𑈩𑈤𑈬𑈞𑈬𑈪𑈵𑈺𑈄𑈨𑈺𑈨𑈦𑈵𑈙𑈞𑈵𑈙𑈰𑈸𑈺𑈄𑈙𑈰𑈺𑈩𑈦𑈵𑈨𑈰𑈺𑈎𑈰𑈙𑈞 𑈀𑈩𑈵𑈥𑈬𑈴𑈺𑈀𑈣𑈭𑈌𑈲𑈩𑈶𑈘𑈬𑈥𑈬𑈴𑈺𑈞 𑈨𑈭𑈝𑈰𑈪𑈵𑈺𑈩𑈤𑈈𑈵𑈩𑈶𑈴𑈺𑈩𑈦𑈵𑈨𑈰𑈟𑈭𑈺𑈙𑈯𑈧𑈵𑈥𑈬𑈪𑈵𑈺𑈩𑈤𑈬𑈞𑈬𑈩𑈶𑈵𑈎𑈺𑈨𑈦𑈵𑈙𑈞𑈵𑈙𑈰𑈸𑈺𑈀𑈟𑈭𑈺𑈎𑈺𑈨𑈭𑈞𑈱𑈨𑈺𑈈𑈤𑈟𑈭𑈺𑈣𑈰𑈛𑈴𑈺𑈨𑈭𑈝𑈰𑈪𑈵𑈺𑈙𑈯𑈧𑈵𑈥𑈴𑈺𑈩𑈴𑈦𑈈𑈵𑈩𑈶𑈘𑈤𑈨𑈬𑈟𑈵𑈙𑈯𑈴𑈺𑈀𑈦𑈵𑈪𑈞𑈵𑈙𑈭𑈸𑈺𑈀𑈩𑈵𑈥𑈬𑈪 𑈞𑈺𑈈𑈩𑈵𑈥𑈬𑈟𑈭𑈺𑈨𑈵𑈥𑈈𑈵𑈙𑈭𑈊𑈙𑈰𑈺𑈟𑈬𑈦𑈭𑈨𑈬𑈦𑈭𑈈𑈰𑈺𑈎𑈺𑈐𑈮𑈨𑈞𑈰,𑈺𑈊𑈵𑈦𑈭𑈪𑈰,𑈺𑈟𑈙𑈵𑈦𑈨𑈵𑈥𑈨𑈪𑈬𑈦𑈰𑈺𑈎𑈺𑈩𑈵𑈨𑈰𑈏𑈷𑈥𑈬𑈺𑈪𑈩𑈵𑈙𑈈𑈵𑈩𑈶𑈰𑈟𑈲𑈞𑈯𑈐𑈵𑈓𑈬𑈩𑈵𑈥𑈙𑈰,𑈺𑈞𑈺𑈨𑈬𑈺𑈈𑈩𑈵𑈥𑈬𑈟𑈭𑈺𑈉𑈵𑈥𑈬𑈙𑈭𑈴𑈺𑈩𑈤𑈷𑈬𑈞𑈴𑈺𑈨𑈬𑈈𑈵𑈦𑈬𑈞𑈵𑈙𑈯𑈴𑈺𑈈𑈲𑈟𑈭𑈺𑈩𑈶𑈈𑈵𑈩𑈶𑈵𑈥𑈙𑈭𑈸𑈺𑈄𑈙𑈬𑈪𑈈𑈵𑈪𑈩𑈵𑈙𑈈𑈵𑈩𑈶𑈰𑈟𑈬𑈈𑈵𑈦𑈤𑈘𑈬𑈞𑈭𑈺𑈨𑈭𑈦𑈯𑈝𑈵𑈥𑈺𑈟𑈵𑈦𑈙𑈵𑈥𑈰𑈈𑈤𑈟𑈭𑈐𑈞𑈪𑈵𑈺𑈨𑈭𑈝𑈭𑈩𑈴𑈦𑈈𑈵𑈩𑈶𑈘𑈴𑈺𑈩𑈴𑈝𑈙𑈷𑈰𑈸 𑈟𑈵𑈦𑈙𑈵𑈥𑈰𑈈𑈤𑈟𑈭𑈺𑈤𑈞𑈵𑈙𑈨𑈵𑈥𑈬𑈣𑈭𑈨𑈵𑈥𑈈𑈵𑈙𑈵𑈥𑈲𑈪𑈵𑈺𑈀𑈝𑈭𑈈𑈬𑈦𑈴𑈺𑈩𑈴𑈝𑈙𑈷𑈰𑈸𑈺𑈩𑈮𑈤𑈬𑈨𑈵𑈥𑈨𑈝𑈬𑈞𑈴𑈺𑈀𑈨𑈭𑈊𑈘𑈥𑈷,𑈺𑈈𑈰𑈞𑈬𑈟𑈭𑈺𑈩𑈴𑈎𑈬𑈦𑈤𑈬𑈝𑈵𑈥𑈤𑈰𑈞𑈺𑈨𑈭𑈎𑈬𑈦𑈬𑈘𑈬𑈴𑈺𑈩𑈯𑈎𑈞𑈬𑈞𑈬𑈴𑈺𑈎𑈺𑈁𑈛𑈬𑈞𑈟𑈵𑈦𑈛𑈬𑈞𑈬𑈦𑈵𑈚𑈴𑈺𑈨𑈭𑈞𑈱𑈨𑈺𑈪𑈩𑈵𑈙𑈈𑈵𑈩𑈶𑈰𑈟𑈴𑈺𑈈𑈭𑈩𑈶𑈵𑈎𑈛𑈟𑈭𑈺𑈐𑈞𑈪𑈵,𑈺𑈩𑈵𑈨𑈮𑈥𑈤𑈞𑈵𑈙𑈨𑈵𑈥𑈩𑈴𑈌𑈬𑈦𑈘𑈬𑈦𑈵𑈚𑈴𑈺𑈀𑈝𑈭𑈈𑈬𑈦𑈰𑈩𑈵𑈤𑈭𑈞𑈵𑈺𑈀𑈦𑈵𑈪𑈭𑈩𑈶𑈵𑈥𑈙𑈰𑈸 𑈟𑈵𑈦𑈙𑈵𑈥𑈰𑈈𑈤𑈰𑈨𑈺𑈐𑈞𑈪𑈵,𑈺𑈩𑈬𑈤𑈬𑈐𑈭𑈈𑈙𑈵𑈨𑈬𑈙𑈵,𑈺𑈩𑈬𑈤𑈬𑈐𑈭𑈈𑈩𑈯𑈦𑈈𑈵𑈩𑈶𑈬𑈥𑈬𑈺𑈀𑈝𑈭𑈈𑈬𑈦𑈴𑈺𑈩𑈞𑈵𑈝𑈬𑈦𑈥𑈙𑈭;𑈺𑈀𑈩𑈳𑈺𑈪𑈭𑈺𑈦𑈬𑈩𑈶𑈵𑈔𑈵𑈦𑈭𑈥𑈟𑈵𑈦𑈥𑈬𑈩𑈰𑈞𑈺𑈁𑈞𑈵𑈙𑈬𑈦𑈬𑈩𑈶𑈵𑈔𑈵𑈦𑈭𑈥𑈩𑈪𑈥𑈲𑈊𑈰𑈺𑈞𑈺𑈎𑈺𑈟𑈵𑈦𑈙𑈵𑈥𑈰𑈈𑈴𑈺𑈦𑈬𑈐𑈵𑈥𑈩𑈵𑈥𑈺𑈩𑈴𑈌𑈔𑈞𑈩𑈴𑈩𑈬𑈝𑈞𑈬𑈞𑈯𑈦𑈯𑈟𑈤𑈵,𑈺𑈩𑈵𑈨𑈮𑈥𑈬𑈨𑈭𑈣𑈬𑈐𑈵𑈥𑈬𑈦𑈵𑈚𑈭𑈈𑈩𑈬𑈤𑈬𑈐𑈭𑈈𑈩𑈬𑈴𑈩𑈵𑈈𑈵𑈦𑈭𑈙𑈭𑈈𑈬𑈝𑈭𑈈𑈬𑈦𑈬𑈘𑈬𑈴𑈺𑈟𑈵𑈦𑈙𑈭𑈩𑈶𑈵𑈕𑈬𑈥𑈱,𑈺𑈩𑈵𑈨𑈮𑈥𑈨𑈵𑈥𑈈𑈵𑈙𑈭𑈙𑈵𑈨𑈩𑈵𑈥𑈺𑈃𑈞𑈵𑈤𑈯𑈈𑈵𑈙𑈺{𑈩𑈦𑈵𑈨𑈬𑈴𑈊𑈮𑈘}𑈺𑈨𑈭𑈈𑈬𑈩𑈬𑈦𑈵𑈚𑈴𑈺𑈎𑈺𑈩𑈴𑈩𑈭𑈝𑈷𑈭𑈴𑈺𑈀𑈦𑈵𑈪𑈙𑈭𑈸 𑈩𑈦𑈵𑈨𑈰𑈺𑈤𑈬𑈞𑈨𑈬𑈪𑈵𑈺𑈩𑈵𑈨𑈙𑈞𑈵𑈙𑈵𑈦𑈬𑈪𑈵𑈺𑈩𑈤𑈯𑈙𑈵𑈟𑈞𑈷𑈬𑈪𑈵𑈺𑈨𑈦𑈵𑈙𑈞𑈵𑈙𑈰𑈺𑈀𑈟𑈭𑈺𑈎,𑈺𑈊𑈳𑈦𑈨𑈛𑈵𑈦𑈭𑈩𑈶𑈬𑈺𑈀𑈝𑈭𑈈𑈬𑈦𑈛𑈵𑈦𑈭𑈩𑈶𑈬𑈺𑈎𑈺𑈩𑈤𑈬𑈞𑈬𑈪𑈵𑈺𑈄𑈨𑈺𑈨𑈦𑈵𑈙𑈞𑈵𑈙𑈰𑈸𑈺𑈄𑈙𑈰𑈺𑈩𑈦𑈵𑈨𑈰𑈺𑈎𑈰𑈙𑈞𑈬𑈙𑈦𑈵𑈈𑈩𑈶𑈈𑈵𑈙𑈭𑈣𑈵𑈥𑈬𑈴𑈺𑈩𑈯𑈩𑈤𑈵𑈟𑈞𑈷𑈬𑈪𑈵𑈺𑈩𑈞𑈵𑈙𑈭𑈸𑈺𑈀𑈟𑈭𑈺𑈎,𑈺𑈩𑈦𑈵𑈨𑈰𑈟𑈭𑈺𑈡𑈞𑈵𑈝𑈯𑈙𑈵𑈨𑈣𑈬𑈨𑈞𑈥𑈬𑈺𑈟𑈦𑈩𑈵𑈟𑈦𑈴𑈺𑈨𑈵𑈥𑈨𑈪𑈦𑈞𑈵𑈙𑈯𑈸 |</div>
+    </div>
+  
+    <div class="box">
+      <div class="box-title">old-Bold 20pt</div>
+	<div class="box-text old-Bold" dir="auto" style="font-size: 20pt">217 10 - 1948 10, . (1948), " — – ' ; 360 ‐ : / ‘‘ = ~ 50 ? ?] [ 𑈩𑈦𑈨𑈤 𑈞𑈪 𑈥𑈙𑈵𑈦𑈺𑈐𑈊𑈙𑈭𑈺𑈩𑈶𑈬𑈞𑈵𑈙𑈭𑈞𑈵𑈥𑈬𑈥𑈩𑈵𑈨𑈬𑈙𑈞𑈵𑈙𑈵𑈦𑈵𑈥𑈬𑈘𑈬𑈴𑈺𑈁𑈝𑈬𑈦𑈪𑈵𑈺𑈤𑈬𑈞𑈨𑈟𑈦𑈭𑈨𑈬𑈦𑈩𑈵𑈥𑈺𑈩𑈦𑈵𑈨𑈰𑈩𑈶𑈬𑈤𑈟𑈭𑈺𑈩𑈛𑈩 𑈩𑈦𑈵𑈨𑈰𑈺𑈤𑈬𑈞𑈨𑈬𑈪𑈵𑈺𑈩𑈵𑈨𑈙𑈞𑈵𑈙𑈵𑈦𑈬𑈪𑈵𑈺𑈩𑈤𑈯𑈙𑈵𑈟𑈞𑈷𑈬𑈪𑈵𑈺𑈨𑈦𑈵𑈙𑈞𑈵𑈙𑈰𑈺𑈀𑈟𑈭𑈺𑈎,𑈺𑈊𑈳𑈦𑈨𑈛𑈵𑈦𑈭𑈩𑈶𑈬𑈺𑈀𑈝𑈭𑈈𑈬𑈦𑈛𑈵𑈦𑈭𑈩𑈶𑈬𑈺𑈎𑈺𑈩𑈤𑈬𑈞𑈬𑈪𑈵𑈺𑈄𑈨𑈺𑈨𑈦𑈵𑈙𑈞𑈵𑈙𑈰𑈸𑈺𑈄𑈙𑈰𑈺𑈩𑈦𑈵𑈨𑈰𑈺𑈎𑈰𑈙𑈞 𑈀𑈩𑈵𑈥𑈬𑈴𑈺𑈀𑈣𑈭𑈌𑈲𑈩𑈶𑈘𑈬𑈥𑈬𑈴𑈺𑈞 𑈨𑈭𑈝𑈰𑈪𑈵𑈺𑈩𑈤𑈈𑈵𑈩𑈶𑈴𑈺𑈩𑈦𑈵𑈨𑈰𑈟𑈭𑈺𑈙𑈯𑈧𑈵𑈥𑈬𑈪𑈵𑈺𑈩𑈤𑈬𑈞𑈬𑈩𑈶𑈵𑈎𑈺𑈨𑈦𑈵𑈙𑈞𑈵𑈙𑈰𑈸𑈺𑈀𑈟𑈭𑈺𑈎𑈺𑈨𑈭𑈞𑈱𑈨𑈺𑈈𑈤𑈟𑈭𑈺𑈣𑈰𑈛𑈴𑈺𑈨𑈭𑈝𑈰𑈪𑈵𑈺𑈙𑈯𑈧𑈵𑈥𑈴𑈺𑈩𑈴𑈦𑈈𑈵𑈩𑈶𑈘𑈤𑈨𑈬𑈟𑈵𑈙𑈯𑈴𑈺𑈀𑈦𑈵𑈪𑈞𑈵𑈙𑈭𑈸𑈺𑈀𑈩𑈵𑈥𑈬𑈪 𑈞𑈺𑈈𑈩𑈵𑈥𑈬𑈟𑈭𑈺𑈨𑈵𑈥𑈈𑈵𑈙𑈭𑈊𑈙𑈰𑈺𑈟𑈬𑈦𑈭𑈨𑈬𑈦𑈭𑈈𑈰𑈺𑈎𑈺𑈐𑈮𑈨𑈞𑈰,𑈺𑈊𑈵𑈦𑈭𑈪𑈰,𑈺𑈟𑈙𑈵𑈦𑈨𑈵𑈥𑈨𑈪𑈬𑈦𑈰𑈺𑈎𑈺𑈩𑈵𑈨𑈰𑈏𑈷𑈥𑈬𑈺𑈪𑈩𑈵𑈙𑈈𑈵𑈩𑈶𑈰𑈟𑈲𑈞𑈯𑈐𑈵𑈓𑈬𑈩𑈵𑈥𑈙𑈰,𑈺𑈞𑈺𑈨𑈬𑈺𑈈𑈩𑈵𑈥𑈬𑈟𑈭𑈺𑈉𑈵𑈥𑈬𑈙𑈭𑈴𑈺𑈩𑈤𑈷𑈬𑈞𑈴𑈺𑈨𑈬𑈈𑈵𑈦𑈬𑈞𑈵𑈙𑈯𑈴𑈺𑈈𑈲𑈟𑈭𑈺𑈩𑈶𑈈𑈵𑈩𑈶𑈵𑈥𑈙𑈭𑈸𑈺𑈄𑈙𑈬𑈪𑈈𑈵𑈪𑈩𑈵𑈙𑈈𑈵𑈩𑈶𑈰𑈟𑈬𑈈𑈵𑈦𑈤𑈘𑈬𑈞𑈭𑈺𑈨𑈭𑈦𑈯𑈝𑈵𑈥𑈺𑈟𑈵𑈦𑈙𑈵𑈥𑈰𑈈𑈤𑈟𑈭𑈐𑈞𑈪𑈵𑈺𑈨𑈭𑈝𑈭𑈩𑈴𑈦𑈈𑈵𑈩𑈶𑈘𑈴𑈺𑈩𑈴𑈝𑈙𑈷𑈰𑈸 𑈟𑈵𑈦𑈙𑈵𑈥𑈰𑈈𑈤𑈟𑈭𑈺𑈤𑈞𑈵𑈙𑈨𑈵𑈥𑈬𑈣𑈭𑈨𑈵𑈥𑈈𑈵𑈙𑈵𑈥𑈲𑈪𑈵𑈺𑈀𑈝𑈭𑈈𑈬𑈦𑈴𑈺𑈩𑈴𑈝𑈙𑈷𑈰𑈸𑈺𑈩𑈮𑈤𑈬𑈨𑈵𑈥𑈨𑈝𑈬𑈞𑈴𑈺𑈀𑈨𑈭𑈊𑈘𑈥𑈷,𑈺𑈈𑈰𑈞𑈬𑈟𑈭𑈺𑈩𑈴𑈎𑈬𑈦𑈤𑈬𑈝𑈵𑈥𑈤𑈰𑈞𑈺𑈨𑈭𑈎𑈬𑈦𑈬𑈘𑈬𑈴𑈺𑈩𑈯𑈎𑈞𑈬𑈞𑈬𑈴𑈺𑈎𑈺𑈁𑈛𑈬𑈞𑈟𑈵𑈦𑈛𑈬𑈞𑈬𑈦𑈵𑈚𑈴𑈺𑈨𑈭𑈞𑈱𑈨𑈺𑈪𑈩𑈵𑈙𑈈𑈵𑈩𑈶𑈰𑈟𑈴𑈺𑈈𑈭𑈩𑈶𑈵𑈎𑈛𑈟𑈭𑈺𑈐𑈞𑈪𑈵,𑈺𑈩𑈵𑈨𑈮𑈥𑈤𑈞𑈵𑈙𑈨𑈵𑈥𑈩𑈴𑈌𑈬𑈦𑈘𑈬𑈦𑈵𑈚𑈴𑈺𑈀𑈝𑈭𑈈𑈬𑈦𑈰𑈩𑈵𑈤𑈭𑈞𑈵𑈺𑈀𑈦𑈵𑈪𑈭𑈩𑈶𑈵𑈥𑈙𑈰𑈸 𑈟𑈵𑈦𑈙𑈵𑈥𑈰𑈈𑈤𑈰𑈨𑈺𑈐𑈞𑈪𑈵,𑈺𑈩𑈬𑈤𑈬𑈐𑈭𑈈𑈙𑈵𑈨𑈬𑈙𑈵,𑈺𑈩𑈬𑈤𑈬𑈐𑈭𑈈𑈩𑈯𑈦𑈈𑈵𑈩𑈶𑈬𑈥𑈬𑈺𑈀𑈝𑈭𑈈𑈬𑈦𑈴𑈺𑈩𑈞𑈵𑈝𑈬𑈦𑈥𑈙𑈭;𑈺𑈀𑈩𑈳𑈺𑈪𑈭𑈺𑈦𑈬𑈩𑈶𑈵𑈔𑈵𑈦𑈭𑈥𑈟𑈵𑈦𑈥𑈬𑈩𑈰𑈞𑈺𑈁𑈞𑈵𑈙𑈬𑈦𑈬𑈩𑈶𑈵𑈔𑈵𑈦𑈭𑈥𑈩𑈪𑈥𑈲𑈊𑈰𑈺𑈞𑈺𑈎𑈺𑈟𑈵𑈦𑈙𑈵𑈥𑈰𑈈𑈴𑈺𑈦𑈬𑈐𑈵𑈥𑈩𑈵𑈥𑈺𑈩𑈴𑈌𑈔𑈞𑈩𑈴𑈩𑈬𑈝𑈞𑈬𑈞𑈯𑈦𑈯𑈟𑈤𑈵,𑈺𑈩𑈵𑈨𑈮𑈥𑈬𑈨𑈭𑈣𑈬𑈐𑈵𑈥𑈬𑈦𑈵𑈚𑈭𑈈𑈩𑈬𑈤𑈬𑈐𑈭𑈈𑈩𑈬𑈴𑈩𑈵𑈈𑈵𑈦𑈭𑈙𑈭𑈈𑈬𑈝𑈭𑈈𑈬𑈦𑈬𑈘𑈬𑈴𑈺𑈟𑈵𑈦𑈙𑈭𑈩𑈶𑈵𑈕𑈬𑈥𑈱,𑈺𑈩𑈵𑈨𑈮𑈥𑈨𑈵𑈥𑈈𑈵𑈙𑈭𑈙𑈵𑈨𑈩𑈵𑈥𑈺𑈃𑈞𑈵𑈤𑈯𑈈𑈵𑈙𑈺{𑈩𑈦𑈵𑈨𑈬𑈴𑈊𑈮𑈘}𑈺𑈨𑈭𑈈𑈬𑈩𑈬𑈦𑈵𑈚𑈴𑈺𑈎𑈺𑈩𑈴𑈩𑈭𑈝𑈷𑈭𑈴𑈺𑈀𑈦𑈵𑈪𑈙𑈭𑈸 𑈩𑈦𑈵𑈨𑈰𑈺𑈤𑈬𑈞𑈨𑈬𑈪𑈵𑈺𑈩𑈵𑈨𑈙𑈞𑈵𑈙𑈵𑈦𑈬𑈪𑈵𑈺𑈩𑈤𑈯𑈙𑈵𑈟𑈞𑈷𑈬𑈪𑈵𑈺𑈨𑈦𑈵𑈙𑈞𑈵𑈙𑈰𑈺𑈀𑈟𑈭𑈺𑈎,𑈺𑈊𑈳𑈦𑈨𑈛𑈵𑈦𑈭𑈩𑈶𑈬𑈺𑈀𑈝𑈭𑈈𑈬𑈦𑈛𑈵𑈦𑈭𑈩𑈶𑈬𑈺𑈎𑈺𑈩𑈤𑈬𑈞𑈬𑈪𑈵𑈺𑈄𑈨𑈺𑈨𑈦𑈵𑈙𑈞𑈵𑈙𑈰𑈸𑈺𑈄𑈙𑈰𑈺𑈩𑈦𑈵𑈨𑈰𑈺𑈎𑈰𑈙𑈞𑈬𑈙𑈦𑈵𑈈𑈩𑈶𑈈𑈵𑈙𑈭𑈣𑈵𑈥𑈬𑈴𑈺𑈩𑈯𑈩𑈤𑈵𑈟𑈞𑈷𑈬𑈪𑈵𑈺𑈩𑈞𑈵𑈙𑈭𑈸𑈺𑈀𑈟𑈭𑈺𑈎,𑈺𑈩𑈦𑈵𑈨𑈰𑈟𑈭𑈺𑈡𑈞𑈵𑈝𑈯𑈙𑈵𑈨𑈣𑈬𑈨𑈞𑈥𑈬𑈺𑈟𑈦𑈩𑈵𑈟𑈦𑈴𑈺𑈨𑈵𑈥𑈨𑈪𑈦𑈞𑈵𑈙𑈯𑈸 |</div>
+    </div>
+  
+
+    </div>
+</body>
+	<script>
+
+	POSITION = "old"
+	fontToggle = document.getElementById("font-toggle")
+	function switchFonts() {
+	boxTitles = document.getElementsByClassName("box-title")
+	items = document.getElementsByClassName("box-text");
+	  
+	if (POSITION === "old") {
+	  POSITION = "new"
+	  for (item of boxTitles) {
+	    item.textContent = item.textContent.replace("old", "new")
+	    fontToggle.textContent = "new"
+	  }
+	  for (item of items) {
+		item.className = item.className.replace("old", "new")
+	  }
+
+	  } else {
+	  POSITION = "old"
+	  for (item of boxTitles) {
+	    item.textContent = item.textContent.replace("new", "old")
+	    fontToggle.textContent = "old"
+	  }
+	  for (item of items) {
+		item.className = item.className.replace("new", "old")
+	  }
+	}
+	}
+	if (fontToggle !== null) {
+		fontToggle.addEventListener("click", switchFonts);
+	}
+
+    const divs = document.querySelectorAll('.node');
+    divs.forEach(el => el.addEventListener('click', event => {
+    var children = event.target.querySelectorAll(".node");
+    children.forEach(function(e) {
+        if (e.style.display === "none") {
+            e.style.display = "block";
+        } else {
+            e.style.display = "none";
+        }
+    })
+    }));
+    
+	// break text so that no reflow happens
+async function breakText() {
+	boxContent = document.getElementsByClassName("box-text")
+	for (let box of boxContent) {
+		switchFonts()
+		await sleep(1)
+		break1 = getLineBreaks(box)
+		switchFonts()
+		await sleep(1)
+		break2 = getLineBreaks(box)
+
+		if (break1.length >= break2.length) {
+		breaks = break1
+		} else {
+		breaks = break2
+		}
+		insertBreaks(box, breaks)
+		box.style.whiteSpace = "pre"
+		console.log("set to pre")
+	}
+	}
+
+function getLineBreaks(elem) {
+	const nodes = grabTextNodes(elem);
+	for (const node of nodes) { // each node is a big block of text
+		let rangeIndex = 1;
+		let textIndex = 0;
+		let nodeText = node.textContent;
+		const textLength = nodeText.length;
+
+		linebreaks = []
+		prevTop = 0;
+		while (rangeIndex <= textLength) {
+			const range = document.createRange();
+			range.setStart(node, rangeIndex-1);
+			range.setEnd(node, rangeIndex)
+			currentTop = range.getBoundingClientRect().top
+		if (currentTop > prevTop) {
+			linebreaks.push(rangeIndex-2)
+		}
+		rangeIndex += 1;
+		prevTop = currentTop
+		}
+	}
+	return linebreaks
+}
+
+function grabTextNodes(elem) {
+	const walker = document.createTreeWalker(elem, NodeFilter.SHOW_TEXT, null);
+	const nodes = [];
+	while (walker.nextNode()) {
+		nodes.push(walker.currentNode);
+	}
+	return nodes;
+}
+
+	function sleep(ms) {
+		return new Promise(resolve => setTimeout(resolve, ms));
+}
+
+
+function insertBreaks(node, breaks) {
+	console.log(node, breaks)
+	newText = ""
+	currentText = node.textContent
+	for (i=0; i<currentText.length; i++) {
+		if (breaks.includes(i)) {
+		newText += "<br>"
+		} else {
+		newText += currentText[i]
+		}
+	}
+	node.innerHTML = newText
+}
+
+	if (fontToggle !== null) {
+		breakText()
+}
+
+	
+
+
+    </script>
+</html>
