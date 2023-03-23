@@ -1,7 +1,7 @@
 {
-.appVersion = "3134";
+.appVersion = "3180";
 DisplayStrings = (
-"/Nukta_Shadda.ns/kj_CHA/kj_BA"
+"/kj_vs_AI.ns"
 );
 classes = (
 {
@@ -232,6 +232,10 @@ name = "Use Typo Metrics";
 value = 1;
 },
 {
+name = "Propagate Anchors";
+value = 0;
+},
+{
 name = description;
 value = "Designed by Monotype design team.";
 },
@@ -280,7 +284,7 @@ code = "lookup AltForms {\012    sub KSSA by KSSA.alt;\012    sub GNA by GNA.alt
 name = "Alt Forms";
 },
 {
-code = "lookup NuktaShaddaLigatures {\012    lookupflag MarkAttachmentType @abovemarks;\012    sub Nukta Shadda kj_vs_AI.ns by Nukta_Shadda_AI.ns;\012    sub Nukta Shadda kj_vs_E.ns by Nukta_Shadda_E.ns;\012    sub Nukta Shadda by Nukta_Shadda.ns;\012    sub Nukta kj_vs_AI.ns by Nukta_AI.ns;\012    sub Nukta kj_vs_E.ns by Nukta_E.ns;\012    sub Shadda kj_vs_AI.ns by AI_Shadda.ns;\012    sub Shadda kj_vs_E.ns by E_Shadda.ns;\012} NuktaShaddaLigatures;\012";
+code = "lookup NuktaShaddaLigatures {\012    lookupflag MarkAttachmentType @abovemarks;\012    sub Nukta Shadda kj_vs_AI.ns by Nukta_Shadda_AI.ns;\012    sub Nukta Shadda kj_vs_E.ns by Nukta_Shadda_E.ns;\012    sub Nukta Shadda by Nukta_Shadda.ns;\012    sub Nukta kj_vs_AI.ns by Nukta_AI.ns;\012    sub Nukta kj_vs_E.ns by Nukta_E.ns;\012    sub Shadda kj_vs_AI.ns by AI_Shadda.ns;\012    sub Shadda kj_vs_E.ns by E_Shadda.ns;\012} NuktaShaddaLigatures;\012\012lookup BreakNuktaShaddaLigatures {\012    lookupflag MarkAttachmentType @abovemarks;\012    sub Nukta_Shadda.ns by Shadda Nukta;\012    sub Nukta_AI.ns by kj_vs_AI.ns Nukta;\012    sub Nukta_E.ns by kj_vs_E.ns Nukta;\012    sub Nukta_Shadda_AI.ns by kj_vs_AI.ns Shadda Nukta;\012    sub Nukta_Shadda_E.ns by kj_vs_E.ns Shadda Nukta;\012} BreakNuktaShaddaLigatures;\012";
 name = "Nukta and Shadda Ligatures";
 },
 {
@@ -314,7 +318,7 @@ code = "lookupflag IgnoreMarks;\012sub @consonants' kj_vs_I' lookup AltForms;\01
 name = psts;
 },
 {
-code = "sub Anusvara by Anusvara.alt;\012sub Nukta by Nukta.alt;\012";
+code = "lookup BreakNuktaShaddaLigatures;\012sub Anusvara by Anusvara.alt;\012sub Nukta by Nukta.alt;\012";
 name = salt;
 },
 {
@@ -2262,10 +2266,14 @@ subCategory = Nonspacing;
 },
 {
 glyphname = Shadda;
-lastChange = "2018-11-05 20:04:51 +0000";
+lastChange = "2023-03-23 12:03:57 +0000";
 layers = (
 {
 anchors = (
+{
+name = Anchor7;
+position = "{-223, 840}";
+},
 {
 name = _Anchor7;
 position = "{-220, 620}";
@@ -14083,13 +14091,17 @@ subCategory = Nonspacing;
 },
 {
 glyphname = kj_vs_E.ns;
-lastChange = "2018-11-05 20:04:54 +0000";
+lastChange = "2023-03-23 12:10:08 +0000";
 layers = (
 {
 anchors = (
 {
 name = Anchor17;
 position = "{-147, 750}";
+},
+{
+name = Anchor7;
+position = "{-256, 844}";
 },
 {
 name = _Anchor11;
@@ -14138,13 +14150,17 @@ subCategory = Nonspacing;
 },
 {
 glyphname = kj_vs_AI.ns;
-lastChange = "2018-11-05 20:04:54 +0000";
+lastChange = "2023-03-23 12:12:56 +0000";
 layers = (
 {
 anchors = (
 {
 name = Anchor17;
 position = "{-87, 850}";
+},
+{
+name = Anchor7;
+position = "{-117, 930}";
 },
 {
 name = _Anchor11;
@@ -16700,7 +16716,7 @@ subCategory = Nonspacing;
 },
 {
 glyphname = Nukta_E.ns;
-lastChange = "2018-11-05 20:04:54 +0000";
+lastChange = "2023-03-23 12:07:45 +0000";
 layers = (
 {
 anchors = (
