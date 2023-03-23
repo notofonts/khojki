@@ -21,11 +21,16 @@ Fontbakery version: 0.8.11
 </div></details><br></div></details><details><summary><b>[14] NotoSerifKhojki-Bold.ttf</b></summary><div><details><summary>💔 <b>ERROR:</b> Check that texts shape as per expectation (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Shaping Checks>.html#com.google.fonts/check/shaping/regression">com.google.fonts/check/shaping/regression</a>)</summary><div>
 
 
-* 💔 **ERROR** Failed with KeyError: 'TU'
+* 💔 **ERROR** Failed with KeyError: 'KSSA'
 </div></details><details><summary>🔥 <b>FAIL:</b> Noto fonts must have an ARTICLE.en_us.html file (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/description/noto_has_article">com.google.fonts/check/description/noto_has_article</a>)</summary><div>
 
 
 * 🔥 **FAIL** This is a Noto font but it lacks an ARTICLE.en_us.html file [code: missing-article]
+</div></details><details><summary>🔥 <b>FAIL:</b> Checking with fontTools.ttx (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/ttx_roundtrip">com.google.fonts/check/ttx_roundtrip</a>)</summary><div>
+
+
+* 🔥 **FAIL** name id 256 missing from name table
+* 🔥 **FAIL** name id 257 missing from name table
 </div></details><details><summary>🔥 <b>FAIL:</b> Ensure soft_dotted characters lose their dot when combined with marks that replace the dot. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/soft_dotted">com.google.fonts/check/soft_dotted</a>)</summary><div>
 
 
@@ -45,15 +50,9 @@ The dot of soft dotted characters should disappear in other cases, for example: 
 	* ba_iiMatrakhoj
 	* ba_uMatrakhoj
 	* bakhoj
-	* bb_ra_iMatrakhoj and 128 more.
+	* bb_ra_iMatrakhoj and 127 more.
 
 Use -F or --full-lists to disable shortening of long lists.
-</div></details><details><summary>⚠ <b>WARN:</b> Ensure Stylistic Sets have description. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/stylisticset_description">com.google.fonts/check/stylisticset_description</a>)</summary><div>
-
-
-* ⚠ **WARN** The stylistic set ss01 lacks a description string on the 'name' table. [code: missing-description]
-* ⚠ **WARN** The stylistic set ss02 lacks a description string on the 'name' table. [code: missing-description]
-* ⚠ **WARN** The stylistic set ss03 lacks a description string on the 'name' table. [code: missing-description]
 </div></details><details><summary>⚠ <b>WARN:</b> Ensure fonts have ScriptLangTags declared on the 'meta' table. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/meta/script_lang_tags">com.google.fonts/check/meta/script_lang_tags</a>)</summary><div>
 
 
@@ -75,17 +74,17 @@ Use -F or --full-lists to disable shortening of long lists.
 
 	- dblsectionmark.alt
 
-	- k_ra_uMatrakhoj.alt
-
 	- rakar_rVocalicMatra
 
 	- sh_ra_iMatrakhoj
 
-	- sh_ra_iiMatrakhoj 
+	- sh_ra_iiMatrakhoj
 
-	- 3 more.
+	- sh_ra_uMatrakhoj
 
-Use -F or --full-lists to disable shortening of long lists.
+	- sixkhoj.alt 
+
+	- uni00A0.1
  [code: unreachable-glyphs]
 </div></details><details><summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/contour_count">com.google.fonts/check/contour_count</a>)</summary><div>
 
@@ -153,7 +152,7 @@ multiply, plus
 
 	* f (U+0066): X=310.0,Y=712.0 (should be at cap-height 714?) 
 
-	* 35 more.
+	* 38 more.
 
 Use -F or --full-lists to disable shortening of long lists. [code: found-misalignments]
 </div></details><details><summary>⚠ <b>WARN:</b> Do outlines contain any jaggy segments? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_jaggy_segments">com.google.fonts/check/outline_jaggy_segments</a>)</summary><div>
@@ -183,11 +182,16 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-misalig
 </div></details><br></div></details><details><summary><b>[12] NotoSerifKhojki-Regular.ttf</b></summary><div><details><summary>💔 <b>ERROR:</b> Check that texts shape as per expectation (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Shaping Checks>.html#com.google.fonts/check/shaping/regression">com.google.fonts/check/shaping/regression</a>)</summary><div>
 
 
-* 💔 **ERROR** Failed with KeyError: 'TU'
+* 💔 **ERROR** Failed with KeyError: 'KSSA'
 </div></details><details><summary>🔥 <b>FAIL:</b> Noto fonts must have an ARTICLE.en_us.html file (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/description/noto_has_article">com.google.fonts/check/description/noto_has_article</a>)</summary><div>
 
 
 * 🔥 **FAIL** This is a Noto font but it lacks an ARTICLE.en_us.html file [code: missing-article]
+</div></details><details><summary>🔥 <b>FAIL:</b> Checking with fontTools.ttx (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/ttx_roundtrip">com.google.fonts/check/ttx_roundtrip</a>)</summary><div>
+
+
+* 🔥 **FAIL** name id 256 missing from name table
+* 🔥 **FAIL** name id 257 missing from name table
 </div></details><details><summary>🔥 <b>FAIL:</b> Ensure soft_dotted characters lose their dot when combined with marks that replace the dot. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/soft_dotted">com.google.fonts/check/soft_dotted</a>)</summary><div>
 
 
@@ -210,12 +214,6 @@ The dot of soft dotted characters should disappear in other cases, for example: 
 	* dd_ra_iiMatrakhoj and 25 more.
 
 Use -F or --full-lists to disable shortening of long lists.
-</div></details><details><summary>⚠ <b>WARN:</b> Ensure Stylistic Sets have description. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/stylisticset_description">com.google.fonts/check/stylisticset_description</a>)</summary><div>
-
-
-* ⚠ **WARN** The stylistic set ss01 lacks a description string on the 'name' table. [code: missing-description]
-* ⚠ **WARN** The stylistic set ss02 lacks a description string on the 'name' table. [code: missing-description]
-* ⚠ **WARN** The stylistic set ss03 lacks a description string on the 'name' table. [code: missing-description]
 </div></details><details><summary>⚠ <b>WARN:</b> Ensure fonts have ScriptLangTags declared on the 'meta' table. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/meta/script_lang_tags">com.google.fonts/check/meta/script_lang_tags</a>)</summary><div>
 
 
@@ -237,17 +235,17 @@ Use -F or --full-lists to disable shortening of long lists.
 
 	- dblsectionmark.alt
 
-	- k_ra_uMatrakhoj.alt
-
 	- rakar_rVocalicMatra
 
 	- sh_ra_iMatrakhoj
 
-	- sh_ra_iiMatrakhoj 
+	- sh_ra_iiMatrakhoj
 
-	- 3 more.
+	- sh_ra_uMatrakhoj
 
-Use -F or --full-lists to disable shortening of long lists.
+	- sixkhoj.alt 
+
+	- uni00A0.1
  [code: unreachable-glyphs]
 </div></details><details><summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/contour_count">com.google.fonts/check/contour_count</a>)</summary><div>
 
@@ -315,10 +313,10 @@ multiply, plus
 
 	* sterling (U+00A3): X=77.0,Y=1.0 (should be at baseline 0?) 
 
-	* 35 more.
+	* 37 more.
 
 Use -F or --full-lists to disable shortening of long lists. [code: found-misalignments]
-</div></details><br></div></details><details><summary><b>[15] NotoSerifKhojki[wght].ttf</b></summary><div><details><summary>💔 <b>ERROR:</b> Check font names are correct (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/font_names">com.google.fonts/check/font_names</a>)</summary><div>
+</div></details><br></div></details><details><summary><b>[16] NotoSerifKhojki[wght].ttf</b></summary><div><details><summary>💔 <b>ERROR:</b> Check font names are correct (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/font_names">com.google.fonts/check/font_names</a>)</summary><div>
 
 
 * 💔 **ERROR** The condition <FontBakeryCondition:expected_font_names> had an error: KeyError: 'fvar'
@@ -333,27 +331,31 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-misalig
 </div></details><details><summary>💔 <b>ERROR:</b> Check that texts shape as per expectation (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Shaping Checks>.html#com.google.fonts/check/shaping/regression">com.google.fonts/check/shaping/regression</a>)</summary><div>
 
 
-* 💔 **ERROR** Failed with KeyError: 'TU'
+* 💔 **ERROR** Failed with KeyError: 'KSSA'
 </div></details><details><summary>🔥 <b>FAIL:</b> Noto fonts must have an ARTICLE.en_us.html file (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/description/noto_has_article">com.google.fonts/check/description/noto_has_article</a>)</summary><div>
 
 
 * 🔥 **FAIL** This is a Noto font but it lacks an ARTICLE.en_us.html file [code: missing-article]
+</div></details><details><summary>🔥 <b>FAIL:</b> Checking with fontTools.ttx (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/ttx_roundtrip">com.google.fonts/check/ttx_roundtrip</a>)</summary><div>
+
+
+* 🔥 **FAIL** name id 256 missing from name table
+* 🔥 **FAIL** name id 257 missing from name table
 </div></details><details><summary>🔥 <b>FAIL:</b> Ensure soft_dotted characters lose their dot when combined with marks that replace the dot. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/soft_dotted">com.google.fonts/check/soft_dotted</a>)</summary><div>
 
 
 * 🔥 **FAIL** The dot of soft dotted characters used in orthographies must disappear in the following strings: i̊ i̋ j̀ j́ j̃ j̄ j̈ į̀ į́ į̂ į̃ į̄ į̌
 
 The dot of soft dotted characters should disappear in other cases, for example: ĩ ĭ i̇ ǐ i̒ ĩ̦ ĭ̦ i̦̇ i̦̊ i̦̋ ǐ̦ i̦̒ ĩ̧ ĭ̧ i̧̇ i̧̊ i̧̋ ǐ̧ i̧̒ ĵ [code: soft-dotted]
+</div></details><details><summary>🔥 <b>FAIL:</b> Check name table for empty records. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/name.html#com.adobe.fonts/check/name/empty_records">com.adobe.fonts/check/name/empty_records</a>)</summary><div>
+
+
+* 🔥 **FAIL** "name" table record with key=(3, 1, 1033, 256) is empty and should be removed. [code: empty-record]
+* 🔥 **FAIL** "name" table record with key=(3, 1, 1033, 257) is empty and should be removed. [code: empty-record]
 </div></details><details><summary>⚠ <b>WARN:</b> Ensure variable fonts include an avar table. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/mandatory_avar_table">com.google.fonts/check/mandatory_avar_table</a>)</summary><div>
 
 
 * ⚠ **WARN** This variable font does not have an avar table. [code: missing-avar]
-</div></details><details><summary>⚠ <b>WARN:</b> Ensure Stylistic Sets have description. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/stylisticset_description">com.google.fonts/check/stylisticset_description</a>)</summary><div>
-
-
-* ⚠ **WARN** The stylistic set ss01 lacks a description string on the 'name' table. [code: missing-description]
-* ⚠ **WARN** The stylistic set ss02 lacks a description string on the 'name' table. [code: missing-description]
-* ⚠ **WARN** The stylistic set ss03 lacks a description string on the 'name' table. [code: missing-description]
 </div></details><details><summary>⚠ <b>WARN:</b> Ensure fonts have ScriptLangTags declared on the 'meta' table. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/meta/script_lang_tags">com.google.fonts/check/meta/script_lang_tags</a>)</summary><div>
 
 
@@ -372,8 +374,6 @@ The dot of soft dotted characters should disappear in other cases, for example: 
 	- NullMark
 
 	- dblsectionmark.alt
-
-	- k_ra_uMatrakhoj.alt
 
 	- rakar_rVocalicMatra
 
@@ -394,21 +394,21 @@ The dot of soft dotted characters should disappear in other cases, for example: 
 </div></details><details><summary>⚠ <b>WARN:</b> Detect any interpolation issues in the font. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/interpolation_issues">com.google.fonts/check/interpolation_issues</a>)</summary><div>
 
 
-* ⚠ **WARN** Interpolation issues were found in the font: 	- Contour 1 start point differs in glyph 'dda_iiMatrakhoj' between location <fontTools.ttLib.ttGlyphSet._TTGlyphSetGlyf object at 0x7f334ed1a3d0> and location <fontTools.ttLib.ttGlyphSet._TTGlyphSetGlyf object at 0x7f334ed1a450>
+* ⚠ **WARN** Interpolation issues were found in the font: 	- Contour 1 start point differs in glyph 'dda_iiMatrakhoj' between location <fontTools.ttLib.ttGlyphSet._TTGlyphSetGlyf object at 0x7f9d3f8da510> and location <fontTools.ttLib.ttGlyphSet._TTGlyphSetGlyf object at 0x7f9d3f8d85d0>
 
-	- Contour 0 start point differs in glyph 'dd_rakhoj' between location <fontTools.ttLib.ttGlyphSet._TTGlyphSetGlyf object at 0x7f334ed1a3d0> and location <fontTools.ttLib.ttGlyphSet._TTGlyphSetGlyf object at 0x7f334ed1a450>
+	- Contour 0 start point differs in glyph 'dd_rakhoj' between location <fontTools.ttLib.ttGlyphSet._TTGlyphSetGlyf object at 0x7f9d3f8da510> and location <fontTools.ttLib.ttGlyphSet._TTGlyphSetGlyf object at 0x7f9d3f8d85d0>
 
-	- Contour 1 start point differs in glyph 'dd_ra_iMatrakhoj' between location <fontTools.ttLib.ttGlyphSet._TTGlyphSetGlyf object at 0x7f334ed1a3d0> and location <fontTools.ttLib.ttGlyphSet._TTGlyphSetGlyf object at 0x7f334ed1a450>
+	- Contour 1 start point differs in glyph 'dd_ra_iMatrakhoj' between location <fontTools.ttLib.ttGlyphSet._TTGlyphSetGlyf object at 0x7f9d3f8da510> and location <fontTools.ttLib.ttGlyphSet._TTGlyphSetGlyf object at 0x7f9d3f8d85d0>
 
-	- Contour 1 start point differs in glyph 'dd_ra_iiMatrakhoj' between location <fontTools.ttLib.ttGlyphSet._TTGlyphSetGlyf object at 0x7f334ed1a3d0> and location <fontTools.ttLib.ttGlyphSet._TTGlyphSetGlyf object at 0x7f334ed1a450>
+	- Contour 1 start point differs in glyph 'dd_ra_iiMatrakhoj' between location <fontTools.ttLib.ttGlyphSet._TTGlyphSetGlyf object at 0x7f9d3f8da510> and location <fontTools.ttLib.ttGlyphSet._TTGlyphSetGlyf object at 0x7f9d3f8d85d0>
 
-	- Contour 1 start point differs in glyph 'nna_iiMatrakhoj' between location <fontTools.ttLib.ttGlyphSet._TTGlyphSetGlyf object at 0x7f334ed1a3d0> and location <fontTools.ttLib.ttGlyphSet._TTGlyphSetGlyf object at 0x7f334ed1a450>
+	- Contour 1 start point differs in glyph 'nna_iiMatrakhoj' between location <fontTools.ttLib.ttGlyphSet._TTGlyphSetGlyf object at 0x7f9d3f8da510> and location <fontTools.ttLib.ttGlyphSet._TTGlyphSetGlyf object at 0x7f9d3f8d85d0>
 
-	- Contour 0 start point differs in glyph 'nn_rakhoj' between location <fontTools.ttLib.ttGlyphSet._TTGlyphSetGlyf object at 0x7f334ed1a3d0> and location <fontTools.ttLib.ttGlyphSet._TTGlyphSetGlyf object at 0x7f334ed1a450>
+	- Contour 0 start point differs in glyph 'nn_rakhoj' between location <fontTools.ttLib.ttGlyphSet._TTGlyphSetGlyf object at 0x7f9d3f8da510> and location <fontTools.ttLib.ttGlyphSet._TTGlyphSetGlyf object at 0x7f9d3f8d85d0>
 
-	- Contour 1 start point differs in glyph 'nn_ra_iMatrakhoj' between location <fontTools.ttLib.ttGlyphSet._TTGlyphSetGlyf object at 0x7f334ed1a3d0> and location <fontTools.ttLib.ttGlyphSet._TTGlyphSetGlyf object at 0x7f334ed1a450> 
+	- Contour 1 start point differs in glyph 'nn_ra_iMatrakhoj' between location <fontTools.ttLib.ttGlyphSet._TTGlyphSetGlyf object at 0x7f9d3f8da510> and location <fontTools.ttLib.ttGlyphSet._TTGlyphSetGlyf object at 0x7f9d3f8d85d0> 
 
-	- Contour 1 start point differs in glyph 'nn_ra_iiMatrakhoj' between location <fontTools.ttLib.ttGlyphSet._TTGlyphSetGlyf object at 0x7f334ed1a3d0> and location <fontTools.ttLib.ttGlyphSet._TTGlyphSetGlyf object at 0x7f334ed1a450> [code: interpolation-issues]
+	- Contour 1 start point differs in glyph 'nn_ra_iiMatrakhoj' between location <fontTools.ttLib.ttGlyphSet._TTGlyphSetGlyf object at 0x7f9d3f8da510> and location <fontTools.ttLib.ttGlyphSet._TTGlyphSetGlyf object at 0x7f9d3f8d85d0> [code: interpolation-issues]
 </div></details><details><summary>⚠ <b>WARN:</b> Check math signs have the same width. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/math_signs_width">com.google.fonts/check/math_signs_width</a>)</summary><div>
 
 
@@ -448,7 +448,7 @@ multiply, plus
 
 	* h (U+0068): X=66.5,Y=713.5 (should be at cap-height 714?) 
 
-	* 44 more.
+	* 45 more.
 
 Use -F or --full-lists to disable shortening of long lists. [code: found-misalignments]
 </div></details><br></div></details>
@@ -457,8 +457,8 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-misalig
 
 | 💔 ERROR | 🔥 FAIL | ⚠ WARN | 💤 SKIP | ℹ INFO | 🍞 PASS | 🔎 DEBUG |
 |:-----:|:----:|:----:|:----:|:----:|:----:|:----:|
-| 6 | 10 | 29 | 324 | 20 | 305 | 0 |
-| 1% | 1% | 4% | 47% | 3% | 44% | 0% |
+| 6 | 14 | 26 | 324 | 20 | 304 | 0 |
+| 1% | 2% | 4% | 47% | 3% | 44% | 0% |
 
 **Note:** The following loglevels were omitted in this report:
 * **SKIP**
