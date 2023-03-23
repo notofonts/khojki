@@ -64290,7 +64290,7 @@ subCategory = Nonspacing;
 category = Mark;
 color = 4;
 glyphname = "Nukta_shadda_eMatra-khoj";
-lastChange = "2023-03-23 12:16:30 +0000";
+lastChange = "2023-03-23 12:29:18 +0000";
 layers = (
 {
 anchors = (
@@ -64324,7 +64324,7 @@ shapes = (
 ref = "eMatra-khoj";
 },
 {
-pos = (-186,175);
+pos = (-97,215);
 ref = "Nukta_shadda-khoj";
 }
 );
@@ -65264,7 +65264,7 @@ subCategory = Nonspacing;
 category = Mark;
 color = 4;
 glyphname = "Nukta_aiMatra-khoj";
-lastChange = "2023-03-23 12:16:00 +0000";
+lastChange = "2023-03-23 12:29:18 +0000";
 layers = (
 {
 anchors = (
@@ -65302,7 +65302,7 @@ ref = "aiMatra-khoj";
 },
 {
 angle = -19.66257;
-pos = (-455,430);
+pos = (-210,325);
 ref = "Nukta-khoj";
 }
 );
