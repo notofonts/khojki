@@ -1,6 +1,11 @@
 {
     "tests": [
         {
+            "input": "𑈈𑈵𑈩𑈶𑈯 𑈈𑈵𑈩𑈶‍𑈵𑈦",
+            "expectation": "KSSA=0+676|U.alt3=0@-1,-40+0|space=5+260|KSSA=6+676|space=6+0|RA.alt=6@-151,-80+0",
+            "note": "Do KSSA first (#8)"
+        },
+        {
             "input": "𑈙𑈯𑈧𑈵𑈥",
             "expectation": "TU=0+689|kj_LA=2+640|YA.alt3=2+511",
             "note": "Don't delete JA/TA/LA before YA"
@@ -30,7 +35,7 @@
             "only": "NotoSansKhojki-Regular.ttf"
         },
         {
-            "expectation": "kj_DDDA=0+533|kj_vs_AI.ns=0@20,50+0|kj_THA=2+838|kj_JA=3+761|Shadda=3@-163,0+0|Nukta=3@-210,0+0",
+            "expectation": "kj_DDDA=0+533|kj_vs_AI.ns=0@20,50+0|kj_THA=2+838|kj_JA=3+761|Shadda=3@-163,0+0|Nukta=3@-213,220+0",
             "input": "𑈜𑈱𑈚𑈐𑈷𑈶",
             "note": "Added by SIESTA",
             "only": "NotoSansKhojki-Regular.ttf"
@@ -102,9 +107,9 @@
             "only": "NotoSansKhojki-Regular.ttf"
         },
         {
-            "expectation": "kj_TTHA=0+500|kj_vs_O=0+250|Shadda=0@-4,240+0|u1123E=0@-24,240+0",
+            "expectation": "kj_TTHA=0+500|kj_vs_O=0+250|Shadda=0@-4,240+0|u1123E=0@-27,460+0",
             "input": "𑈕𑈷𑈲𑈾",
-            "note": "Added by SIESTA",
+            "note": "Added by SIESTA (tests #5)",
             "only": "NotoSansKhojki-Regular.ttf"
         },
         {
