@@ -488,11 +488,15 @@ lookup RakarForms {
 tag = rkrf;
 },
 {
-code = "script khoj;
-language GUJ;
-lookup RephContext {
-	sub ra-khoj' lookup Reph halant-khoj' [ka-khoj k_ssa-khoj kha-khoj ga-khoj g_na-khoj gga-khoj gha-khoj nga-khoj ca-khoj cha-khoj ja-khoj jja-khoj nya-khoj tta-khoj ttha-khoj dda-khoj ddha-khoj nna-khoj ta-khoj tha-khoj da-khoj ddda-khoj dha-khoj na-khoj pa-khoj pha-khoj ba-khoj bba-khoj bha-khoj ma-khoj ya-khoj ra-khoj la-khoj va-khoj sa-khoj sha-khoj ha-khoj lla-khoj ];
-} RephContext;";
+code = "# I don't think we want a Repha here, but equally I don't know why one was added.
+# See #9
+
+#script khoj;
+#language GUJ;
+#lookup RephContext {
+#	sub ra-khoj' lookup Reph halant-khoj' [ka-khoj k_ssa-khoj kha-khoj ga-khoj g_na-khoj gga-khoj gha-khoj nga-khoj ca-khoj cha-khoj ja-khoj jja-khoj nya-khoj tta-khoj ttha-khoj dda-khoj ddha-khoj nna-khoj ta-khoj tha-khoj da-khoj ddda-khoj dha-khoj na-khoj pa-khoj pha-khoj ba-khoj bba-khoj bha-khoj ma-khoj ya-khoj ra-khoj la-khoj va-khoj sa-khoj sha-khoj ha-khoj lla-khoj ];
+#} RephContext;
+";
 tag = rphf;
 },
 {
