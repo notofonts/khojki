@@ -2,7 +2,7 @@
 .appVersion = "3180";
 .formatVersion = 3;
 DisplayStrings = (
-"/qa_iMatra-khoj/qa_iiMatra-khoj/qa_uMatra-khoj 𑈿"
+"/qa_iMatra-khoj/qa_iiMatra-khoj/qa_uMatra-khoj ◌"
 );
 axes = (
 {
@@ -1266,13 +1266,17 @@ unicode = 8205;
 {
 category = Letter;
 glyphname = uni25CC;
-lastChange = "2020-12-02 21:56:54 +0000";
+lastChange = "2023-03-23 12:39:55 +0000";
 layers = (
 {
 anchors = (
 {
 name = bottom;
 pos = (298,0);
+},
+{
+name = nukta;
+pos = (297,540);
 },
 {
 name = top;
@@ -1561,6 +1565,10 @@ anchors = (
 {
 name = bottom;
 pos = (298,0);
+},
+{
+name = nukta;
+pos = (297,540);
 },
 {
 name = top;
