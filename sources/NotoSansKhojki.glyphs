@@ -254,7 +254,7 @@ value = "Noto is a trademark of Google Inc.";
 },
 {
 name = versionString;
-value = "Version 2.003";
+value = "Version 2.004";
 },
 {
 name = Axes;
@@ -293,7 +293,7 @@ code = "lookup IncreaseSpaceBeforeAlt {\012    pos TRA 240;\012    pos DDDRA 40;
 name = "Space Before Alt";
 },
 {
-code = "languagesystem khoj dflt;\012languagesystem gujr dflt;\012";
+code = "languagesystem DFLT dflt;\012languagesystem khoj dflt;\012languagesystem gujr dflt;\012";
 name = Languagesystems;
 }
 );
@@ -16949,5 +16949,5 @@ manufacturer = "Monotype Imaging Inc.";
 manufacturerURL = "http://www.google.com/get/noto/";
 unitsPerEm = 1000;
 versionMajor = 2;
-versionMinor = 3;
+versionMinor = 4;
 }
