@@ -79,11 +79,9 @@ Use -F or --full-lists to disable shortening of long lists.
 
 	- sh_ra_iiMatrakhoj
 
-	- sh_ra_uMatrakhoj
+	- sh_ra_uMatrakhoj 
 
-	- sixkhoj.alt 
-
-	- uni00A0.1
+	- sixkhoj.alt
  [code: unreachable-glyphs]
 </div></details><details><summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/contour_count">com.google.fonts/check/contour_count</a>)</summary><div>
 
@@ -239,11 +237,9 @@ Use -F or --full-lists to disable shortening of long lists.
 
 	- sh_ra_iiMatrakhoj
 
-	- sh_ra_uMatrakhoj
+	- sh_ra_uMatrakhoj 
 
-	- sixkhoj.alt 
-
-	- uni00A0.1
+	- sixkhoj.alt
  [code: unreachable-glyphs]
 </div></details><details><summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/contour_count">com.google.fonts/check/contour_count</a>)</summary><div>
 
@@ -381,11 +377,9 @@ The dot of soft dotted characters should disappear in other cases, for example: 
 
 	- sh_ra_iiMatrakhoj
 
-	- sh_ra_uMatrakhoj
+	- sh_ra_uMatrakhoj 
 
-	- sixkhoj.alt 
-
-	- uni00A0.1
+	- sixkhoj.alt
  [code: unreachable-glyphs]
 </div></details><details><summary>⚠ <b>WARN:</b> Does the font contain a soft hyphen? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/soft_hyphen">com.google.fonts/check/soft_hyphen</a>)</summary><div>
 
@@ -394,21 +388,21 @@ The dot of soft dotted characters should disappear in other cases, for example: 
 </div></details><details><summary>⚠ <b>WARN:</b> Detect any interpolation issues in the font. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/interpolation_issues">com.google.fonts/check/interpolation_issues</a>)</summary><div>
 
 
-* ⚠ **WARN** Interpolation issues were found in the font: 	- Contour 1 start point differs in glyph 'dd_ra_iiMatrakhoj' between location <fontTools.ttLib.ttGlyphSet._TTGlyphSetGlyf object at 0x7f0c79416290> and location <fontTools.ttLib.ttGlyphSet._TTGlyphSetGlyf object at 0x7f0c79416410>
+* ⚠ **WARN** Interpolation issues were found in the font: 	- Contour 1 start point differs in glyph 'dda_iiMatrakhoj' between location <fontTools.ttLib.ttGlyphSet._TTGlyphSetGlyf object at 0x7f131c19b410> and location <fontTools.ttLib.ttGlyphSet._TTGlyphSetGlyf object at 0x7f131c19bf10>
 
-	- Contour 1 start point differs in glyph 'dd_ra_iMatrakhoj' between location <fontTools.ttLib.ttGlyphSet._TTGlyphSetGlyf object at 0x7f0c79416290> and location <fontTools.ttLib.ttGlyphSet._TTGlyphSetGlyf object at 0x7f0c79416410>
+	- Contour 1 start point differs in glyph 'nna_iiMatrakhoj' between location <fontTools.ttLib.ttGlyphSet._TTGlyphSetGlyf object at 0x7f131c19b410> and location <fontTools.ttLib.ttGlyphSet._TTGlyphSetGlyf object at 0x7f131c19bf10>
 
-	- Contour 0 start point differs in glyph 'dd_rakhoj' between location <fontTools.ttLib.ttGlyphSet._TTGlyphSetGlyf object at 0x7f0c79416290> and location <fontTools.ttLib.ttGlyphSet._TTGlyphSetGlyf object at 0x7f0c79416410>
+	- Contour 0 start point differs in glyph 'nn_rakhoj' between location <fontTools.ttLib.ttGlyphSet._TTGlyphSetGlyf object at 0x7f131c19b410> and location <fontTools.ttLib.ttGlyphSet._TTGlyphSetGlyf object at 0x7f131c19bf10>
 
-	- Contour 1 start point differs in glyph 'nn_ra_iMatrakhoj' between location <fontTools.ttLib.ttGlyphSet._TTGlyphSetGlyf object at 0x7f0c79416290> and location <fontTools.ttLib.ttGlyphSet._TTGlyphSetGlyf object at 0x7f0c79416410>
+	- Contour 1 start point differs in glyph 'dd_ra_iMatrakhoj' between location <fontTools.ttLib.ttGlyphSet._TTGlyphSetGlyf object at 0x7f131c19b410> and location <fontTools.ttLib.ttGlyphSet._TTGlyphSetGlyf object at 0x7f131c19bf10>
 
-	- Contour 1 start point differs in glyph 'nna_iiMatrakhoj' between location <fontTools.ttLib.ttGlyphSet._TTGlyphSetGlyf object at 0x7f0c79416290> and location <fontTools.ttLib.ttGlyphSet._TTGlyphSetGlyf object at 0x7f0c79416410>
+	- Contour 1 start point differs in glyph 'nn_ra_iiMatrakhoj' between location <fontTools.ttLib.ttGlyphSet._TTGlyphSetGlyf object at 0x7f131c19b410> and location <fontTools.ttLib.ttGlyphSet._TTGlyphSetGlyf object at 0x7f131c19bf10>
 
-	- Contour 1 start point differs in glyph 'nn_ra_iiMatrakhoj' between location <fontTools.ttLib.ttGlyphSet._TTGlyphSetGlyf object at 0x7f0c79416290> and location <fontTools.ttLib.ttGlyphSet._TTGlyphSetGlyf object at 0x7f0c79416410>
+	- Contour 0 start point differs in glyph 'dd_rakhoj' between location <fontTools.ttLib.ttGlyphSet._TTGlyphSetGlyf object at 0x7f131c19b410> and location <fontTools.ttLib.ttGlyphSet._TTGlyphSetGlyf object at 0x7f131c19bf10>
 
-	- Contour 1 start point differs in glyph 'dda_iiMatrakhoj' between location <fontTools.ttLib.ttGlyphSet._TTGlyphSetGlyf object at 0x7f0c79416290> and location <fontTools.ttLib.ttGlyphSet._TTGlyphSetGlyf object at 0x7f0c79416410> 
+	- Contour 1 start point differs in glyph 'dd_ra_iiMatrakhoj' between location <fontTools.ttLib.ttGlyphSet._TTGlyphSetGlyf object at 0x7f131c19b410> and location <fontTools.ttLib.ttGlyphSet._TTGlyphSetGlyf object at 0x7f131c19bf10> 
 
-	- Contour 0 start point differs in glyph 'nn_rakhoj' between location <fontTools.ttLib.ttGlyphSet._TTGlyphSetGlyf object at 0x7f0c79416290> and location <fontTools.ttLib.ttGlyphSet._TTGlyphSetGlyf object at 0x7f0c79416410> [code: interpolation-issues]
+	- Contour 1 start point differs in glyph 'nn_ra_iMatrakhoj' between location <fontTools.ttLib.ttGlyphSet._TTGlyphSetGlyf object at 0x7f131c19b410> and location <fontTools.ttLib.ttGlyphSet._TTGlyphSetGlyf object at 0x7f131c19bf10> [code: interpolation-issues]
 </div></details><details><summary>⚠ <b>WARN:</b> Check math signs have the same width. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/math_signs_width">com.google.fonts/check/math_signs_width</a>)</summary><div>
 
 
