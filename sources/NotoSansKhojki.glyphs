@@ -301,7 +301,7 @@ code = "lookup IncreaseSpaceBeforeAlt {\012    pos TRA 240;\012    pos DDDRA 40;
 name = "Space Before Alt";
 },
 {
-code = "languagesystem khoj dflt;\012languagesystem gujr dflt;\012";
+code = "languagesystem DFLT dflt;\012languagesystem khoj dflt;\012languagesystem gujr dflt;\012";
 name = Languagesystems;
 }
 );
