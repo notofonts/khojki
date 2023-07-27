@@ -1,5 +1,5 @@
 {
-.appVersion = "3151";
+.appVersion = "3207";
 DisplayStrings = (
 "/QA.alt/QU/kj_QA/QRA"
 );
@@ -332,7 +332,7 @@ code = "# Automatic Code Start\012\012";
 name = kern;
 },
 {
-code = "# Automatic Code Start\012\012lookupflag MarkAttachmentType @abovemarks;\012pos @consonants' lookup IncreaseSpaceBeforeAlt I.alt;\012pos [YA.alt3 kj_CHA kj_DDA kj_DDHA kj_DHA kj_JJA kj_LLA kj_NNA\012 DDDRA kj_NYA]' lookup IncreaseSpaceBeforeAlt I.alt2;\012pos [THA.alt PA.alt SA.alt]' lookup IncreaseSpaceBeforeAlt I.alt3;\012pos [KHA.alt NA.alt]' lookup IncreaseSpaceBeforeAlt I.alt4;\012pos [kj_TTA kj_TTHA]' lookup IncreaseSpaceBeforeAlt I.alt2;\012pos [kj_TTA kj_TTHA]' [Anusvara.alt Nukta Nukta.alt Nukta_Shadda.ns Shadda u1123E]' <0 40 0 0> kj_vs_II';\012";
+code = "lookup SpaceBeforeAlt {\012lookupflag UseMarkFilteringSet [I.alt I.alt2 I.alt3 I.alt4 U.alt];\012pos @consonants' lookup IncreaseSpaceBeforeAlt I.alt;\012pos [YA.alt3 kj_CHA kj_DDA kj_DDHA kj_DHA kj_JJA kj_LLA kj_NNA\012 DDDRA kj_NYA]' lookup IncreaseSpaceBeforeAlt I.alt2;\012pos [THA.alt PA.alt SA.alt]' lookup IncreaseSpaceBeforeAlt I.alt3;\012pos [KHA.alt NA.alt]' lookup IncreaseSpaceBeforeAlt I.alt4;\012pos [kj_TTA kj_TTHA]' lookup IncreaseSpaceBeforeAlt I.alt2;\012pos [BHRA MRA kj_DHA]' U.alt 160;\012pos kj_GGA' U.alt 170;\012} SpaceBeforeAlt;\012\012lookup TtaMark {\012lookupflag MarkAttachmentType @abovemarks;\012pos [kj_TTA kj_TTHA]' [Anusvara.alt Nukta Nukta.alt Nukta_Shadda.ns Shadda u1123E]' <0 40 0 0> kj_vs_II';\012} TtaMark;\012";
 name = dist;
 },
 {
@@ -17545,22 +17545,6 @@ instanceInterpolations = {
 name = Regular;
 }
 );
-kerning = {
-"0717401B-DDB5-4983-85F2-A81AFE530D5E" = {
-BHRA = {
-U.alt = 160;
-};
-MRA = {
-U.alt = 160;
-};
-kj_DHA = {
-U.alt = 160;
-};
-kj_GGA = {
-U.alt = 170;
-};
-};
-};
 manufacturer = "Monotype Imaging Inc.";
 manufacturerURL = "http://www.google.com/get/noto/";
 unitsPerEm = 1000;
