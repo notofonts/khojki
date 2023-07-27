@@ -1,9 +1,14 @@
 {
-.appVersion = "3151";
+.appVersion = "3207";
 .formatVersion = 3;
 DisplayStrings = (
 "𑈿/qa_iMatra-khoj/qa_iiMatra-khoj/qa_uMatra-khoj/q_ra_uMatra-khoj 
-𑈈/ka_iMatra-khoj/ka_iiMatra-khoj/ka_uMatra-khoj/k_ra_uMatra-khoj"
+𑈈/ka_iMatra-khoj/ka_iiMatra-khoj/ka_uMatra-khoj/k_ra_uMatra-khoj",
+"𑈷 ",
+"",
+"",
+"𑈶",
+"/aiMatra_anusvara-khoj"
 );
 axes = (
 {
@@ -17,7 +22,7 @@ code = "iMatra-khoj iiMatra-khoj uMatra-khoj";
 name = VOWELS;
 },
 {
-code = "ka_iMatra-khoj qa_iMatra-khoj k_ssa_iMatra-khoj k_ssa_ra_iMatra-khoj kha_iMatra-khoj kh_ra_iMatra-khoj ga_iMatra-khoj g_ra_iMatra-khoj g_na_iMatra-khoj g_na_ra_iMatra-khoj gga_iMatra-khoj gg_ra_iMatra-khoj gha_iMatra-khoj nga_iMatra-khoj ca_iMatra-khoj c_ra_iMatra-khoj cha_iMatra-khoj ja_iMatra-khoj j_ra_iMatra-khoj jja_iMatra-khoj jj_ra_iMatra-khoj nya_iMatra-khoj tta_iMatra-khoj ttha_iMatra-khoj dda_iMatra-khoj dd_ra_iMatra-khoj ddha_iMatra-khoj nna_iMatra-khoj nn_ra_iMatra-khoj ta_iMatra-khoj t_ra_iMatra-khoj tha_iMatra-khoj da_iMatra-khoj d_ra_iMatra-khoj ddda_iMatra-khoj dha_iMatra-khoj dh_ra_iMatra-khoj na_iMatra-khoj n_ra_iMatra-khoj pa_iMatra-khoj pha_iMatra-khoj ba_iMatra-khoj b_ra_iMatra-khoj bba_iMatra-khoj bb_ra_iMatra-khoj bha_iMatra-khoj bh_ra_iMatra-khoj ma_iMatra-khoj m_ra_iMatra-khoj ya_iMatra-khoj y_ra_iMatra-khoj ra_iMatra-khoj la_iMatra-khoj l_ra_iMatra-khoj va_iMatra-khoj v_ra_iMatra-khoj sa_iMatra-khoj s_ra_iMatra-khoj sha_iMatra-khoj sh_ra_iMatra-khoj ha_iMatra-khoj h_ra_iMatra-khoj lla_iMatra-khoj yakar_iMatra-khoj 
+code = "ka_iMatra-khoj qa_iMatra-khoj k_ssa_iMatra-khoj k_ssa_ra_iMatra-khoj kha_iMatra-khoj kh_ra_iMatra-khoj ga_iMatra-khoj g_ra_iMatra-khoj g_na_iMatra-khoj g_na_ra_iMatra-khoj gga_iMatra-khoj gg_ra_iMatra-khoj gha_iMatra-khoj nga_iMatra-khoj ca_iMatra-khoj c_ra_iMatra-khoj cha_iMatra-khoj ja_iMatra-khoj j_ra_iMatra-khoj jja_iMatra-khoj jj_ra_iMatra-khoj nya_iMatra-khoj tta_iMatra-khoj ttha_iMatra-khoj dda_iMatra-khoj dd_ra_iMatra-khoj ddha_iMatra-khoj nna_iMatra-khoj nn_ra_iMatra-khoj ta_iMatra-khoj t_ra_iMatra-khoj tha_iMatra-khoj da_iMatra-khoj d_ra_iMatra-khoj ddda_iMatra-khoj dha_iMatra-khoj dh_ra_iMatra-khoj na_iMatra-khoj n_ra_iMatra-khoj pa_iMatra-khoj pha_iMatra-khoj ba_iMatra-khoj b_ra_iMatra-khoj bba_iMatra-khoj bb_ra_iMatra-khoj bha_iMatra-khoj bh_ra_iMatra-khoj ma_iMatra-khoj m_ra_iMatra-khoj ya_iMatra-khoj y_ra_iMatra-khoj ra_iMatra-khoj la_iMatra-khoj l_ra_iMatra-khoj va_iMatra-khoj v_ra_iMatra-khoj sa_iMatra-khoj s_ra_iMatra-khoj sha_iMatra-khoj ha_iMatra-khoj h_ra_iMatra-khoj lla_iMatra-khoj yakar_iMatra-khoj 
 ";
 name = IMATRA;
 },
@@ -485,15 +490,498 @@ code = "lookup Reph {
 	sub ra-khoj halant-khoj by reph-gujarati;
 } Reph;";
 name = ref_gsub;
+},
+{
+code = "lookup AddAi {
+sub a-khoj by a-khoj aiMatra-khoj;
+sub aa-khoj by aa-khoj aiMatra-khoj;
+sub ai-khoj by ai-khoj aiMatra-khoj;
+sub au-khoj by au-khoj aiMatra-khoj;
+sub ba-khoj by ba-khoj aiMatra-khoj;
+sub bba-khoj by bba-khoj aiMatra-khoj;
+sub bha-khoj by bha-khoj aiMatra-khoj;
+sub c_ra-khoj by c_ra-khoj aiMatra-khoj;
+sub ca-khoj by ca-khoj aiMatra-khoj;
+sub cha-khoj by cha-khoj aiMatra-khoj;
+sub d_ra-khoj by d_ra-khoj aiMatra-khoj;
+sub da-khoj by da-khoj aiMatra-khoj;
+sub dda-khoj by dda-khoj aiMatra-khoj;
+sub ddda-khoj by ddda-khoj aiMatra-khoj;
+sub ddha-khoj by ddha-khoj aiMatra-khoj;
+sub dha-khoj by dha-khoj aiMatra-khoj;
+sub e-khoj by e-khoj aiMatra-khoj;
+sub g_na-khoj by g_na-khoj aiMatra-khoj;
+sub g_na_ra-khoj by g_na_ra-khoj aiMatra-khoj;
+sub g_ra-khoj by g_ra-khoj aiMatra-khoj;
+sub ga-khoj by ga-khoj aiMatra-khoj;
+sub gga-khoj by gga-khoj aiMatra-khoj;
+sub gha-khoj by gha-khoj aiMatra-khoj;
+sub h_ra-khoj by h_ra-khoj aiMatra-khoj;
+sub ha-khoj by ha-khoj aiMatra-khoj;
+sub ishort-khoj by ishort-khoj aiMatra-khoj;
+sub i-khoj by i-khoj aiMatra-khoj;
+sub j_ra-khoj by j_ra-khoj aiMatra-khoj;
+sub ja-khoj by ja-khoj aiMatra-khoj;
+sub jja-khoj by jja-khoj aiMatra-khoj;
+sub k_ssa-khoj by k_ssa-khoj aiMatra-khoj;
+sub k_ssa_ra-khoj by k_ssa_ra-khoj aiMatra-khoj;
+sub ka-khoj by ka-khoj aiMatra-khoj;
+sub qa-khoj by qa-khoj aiMatra-khoj;
+sub kha-khoj by kha-khoj aiMatra-khoj;
+sub l_ra-khoj by l_ra-khoj aiMatra-khoj;
+sub la-khoj by la-khoj aiMatra-khoj;
+sub lla-khoj by lla-khoj aiMatra-khoj;
+sub m_ra-khoj by m_ra-khoj aiMatra-khoj;
+sub ma-khoj by ma-khoj aiMatra-khoj;
+sub n_ra-khoj by n_ra-khoj aiMatra-khoj;
+sub na-khoj by na-khoj aiMatra-khoj;
+sub nga-khoj by nga-khoj aiMatra-khoj;
+sub nna-khoj by nna-khoj aiMatra-khoj;
+sub nya-khoj by nya-khoj aiMatra-khoj;
+sub o-khoj by o-khoj aiMatra-khoj;
+sub pa-khoj by pa-khoj aiMatra-khoj;
+sub pha-khoj by pha-khoj aiMatra-khoj;
+sub ra-khoj by ra-khoj aiMatra-khoj;
+sub s_ra-khoj by s_ra-khoj aiMatra-khoj;
+sub sa-khoj by sa-khoj aiMatra-khoj;
+sub t_ra-khoj by t_ra-khoj aiMatra-khoj;
+sub ta-khoj by ta-khoj aiMatra-khoj;
+sub tha-khoj by tha-khoj aiMatra-khoj;
+sub tta-khoj by tta-khoj aiMatra-khoj;
+sub ttha-khoj by ttha-khoj aiMatra-khoj;
+sub u-khoj by u-khoj aiMatra-khoj;
+sub uni25CC by uni25CC aiMatra-khoj;
+sub v_ra-khoj by v_ra-khoj aiMatra-khoj;
+sub va-khoj by va-khoj aiMatra-khoj;
+sub y_ra-khoj by y_ra-khoj aiMatra-khoj;
+sub ya-khoj by ya-khoj aiMatra-khoj;
+sub yakar-khoj by yakar-khoj aiMatra-khoj;
+} AddAi;
+
+lookup AddE {
+sub a-khoj by a-khoj eMatra-khoj;
+sub aa-khoj by aa-khoj eMatra-khoj;
+sub ai-khoj by ai-khoj eMatra-khoj;
+sub au-khoj by au-khoj eMatra-khoj;
+sub ba-khoj by ba-khoj eMatra-khoj;
+sub bba-khoj by bba-khoj eMatra-khoj;
+sub bha-khoj by bha-khoj eMatra-khoj;
+sub c_ra-khoj by c_ra-khoj eMatra-khoj;
+sub ca-khoj by ca-khoj eMatra-khoj;
+sub cha-khoj by cha-khoj eMatra-khoj;
+sub d_ra-khoj by d_ra-khoj eMatra-khoj;
+sub da-khoj by da-khoj eMatra-khoj;
+sub dda-khoj by dda-khoj eMatra-khoj;
+sub ddda-khoj by ddda-khoj eMatra-khoj;
+sub ddha-khoj by ddha-khoj eMatra-khoj;
+sub dha-khoj by dha-khoj eMatra-khoj;
+sub e-khoj by e-khoj eMatra-khoj;
+sub g_na-khoj by g_na-khoj eMatra-khoj;
+sub g_na_ra-khoj by g_na_ra-khoj eMatra-khoj;
+sub g_ra-khoj by g_ra-khoj eMatra-khoj;
+sub ga-khoj by ga-khoj eMatra-khoj;
+sub gga-khoj by gga-khoj eMatra-khoj;
+sub gha-khoj by gha-khoj eMatra-khoj;
+sub h_ra-khoj by h_ra-khoj eMatra-khoj;
+sub ha-khoj by ha-khoj eMatra-khoj;
+sub ishort-khoj by ishort-khoj eMatra-khoj;
+sub i-khoj by i-khoj eMatra-khoj;
+sub j_ra-khoj by j_ra-khoj eMatra-khoj;
+sub ja-khoj by ja-khoj eMatra-khoj;
+sub jja-khoj by jja-khoj eMatra-khoj;
+sub k_ssa-khoj by k_ssa-khoj eMatra-khoj;
+sub k_ssa_ra-khoj by k_ssa_ra-khoj eMatra-khoj;
+sub ka-khoj by ka-khoj eMatra-khoj;
+sub qa-khoj by qa-khoj eMatra-khoj;
+sub kha-khoj by kha-khoj eMatra-khoj;
+sub l_ra-khoj by l_ra-khoj eMatra-khoj;
+sub la-khoj by la-khoj eMatra-khoj;
+sub lla-khoj by lla-khoj eMatra-khoj;
+sub m_ra-khoj by m_ra-khoj eMatra-khoj;
+sub ma-khoj by ma-khoj eMatra-khoj;
+sub n_ra-khoj by n_ra-khoj eMatra-khoj;
+sub na-khoj by na-khoj eMatra-khoj;
+sub nga-khoj by nga-khoj eMatra-khoj;
+sub nna-khoj by nna-khoj eMatra-khoj;
+sub nya-khoj by nya-khoj eMatra-khoj;
+sub o-khoj by o-khoj eMatra-khoj;
+sub pa-khoj by pa-khoj eMatra-khoj;
+sub pha-khoj by pha-khoj eMatra-khoj;
+sub ra-khoj by ra-khoj eMatra-khoj;
+sub s_ra-khoj by s_ra-khoj eMatra-khoj;
+sub sa-khoj by sa-khoj eMatra-khoj;
+sub t_ra-khoj by t_ra-khoj eMatra-khoj;
+sub ta-khoj by ta-khoj eMatra-khoj;
+sub tha-khoj by tha-khoj eMatra-khoj;
+sub tta-khoj by tta-khoj eMatra-khoj;
+sub ttha-khoj by ttha-khoj eMatra-khoj;
+sub u-khoj by u-khoj eMatra-khoj;
+sub uni25CC by uni25CC eMatra-khoj;
+sub v_ra-khoj by v_ra-khoj eMatra-khoj;
+sub va-khoj by va-khoj eMatra-khoj;
+sub y_ra-khoj by y_ra-khoj eMatra-khoj;
+sub ya-khoj by ya-khoj eMatra-khoj;
+sub yakar-khoj by yakar-khoj eMatra-khoj;
+} AddE;
+
+lookup AddI {
+sub a-khoj by a-khoj iMatra-khoj;
+sub aa-khoj by aa-khoj iMatra-khoj;
+sub ai-khoj by ai-khoj iMatra-khoj;
+sub au-khoj by au-khoj iMatra-khoj;
+sub ba-khoj by ba-khoj iMatra-khoj;
+sub bba-khoj by bba-khoj iMatra-khoj;
+sub bha-khoj by bha-khoj iMatra-khoj;
+sub c_ra-khoj by c_ra-khoj iMatra-khoj;
+sub ca-khoj by ca-khoj iMatra-khoj;
+sub cha-khoj by cha-khoj iMatra-khoj;
+sub d_ra-khoj by d_ra-khoj iMatra-khoj;
+sub da-khoj by da-khoj iMatra-khoj;
+sub dda-khoj by dda-khoj iMatra-khoj;
+sub ddda-khoj by ddda-khoj iMatra-khoj;
+sub ddha-khoj by ddha-khoj iMatra-khoj;
+sub dha-khoj by dha-khoj iMatra-khoj;
+sub e-khoj by e-khoj iMatra-khoj;
+sub g_na-khoj by g_na-khoj iMatra-khoj;
+sub g_na_ra-khoj by g_na_ra-khoj iMatra-khoj;
+sub g_ra-khoj by g_ra-khoj iMatra-khoj;
+sub ga-khoj by ga-khoj iMatra-khoj;
+sub gga-khoj by gga-khoj iMatra-khoj;
+sub gha-khoj by gha-khoj iMatra-khoj;
+sub h_ra-khoj by h_ra-khoj iMatra-khoj;
+sub ha-khoj by ha-khoj iMatra-khoj;
+sub ishort-khoj by ishort-khoj iMatra-khoj;
+sub i-khoj by i-khoj iMatra-khoj;
+sub j_ra-khoj by j_ra-khoj iMatra-khoj;
+sub ja-khoj by ja-khoj iMatra-khoj;
+sub jja-khoj by jja-khoj iMatra-khoj;
+sub k_ssa-khoj by k_ssa-khoj iMatra-khoj;
+sub k_ssa_ra-khoj by k_ssa_ra-khoj iMatra-khoj;
+sub ka-khoj by ka-khoj iMatra-khoj;
+sub qa-khoj by qa-khoj iMatra-khoj;
+sub kha-khoj by kha-khoj iMatra-khoj;
+sub l_ra-khoj by l_ra-khoj iMatra-khoj;
+sub la-khoj by la-khoj iMatra-khoj;
+sub lla-khoj by lla-khoj iMatra-khoj;
+sub m_ra-khoj by m_ra-khoj iMatra-khoj;
+sub ma-khoj by ma-khoj iMatra-khoj;
+sub n_ra-khoj by n_ra-khoj iMatra-khoj;
+sub na-khoj by na-khoj iMatra-khoj;
+sub nga-khoj by nga-khoj iMatra-khoj;
+sub nna-khoj by nna-khoj iMatra-khoj;
+sub nya-khoj by nya-khoj iMatra-khoj;
+sub o-khoj by o-khoj iMatra-khoj;
+sub pa-khoj by pa-khoj iMatra-khoj;
+sub pha-khoj by pha-khoj iMatra-khoj;
+sub ra-khoj by ra-khoj iMatra-khoj;
+sub s_ra-khoj by s_ra-khoj iMatra-khoj;
+sub sa-khoj by sa-khoj iMatra-khoj;
+sub t_ra-khoj by t_ra-khoj iMatra-khoj;
+sub ta-khoj by ta-khoj iMatra-khoj;
+sub tha-khoj by tha-khoj iMatra-khoj;
+sub tta-khoj by tta-khoj iMatra-khoj;
+sub ttha-khoj by ttha-khoj iMatra-khoj;
+sub u-khoj by u-khoj iMatra-khoj;
+sub uni25CC by uni25CC iMatra-khoj;
+sub v_ra-khoj by v_ra-khoj iMatra-khoj;
+sub va-khoj by va-khoj iMatra-khoj;
+sub y_ra-khoj by y_ra-khoj iMatra-khoj;
+sub ya-khoj by ya-khoj iMatra-khoj;
+sub yakar-khoj by yakar-khoj iMatra-khoj;
+} AddI;
+
+lookup AddIi {
+sub a-khoj by a-khoj iiMatra-khoj;
+sub aa-khoj by aa-khoj iiMatra-khoj;
+sub ai-khoj by ai-khoj iiMatra-khoj;
+sub au-khoj by au-khoj iiMatra-khoj;
+sub ba-khoj by ba-khoj iiMatra-khoj;
+sub bba-khoj by bba-khoj iiMatra-khoj;
+sub bha-khoj by bha-khoj iiMatra-khoj;
+sub c_ra-khoj by c_ra-khoj iiMatra-khoj;
+sub ca-khoj by ca-khoj iiMatra-khoj;
+sub cha-khoj by cha-khoj iiMatra-khoj;
+sub d_ra-khoj by d_ra-khoj iiMatra-khoj;
+sub da-khoj by da-khoj iiMatra-khoj;
+sub dda-khoj by dda-khoj iiMatra-khoj;
+sub ddda-khoj by ddda-khoj iiMatra-khoj;
+sub ddha-khoj by ddha-khoj iiMatra-khoj;
+sub dha-khoj by dha-khoj iiMatra-khoj;
+sub e-khoj by e-khoj iiMatra-khoj;
+sub g_na-khoj by g_na-khoj iiMatra-khoj;
+sub g_na_ra-khoj by g_na_ra-khoj iiMatra-khoj;
+sub g_ra-khoj by g_ra-khoj iiMatra-khoj;
+sub ga-khoj by ga-khoj iiMatra-khoj;
+sub gga-khoj by gga-khoj iiMatra-khoj;
+sub gha-khoj by gha-khoj iiMatra-khoj;
+sub h_ra-khoj by h_ra-khoj iiMatra-khoj;
+sub ha-khoj by ha-khoj iiMatra-khoj;
+sub ishort-khoj by ishort-khoj iiMatra-khoj;
+sub i-khoj by i-khoj iiMatra-khoj;
+sub j_ra-khoj by j_ra-khoj iiMatra-khoj;
+sub ja-khoj by ja-khoj iiMatra-khoj;
+sub jja-khoj by jja-khoj iiMatra-khoj;
+sub k_ssa-khoj by k_ssa-khoj iiMatra-khoj;
+sub k_ssa_ra-khoj by k_ssa_ra-khoj iiMatra-khoj;
+sub ka-khoj by ka-khoj iiMatra-khoj;
+sub qa-khoj by qa-khoj iiMatra-khoj;
+sub kha-khoj by kha-khoj iiMatra-khoj;
+sub l_ra-khoj by l_ra-khoj iiMatra-khoj;
+sub la-khoj by la-khoj iiMatra-khoj;
+sub lla-khoj by lla-khoj iiMatra-khoj;
+sub m_ra-khoj by m_ra-khoj iiMatra-khoj;
+sub ma-khoj by ma-khoj iiMatra-khoj;
+sub n_ra-khoj by n_ra-khoj iiMatra-khoj;
+sub na-khoj by na-khoj iiMatra-khoj;
+sub nga-khoj by nga-khoj iiMatra-khoj;
+sub nna-khoj by nna-khoj iiMatra-khoj;
+sub nya-khoj by nya-khoj iiMatra-khoj;
+sub o-khoj by o-khoj iiMatra-khoj;
+sub pa-khoj by pa-khoj iiMatra-khoj;
+sub pha-khoj by pha-khoj iiMatra-khoj;
+sub ra-khoj by ra-khoj iiMatra-khoj;
+sub s_ra-khoj by s_ra-khoj iiMatra-khoj;
+sub sa-khoj by sa-khoj iiMatra-khoj;
+sub t_ra-khoj by t_ra-khoj iiMatra-khoj;
+sub ta-khoj by ta-khoj iiMatra-khoj;
+sub tha-khoj by tha-khoj iiMatra-khoj;
+sub tta-khoj by tta-khoj iiMatra-khoj;
+sub ttha-khoj by ttha-khoj iiMatra-khoj;
+sub u-khoj by u-khoj iiMatra-khoj;
+sub uni25CC by uni25CC iiMatra-khoj;
+sub v_ra-khoj by v_ra-khoj iiMatra-khoj;
+sub va-khoj by va-khoj iiMatra-khoj;
+sub y_ra-khoj by y_ra-khoj iiMatra-khoj;
+sub ya-khoj by ya-khoj iiMatra-khoj;
+sub yakar-khoj by yakar-khoj iiMatra-khoj;
+} AddIi;
+
+lookup AddO {
+sub a-khoj by a-khoj oMatra-khoj;
+sub aa-khoj by aa-khoj oMatra-khoj;
+sub ai-khoj by ai-khoj oMatra-khoj;
+sub au-khoj by au-khoj oMatra-khoj;
+sub ba-khoj by ba-khoj oMatra-khoj;
+sub bba-khoj by bba-khoj oMatra-khoj;
+sub bha-khoj by bha-khoj oMatra-khoj;
+sub c_ra-khoj by c_ra-khoj oMatra-khoj;
+sub ca-khoj by ca-khoj oMatra-khoj;
+sub cha-khoj by cha-khoj oMatra-khoj;
+sub d_ra-khoj by d_ra-khoj oMatra-khoj;
+sub da-khoj by da-khoj oMatra-khoj;
+sub dda-khoj by dda-khoj oMatra-khoj;
+sub ddda-khoj by ddda-khoj oMatra-khoj;
+sub ddha-khoj by ddha-khoj oMatra-khoj;
+sub dha-khoj by dha-khoj oMatra-khoj;
+sub e-khoj by e-khoj oMatra-khoj;
+sub g_na-khoj by g_na-khoj oMatra-khoj;
+sub g_na_ra-khoj by g_na_ra-khoj oMatra-khoj;
+sub g_ra-khoj by g_ra-khoj oMatra-khoj;
+sub ga-khoj by ga-khoj oMatra-khoj;
+sub gga-khoj by gga-khoj oMatra-khoj;
+sub gha-khoj by gha-khoj oMatra-khoj;
+sub h_ra-khoj by h_ra-khoj oMatra-khoj;
+sub ha-khoj by ha-khoj oMatra-khoj;
+sub ishort-khoj by ishort-khoj oMatra-khoj;
+sub i-khoj by i-khoj oMatra-khoj;
+sub j_ra-khoj by j_ra-khoj oMatra-khoj;
+sub ja-khoj by ja-khoj oMatra-khoj;
+sub jja-khoj by jja-khoj oMatra-khoj;
+sub k_ssa-khoj by k_ssa-khoj oMatra-khoj;
+sub k_ssa_ra-khoj by k_ssa_ra-khoj oMatra-khoj;
+sub ka-khoj by ka-khoj oMatra-khoj;
+sub qa-khoj by qa-khoj oMatra-khoj;
+sub kha-khoj by kha-khoj oMatra-khoj;
+sub l_ra-khoj by l_ra-khoj oMatra-khoj;
+sub la-khoj by la-khoj oMatra-khoj;
+sub lla-khoj by lla-khoj oMatra-khoj;
+sub m_ra-khoj by m_ra-khoj oMatra-khoj;
+sub ma-khoj by ma-khoj oMatra-khoj;
+sub n_ra-khoj by n_ra-khoj oMatra-khoj;
+sub na-khoj by na-khoj oMatra-khoj;
+sub nga-khoj by nga-khoj oMatra-khoj;
+sub nna-khoj by nna-khoj oMatra-khoj;
+sub nya-khoj by nya-khoj oMatra-khoj;
+sub o-khoj by o-khoj oMatra-khoj;
+sub pa-khoj by pa-khoj oMatra-khoj;
+sub pha-khoj by pha-khoj oMatra-khoj;
+sub ra-khoj by ra-khoj oMatra-khoj;
+sub s_ra-khoj by s_ra-khoj oMatra-khoj;
+sub sa-khoj by sa-khoj oMatra-khoj;
+sub t_ra-khoj by t_ra-khoj oMatra-khoj;
+sub ta-khoj by ta-khoj oMatra-khoj;
+sub tha-khoj by tha-khoj oMatra-khoj;
+sub tta-khoj by tta-khoj oMatra-khoj;
+sub ttha-khoj by ttha-khoj oMatra-khoj;
+sub u-khoj by u-khoj oMatra-khoj;
+sub uni25CC by uni25CC oMatra-khoj;
+sub v_ra-khoj by v_ra-khoj oMatra-khoj;
+sub va-khoj by va-khoj oMatra-khoj;
+sub y_ra-khoj by y_ra-khoj oMatra-khoj;
+sub ya-khoj by ya-khoj oMatra-khoj;
+sub yakar-khoj by yakar-khoj oMatra-khoj;
+} AddO;
+lookup AddAu {
+sub a-khoj by a-khoj auMatra-khoj;
+sub aa-khoj by aa-khoj auMatra-khoj;
+sub ai-khoj by ai-khoj auMatra-khoj;
+sub au-khoj by au-khoj auMatra-khoj;
+sub ba-khoj by ba-khoj auMatra-khoj;
+sub bba-khoj by bba-khoj auMatra-khoj;
+sub bha-khoj by bha-khoj auMatra-khoj;
+sub c_ra-khoj by c_ra-khoj auMatra-khoj;
+sub ca-khoj by ca-khoj auMatra-khoj;
+sub cha-khoj by cha-khoj auMatra-khoj;
+sub d_ra-khoj by d_ra-khoj auMatra-khoj;
+sub da-khoj by da-khoj auMatra-khoj;
+sub dda-khoj by dda-khoj auMatra-khoj;
+sub ddda-khoj by ddda-khoj auMatra-khoj;
+sub ddha-khoj by ddha-khoj auMatra-khoj;
+sub dha-khoj by dha-khoj auMatra-khoj;
+sub e-khoj by e-khoj auMatra-khoj;
+sub g_na-khoj by g_na-khoj auMatra-khoj;
+sub g_na_ra-khoj by g_na_ra-khoj auMatra-khoj;
+sub g_ra-khoj by g_ra-khoj auMatra-khoj;
+sub ga-khoj by ga-khoj auMatra-khoj;
+sub gga-khoj by gga-khoj auMatra-khoj;
+sub gha-khoj by gha-khoj auMatra-khoj;
+sub h_ra-khoj by h_ra-khoj auMatra-khoj;
+sub ha-khoj by ha-khoj auMatra-khoj;
+sub ishort-khoj by ishort-khoj auMatra-khoj;
+sub i-khoj by i-khoj auMatra-khoj;
+sub j_ra-khoj by j_ra-khoj auMatra-khoj;
+sub ja-khoj by ja-khoj auMatra-khoj;
+sub jja-khoj by jja-khoj auMatra-khoj;
+sub k_ssa-khoj by k_ssa-khoj auMatra-khoj;
+sub k_ssa_ra-khoj by k_ssa_ra-khoj auMatra-khoj;
+sub ka-khoj by ka-khoj auMatra-khoj;
+sub qa-khoj by qa-khoj auMatra-khoj;
+sub kha-khoj by kha-khoj auMatra-khoj;
+sub l_ra-khoj by l_ra-khoj auMatra-khoj;
+sub la-khoj by la-khoj auMatra-khoj;
+sub lla-khoj by lla-khoj auMatra-khoj;
+sub m_ra-khoj by m_ra-khoj auMatra-khoj;
+sub ma-khoj by ma-khoj auMatra-khoj;
+sub n_ra-khoj by n_ra-khoj auMatra-khoj;
+sub na-khoj by na-khoj auMatra-khoj;
+sub nga-khoj by nga-khoj auMatra-khoj;
+sub nna-khoj by nna-khoj auMatra-khoj;
+sub nya-khoj by nya-khoj auMatra-khoj;
+sub o-khoj by o-khoj auMatra-khoj;
+sub pa-khoj by pa-khoj auMatra-khoj;
+sub pha-khoj by pha-khoj auMatra-khoj;
+sub ra-khoj by ra-khoj auMatra-khoj;
+sub s_ra-khoj by s_ra-khoj auMatra-khoj;
+sub sa-khoj by sa-khoj auMatra-khoj;
+sub t_ra-khoj by t_ra-khoj auMatra-khoj;
+sub ta-khoj by ta-khoj auMatra-khoj;
+sub tha-khoj by tha-khoj auMatra-khoj;
+sub tta-khoj by tta-khoj auMatra-khoj;
+sub ttha-khoj by ttha-khoj auMatra-khoj;
+sub u-khoj by u-khoj auMatra-khoj;
+sub uni25CC by uni25CC auMatra-khoj;
+sub v_ra-khoj by v_ra-khoj auMatra-khoj;
+sub va-khoj by va-khoj auMatra-khoj;
+sub y_ra-khoj by y_ra-khoj auMatra-khoj;
+sub ya-khoj by ya-khoj auMatra-khoj;
+sub yakar-khoj by yakar-khoj auMatra-khoj;
+} AddAu;
+";
+name = AddMatra;
+},
+{
+code = "lookup NuktaShaddaSwap {
+	sub Nukta-khoj by Shadda-khoj;
+	sub Shadda-khoj by Nukta-khoj;
+} NuktaShaddaSwap;
+
+lookup NuktaSukunSwap {
+	sub Nukta-khoj by Sukun-khoj;
+	sub Sukun-khoj by Nukta-khoj;
+} NuktaSukunSwap;
+
+lookup ReallyDeleteMatra {
+	sub eMatra-khoj by NULL;
+	sub aiMatra-khoj by NULL;
+	sub iMatra-khoj by NULL;
+	sub iiMatra-khoj by NULL;
+	sub oMatra-khoj by NULL;
+	sub auMatra-khoj by NULL;
+} ReallyDeleteMatra;
+
+lookup DeleteMatra {
+	lookupflag UseMarkFilteringSet [eMatra-khoj aiMatra-khoj auMatra-khoj];
+	sub [eMatra-khoj aiMatra-khoj iMatra-khoj iiMatra-khoj oMatra-khoj auMatra-khoj]' [eMatra-khoj aiMatra-khoj iMatra-khoj iiMatra-khoj oMatra-khoj auMatra-khoj]' lookup ReallyDeleteMatra;
+} DeleteMatra;
+
+# This is OpenType witchcraft. We have:
+#  ta-khoj | <topmarks> | eMatra-khoj
+# We want:
+#  ta-khoj | eMatra-khoj | <topmarks>
+# Idea: add the eMatra after the base, delete it after the marks.
+
+# GrabMatra in ccmp does:
+
+#  ta-khoj | <topmarks> | eMatra-khoj
+#  ta-khoj | eMatra-khoj (because of mark filtering)
+#  ^ Apply | ^ Apply
+#    AddE  |   DeleteMatra
+#
+# But AddE goes first, so the input glyphs become
+#  ta-khoj | eMatra-khoj | eMatra-khoj
+#            ^ Apply
+#              DeleteMatra
+
+# And so a simple application of DeleteMatra ends up deleting the thing you just added - oops!
+# If AFDKO supported the ability to choose which order lookups are applied in, there'd be no problem.
+# But we can't, we have to deal with the fact that the eMatra has been inserted into the glyph stream
+# *but* that our \"read head\" - the place where the lookup gets applied - has *not* changed.
+# Hence, DeleteMatra needs to \"reach into\" the next glyph in the stream and apply the deletion there:
+
+#  ta-khoj | eMatra-khoj    | eMatra-khoj
+#            ^ We are here, | ^ ReallyDeleteMatra
+#            do nothing
+";
+name = swaps;
 }
 );
 features = (
 {
+code = "lookup DoNuktaShaddaSwap {
+	lookupflag UseMarkFilteringSet [Nukta-khoj Shadda-khoj];
+	sub @BASES Nukta-khoj' lookup NuktaShaddaSwap Shadda-khoj' lookup NuktaShaddaSwap;
+} DoNuktaShaddaSwap;
+
+lookup DoNuktaSukunSwap {
+  lookupflag UseMarkFilteringSet [Nukta-khoj Sukun-khoj];
+  sub @BASES Nukta-khoj' lookup NuktaSukunSwap Sukun-khoj' lookup NuktaSukunSwap;
+} DoNuktaSukunSwap;
+
+lookup GrabMatra { # And bring it next to the base
+	lookupflag UseMarkFilteringSet [eMatra-khoj aiMatra-khoj];
+	sub @BASES' lookup AddE eMatra-khoj' lookup DeleteMatra;
+	sub @BASES' lookup AddAi aiMatra-khoj' lookup DeleteMatra;
+} GrabMatra;
+
+lookup GrabMatra2 {
+	lookupflag IgnoreMarks;
+	sub @BASES' lookup AddI iMatra-khoj' lookup DeleteMatra;
+	sub @BASES' lookup AddIi iiMatra-khoj' lookup DeleteMatra;
+	sub @BASES' lookup AddO oMatra-khoj' lookup DeleteMatra;
+	sub @BASES' lookup AddAu auMatra-khoj' lookup DeleteMatra;
+} GrabMatra2;
+
+sub NullMark by NULL;";
+tag = ccmp;
+},
+{
 code = "lookup RakarU {
+	lookupflag UseMarkFilteringSet [halant-khoj uMatra-khoj];
 	sub [gha-khoj nga-khoj tta-khoj ttha-khoj lla-khoj ] halant-khoj' ra-khoj' uMatra-khoj' by rakar_umatra;
 } RakarU;
 
 lookup RakarForms {
+	lookupflag UseMarkFilteringSet [halant-khoj];
 	sub [gha-khoj nga-khoj tta-khoj ttha-khoj lla-khoj ] halant-khoj' ra-khoj' by rakar-gujarati;
 	sub [ka-khoj qa-khoj cha-khoj nya-khoj ddha-khoj tha-khoj pa-khoj pha-khoj ] halant-khoj' ra-khoj' by rakar.alt;
 } RakarForms;
@@ -514,6 +1002,7 @@ tag = rphf;
 },
 {
 code = "lookup YakarForms {
+	lookupflag UseMarkFilteringSet [halant-khoj];
 	sub [ka-khoj kha-khoj ga-khoj gga-khoj gha-khoj nga-khoj ca-khoj cha-khoj ja-khoj jja-khoj nya-khoj tta-khoj ttha-khoj dda-khoj ddha-khoj nna-khoj ta-khoj tha-khoj da-khoj ddda-khoj dha-khoj na-khoj pa-khoj pha-khoj ba-khoj bba-khoj bha-khoj ma-khoj ya-khoj ra-khoj la-khoj va-khoj sa-khoj ha-khoj lla-khoj qa-khoj ] halant-khoj' ya-khoj' by yakar-khoj;
 } YakarForms;
 
@@ -523,8 +1012,10 @@ lookup YakarVowels {
 	sub yakar-khoj uMatra-khoj by yakar_uMatra-khoj;
 } YakarVowels;
 
+sub ka-khoj halant-khoj sa-khoj Nukta-khoj by k_ssa-khoj;
+
 lookup AtomicLigatures {
-	sub ka-khoj halant-khoj sa-khoj Nukta-khoj by k_ssa-khoj;
+	lookupflag UseMarkFilteringSet [halant-khoj rakar.alt];
 	sub ga-khoj halant-khoj na-khoj by g_na-khoj;
 	sub ja-khoj halant-khoj nya-khoj by g_na-khoj;
 	sub ta-khoj halant-khoj ra-khoj by t_ra-khoj;
@@ -536,12 +1027,11 @@ lookup AtomicLigatures {
 } AtomicLigatures;
 
 lookup NuktaForms {
-	sub sa-khoj Nukta-khoj halant-khoj ra-khoj eMatra-khoj by sh_ra_eMatra-khoj;
-	sub sa-khoj Nukta-khoj eMatra-khoj by sha_eMatra-khoj;
-	sub sa-khoj Nukta-khoj by sha-khoj;
+	sub sa-khoj Nukta-khoj eMatra-khoj' by eMatra-khoj.alt;
 } NuktaForms;
 
 lookup Conjuncts {
+	lookupflag UseMarkFilteringSet [halant-khoj];
 	sub k_ssa-khoj halant-khoj ra-khoj by k_ssa_ra-khoj;
 	sub g_na-khoj halant-khoj ra-khoj by g_na_ra-khoj;
 	sub kha-khoj halant-khoj ra-khoj by kh_ra-khoj;
@@ -562,7 +1052,6 @@ lookup Conjuncts {
 	sub la-khoj halant-khoj ra-khoj by l_ra-khoj;
 	sub va-khoj halant-khoj ra-khoj by v_ra-khoj;
 	sub sa-khoj halant-khoj ra-khoj by s_ra-khoj;
-	sub sha-khoj halant-khoj ra-khoj by sh_ra-khoj;
 	sub ha-khoj halant-khoj ra-khoj by h_ra-khoj;
 	sub ta-khoj halant-khoj ra-khoj by t_ra-khoj;
 	sub ddda-khoj halant-khoj ra-khoj by d_ra-khoj;
@@ -628,7 +1117,6 @@ lookup iMatra_ligatures {
 	sub va-khoj iMatra-khoj by va_iMatra-khoj;
 	sub s_ra-khoj iMatra-khoj by s_ra_iMatra-khoj;
 	sub sa-khoj iMatra-khoj by sa_iMatra-khoj;
-	sub sha-khoj iMatra-khoj by sha_iMatra-khoj;
 	sub h_ra-khoj iMatra-khoj by h_ra_iMatra-khoj;
 	sub ha-khoj iMatra-khoj by ha_iMatra-khoj;
 	sub lla-khoj iMatra-khoj by lla_iMatra-khoj;
@@ -695,7 +1183,6 @@ lookup iiMatra_ligatures {
 	sub va-khoj iiMatra-khoj by va_iiMatra-khoj;
 	sub s_ra-khoj iiMatra-khoj by s_ra_iiMatra-khoj;
 	sub sa-khoj iiMatra-khoj by sa_iiMatra-khoj;
-	sub sha-khoj iiMatra-khoj by sha_iiMatra-khoj;
 	sub h_ra-khoj iiMatra-khoj by h_ra_iiMatra-khoj;
 	sub ha-khoj iiMatra-khoj by ha_iiMatra-khoj;
 	sub lla-khoj iiMatra-khoj by lla_iiMatra-khoj;
@@ -762,7 +1249,6 @@ lookup uMatra_ligatures {
 	sub va-khoj uMatra-khoj by va_uMatra-khoj;
 	sub s_ra-khoj uMatra-khoj by s_ra_uMatra-khoj;
 	sub sa-khoj uMatra-khoj by sa_uMatra-khoj;
-	sub sha-khoj uMatra-khoj by sha_uMatra-khoj;
 	sub h_ra-khoj uMatra-khoj by h_ra_uMatra-khoj;
 	sub ha-khoj uMatra-khoj by ha_uMatra-khoj;
 	sub lla-khoj uMatra-khoj by lla_uMatra-khoj;
@@ -772,22 +1258,8 @@ lookup uMatra_ligatures {
 tag = cjct;
 },
 {
-code = "lookup abvs01 {
-	sub Nukta-khoj Shadda-khoj by Nukta_shadda-khoj;
-	sub Shadda-khoj Sukun-khoj by Shadda_sukun-khoj;
-	sub Shadda-khoj eMatra-khoj by eMatra_shadda-khoj;
-	sub Nukta-khoj Sukun-khoj by Nukta_sukun-khoj;
-
-	sub Nukta-khoj Shadda-khoj eMatra-khoj by Nukta_shadda_eMatra-khoj;
-	sub Shadda-khoj aiMatra-khoj by aiMatra_shadda-khoj;
-
-	sub Nukta-khoj Shadda-khoj aiMatra-khoj by Nukta_shadda_aiMatra-khoj;
-	sub Shadda-khoj oMatra-khoj by oMatra_shadda-khoj;
-
-	sub Nukta-khoj Shadda-khoj oMatra-khoj by Nukta_shadda_oMatra-khoj;
-	sub Shadda-khoj auMatra-khoj by auMatra_shadda-khoj;
-
-	sub Nukta-khoj Shadda-khoj auMatra-khoj by Nukta_shadda_auMatra-khoj;
+code = "
+lookup abvs01 {
 	sub reph-gujarati Anusvara-khoj by reph_anusvara-khoj;
 
 	sub reph-gujarati eMatra-khoj Anusvara-khoj by eMatra_reph_anusvara-khoj;
@@ -808,8 +1280,8 @@ code = "lookup abvs01 {
 } abvs01;
 
 lookup altEMatra {
-	sub @IMATRA @BASES [eMatra-khoj eMatra_anusvara-khoj eMatra_reph-khoj eMatra_reph_anusvara-khoj eMatra_shadda-khoj Nukta_eMatra-khoj Nukta_shadda_eMatra-khoj ]' by [eMatra-khoj.alt eMatra_anusvara-khoj.alt eMatra_reph-khoj.alt eMatra_reph_anusvara-khoj.alt eMatra_shadda-khoj.alt Nukta_eMatra-khoj.alt Nukta_shadda_eMatra-khoj.alt ];
-	sub @IMATRA [Anusvara-khoj Anusvara-khoj.alt Nukta-khoj Shadda-khoj Sukun-khoj Nukta_shadda-khoj Nukta_sukun-khoj Shadda_sukun-khoj Nukta-khoj.alt ] @BASES [eMatra-khoj eMatra_anusvara-khoj eMatra_reph-khoj eMatra_reph_anusvara-khoj eMatra_shadda-khoj Nukta_eMatra-khoj Nukta_shadda_eMatra-khoj ]' by [eMatra-khoj.alt eMatra_anusvara-khoj.alt eMatra_reph-khoj.alt eMatra_reph_anusvara-khoj.alt eMatra_shadda-khoj.alt Nukta_eMatra-khoj.alt Nukta_shadda_eMatra-khoj.alt ];
+	sub @IMATRA @BASES [eMatra-khoj eMatra_anusvara-khoj eMatra_reph-khoj eMatra_reph_anusvara-khoj  ]' by [eMatra-khoj.alt eMatra_anusvara-khoj.alt eMatra_reph-khoj.alt eMatra_reph_anusvara-khoj.alt ];
+	sub @IMATRA [Anusvara-khoj Anusvara-khoj.alt Shadda-khoj Nukta-khoj Sukun-khoj  Nukta-khoj.alt ] @BASES [eMatra-khoj eMatra_anusvara-khoj eMatra_reph-khoj eMatra_reph_anusvara-khoj  ]' by [eMatra-khoj.alt eMatra_anusvara-khoj.alt eMatra_reph-khoj.alt eMatra_reph_anusvara-khoj.alt  ];
 } altEMatra;
 ";
 tag = abvs;
@@ -58457,10 +58929,11 @@ note = SU;
 script = khoj;
 },
 {
+category = Letter;
 glyphname = "s_ra-khoj";
 kernLeft = PA;
 kernRight = PA;
-lastChange = "2023-06-05 09:48:09 +0000";
+lastChange = "2023-07-27 12:55:47 +0000";
 layers = (
 {
 anchors = (
@@ -58736,12 +59209,14 @@ width = 975;
 metricLeft = "sa-khoj";
 metricRight = "sa-khoj";
 script = khoj;
+subCategory = Other;
 },
 {
+category = Letter;
 glyphname = "s_ra_iMatra-khoj";
 kernLeft = PA;
 kernRight = DI;
-lastChange = "2023-06-05 09:48:09 +0000";
+lastChange = "2023-07-27 12:55:47 +0000";
 layers = (
 {
 anchors = (
@@ -59063,12 +59538,14 @@ width = 1169;
 metricLeft = "sa_iMatra-khoj";
 metricRight = "sa_iMatra-khoj";
 script = khoj;
+subCategory = Other;
 },
 {
+category = Letter;
 glyphname = "s_ra_iiMatra-khoj";
 kernLeft = PA;
 kernRight = LII;
-lastChange = "2023-06-05 09:48:09 +0000";
+lastChange = "2023-07-27 12:55:47 +0000";
 layers = (
 {
 anchors = (
@@ -59402,13 +59879,14 @@ width = 1325;
 metricLeft = "sa_iiMatra-khoj";
 metricRight = "sa_iiMatra-khoj";
 script = khoj;
+subCategory = Other;
 },
 {
 category = Letter;
 glyphname = "s_ra_uMatra-khoj";
 kernLeft = SU;
 kernRight = AA;
-lastChange = "2023-06-05 09:48:09 +0000";
+lastChange = "2023-07-27 12:55:47 +0000";
 layers = (
 {
 anchors = (
@@ -59680,6 +60158,7 @@ width = 917;
 metricLeft = "sa_uMatra-khoj";
 metricRight = "sa_uMatra-khoj";
 script = khoj;
+subCategory = Other;
 },
 {
 glyphname = "sha-khoj";
@@ -60126,454 +60605,6 @@ width = 975;
 );
 metricLeft = "sha-khoj";
 metricRight = "sha-khoj";
-script = khoj;
-},
-{
-glyphname = "sh_ra-khoj";
-kernLeft = PA;
-kernRight = PA;
-lastChange = "2023-06-05 09:48:09 +0000";
-layers = (
-{
-anchors = (
-{
-name = bottom;
-pos = (721,20);
-},
-{
-name = nukta;
-pos = (551,870);
-},
-{
-name = top;
-pos = (919,634);
-}
-);
-layerId = "0717401B-DDB5-4983-85F2-A81AFE530D5E";
-shapes = (
-{
-ref = "s_ra-khoj";
-},
-{
-pos = (551,-70);
-ref = "Nukta-khoj";
-}
-);
-width = 882;
-},
-{
-anchors = (
-{
-name = bottom;
-pos = (721,20);
-},
-{
-name = nukta;
-pos = (551,870);
-},
-{
-name = top;
-pos = (919,634);
-}
-);
-layerId = "A430B39A-257A-41FC-BEA9-652C696FFEF7";
-shapes = (
-{
-ref = "s_ra-khoj";
-},
-{
-pos = (613,-63);
-ref = "Nukta-khoj";
-}
-);
-width = 975;
-}
-);
-script = khoj;
-},
-{
-glyphname = "sh_ra_iMatra-khoj";
-kernLeft = PA;
-kernRight = DI;
-lastChange = "2023-06-05 09:48:09 +0000";
-layers = (
-{
-anchors = (
-{
-name = bottom;
-pos = (721,20);
-},
-{
-name = nukta;
-pos = (551,870);
-},
-{
-name = top;
-pos = (1221,892);
-}
-);
-layerId = "0717401B-DDB5-4983-85F2-A81AFE530D5E";
-shapes = (
-{
-ref = "s_ra_iMatra-khoj";
-},
-{
-pos = (557,-70);
-ref = "Nukta-khoj";
-}
-);
-width = 1054;
-},
-{
-anchors = (
-{
-name = bottom;
-pos = (721,20);
-},
-{
-name = nukta;
-pos = (551,870);
-},
-{
-name = top;
-pos = (1221,892);
-}
-);
-layerId = "A430B39A-257A-41FC-BEA9-652C696FFEF7";
-shapes = (
-{
-ref = "s_ra_iMatra-khoj";
-},
-{
-pos = (613,-63);
-ref = "Nukta-khoj";
-}
-);
-width = 1169;
-}
-);
-script = khoj;
-},
-{
-glyphname = "sh_ra_iiMatra-khoj";
-kernLeft = PA;
-kernRight = LII;
-lastChange = "2023-06-05 09:48:09 +0000";
-layers = (
-{
-anchors = (
-{
-name = bottom;
-pos = (721,20);
-},
-{
-name = nukta;
-pos = (551,870);
-},
-{
-name = top;
-pos = (1079,656);
-}
-);
-layerId = "0717401B-DDB5-4983-85F2-A81AFE530D5E";
-shapes = (
-{
-ref = "s_ra_iiMatra-khoj";
-},
-{
-pos = (553,-70);
-ref = "Nukta-khoj";
-}
-);
-width = 1194;
-},
-{
-anchors = (
-{
-name = bottom;
-pos = (721,20);
-},
-{
-name = nukta;
-pos = (551,870);
-},
-{
-name = top;
-pos = (1079,656);
-}
-);
-layerId = "A430B39A-257A-41FC-BEA9-652C696FFEF7";
-shapes = (
-{
-ref = "s_ra_iiMatra-khoj";
-},
-{
-pos = (613,-63);
-ref = "Nukta-khoj";
-}
-);
-width = 1325;
-}
-);
-script = khoj;
-},
-{
-category = "";
-glyphname = "sh_ra_uMatra-khoj";
-kernLeft = SU;
-kernRight = AA;
-lastChange = "2023-06-05 09:48:09 +0000";
-layers = (
-{
-anchors = (
-{
-name = bottom;
-pos = (621,-220);
-},
-{
-name = nukta;
-pos = (538,870);
-},
-{
-name = top;
-pos = (889,634);
-}
-);
-layerId = "0717401B-DDB5-4983-85F2-A81AFE530D5E";
-shapes = (
-{
-ref = "s_ra_uMatra-khoj";
-},
-{
-pos = (523,-70);
-ref = "Nukta-khoj";
-}
-);
-width = 829;
-},
-{
-anchors = (
-{
-name = bottom;
-pos = (621,-220);
-},
-{
-name = nukta;
-pos = (538,870);
-},
-{
-name = top;
-pos = (889,634);
-}
-);
-layerId = "A430B39A-257A-41FC-BEA9-652C696FFEF7";
-shapes = (
-{
-ref = "s_ra_uMatra-khoj";
-},
-{
-pos = (596,-63);
-ref = "Nukta-khoj";
-}
-);
-width = 917;
-}
-);
-script = khoj;
-},
-{
-glyphname = "sh_ra_eMatra-khoj";
-kernLeft = PA;
-kernRight = PA;
-lastChange = "2023-06-05 09:48:09 +0000";
-layers = (
-{
-anchors = (
-{
-name = bottom;
-pos = (761,20);
-},
-{
-name = nukta;
-pos = (887,843);
-},
-{
-name = top;
-pos = (904,814);
-}
-);
-layerId = "0717401B-DDB5-4983-85F2-A81AFE530D5E";
-shapes = (
-{
-closed = 1;
-nodes = (
-(777,715,l),
-(730,852,o),
-(673,1022,o),
-(571,1074,cs),
-(530,1094,o),
-(482,1111,o),
-(449,1118,c),
-(431,1101,l),
-(481,1003,l),
-(622,951,l),
-(660,893,o),
-(707,787,o),
-(735,701,c)
-);
-},
-{
-closed = 1;
-nodes = (
-(435,656,o),
-(460,681,o),
-(460,713,cs),
-(460,745,o),
-(435,770,o),
-(404,770,cs),
-(372,770,o),
-(347,745,o),
-(347,713,cs),
-(347,681,o),
-(372,656,o),
-(404,656,cs)
-);
-},
-{
-closed = 1;
-nodes = (
-(610,656,o),
-(635,681,o),
-(635,713,cs),
-(635,745,o),
-(610,770,o),
-(578,770,cs),
-(547,770,o),
-(522,745,o),
-(522,713,cs),
-(522,681,o),
-(547,656,o),
-(578,656,cs)
-);
-},
-{
-closed = 1;
-nodes = (
-(522,797,o),
-(548,822,o),
-(548,854,cs),
-(548,886,o),
-(522,911,o),
-(490,911,cs),
-(459,911,o),
-(434,886,o),
-(434,854,cs),
-(434,822,o),
-(459,797,o),
-(490,797,cs)
-);
-},
-{
-ref = "s_ra-khoj";
-}
-);
-width = 882;
-},
-{
-anchors = (
-{
-name = bottom;
-pos = (870,6);
-},
-{
-name = nukta;
-pos = (979,913);
-},
-{
-name = top;
-pos = (1042,859);
-}
-);
-layerId = "A430B39A-257A-41FC-BEA9-652C696FFEF7";
-shapes = (
-{
-closed = 1;
-nodes = (
-(871,759,l),
-(818,923,o),
-(759,1089,o),
-(649,1150,cs),
-(602,1176,o),
-(544,1192,o),
-(504,1199,c),
-(483,1170,l),
-(548,1047,l),
-(697,991,l),
-(737,932,o),
-(779,830,o),
-(811,741,c)
-);
-},
-{
-closed = 1;
-nodes = (
-(495,660,o),
-(528,694,o),
-(528,738,cs),
-(528,782,o),
-(495,816,o),
-(452,816,cs),
-(409,816,o),
-(376,782,o),
-(376,738,cs),
-(376,694,o),
-(409,660,o),
-(452,660,cs)
-);
-},
-{
-closed = 1;
-nodes = (
-(693,660,o),
-(726,694,o),
-(726,738,cs),
-(726,782,o),
-(693,816,o),
-(650,816,cs),
-(607,816,o),
-(574,782,o),
-(574,738,cs),
-(574,694,o),
-(607,660,o),
-(650,660,cs)
-);
-},
-{
-closed = 1;
-nodes = (
-(593,826,o),
-(629,860,o),
-(629,904,cs),
-(629,948,o),
-(593,982,o),
-(550,982,cs),
-(507,982,o),
-(473,948,o),
-(473,904,cs),
-(473,860,o),
-(507,826,o),
-(550,826,cs)
-);
-},
-{
-ref = "s_ra-khoj";
-}
-);
-width = 975;
-}
-);
-metricLeft = "sha_eMatra-khoj";
-metricRight = "sha_eMatra-khoj";
 script = khoj;
 },
 {
@@ -64139,149 +64170,6 @@ subCategory = Nonspacing;
 },
 {
 category = Mark;
-glyphname = "eMatra_shadda-khoj";
-lastChange = "2023-06-05 09:48:09 +0000";
-layers = (
-{
-anchors = (
-{
-name = _top;
-pos = (0,600);
-}
-);
-layerId = "0717401B-DDB5-4983-85F2-A81AFE530D5E";
-shapes = (
-{
-pos = (-156,125);
-ref = "Shadda-khoj";
-},
-{
-ref = "eMatra-khoj";
-}
-);
-width = 0;
-},
-{
-anchors = (
-{
-name = _top;
-pos = (0,600);
-}
-);
-layerId = "A430B39A-257A-41FC-BEA9-652C696FFEF7";
-shapes = (
-{
-pos = (-186,155);
-ref = "Shadda-khoj";
-},
-{
-ref = "eMatra-khoj";
-}
-);
-width = 0;
-}
-);
-script = khoj;
-subCategory = Nonspacing;
-},
-{
-category = Mark;
-glyphname = "Nukta_eMatra-khoj";
-lastChange = "2023-06-05 09:48:09 +0000";
-layers = (
-{
-anchors = (
-{
-name = _top;
-pos = (0,600);
-}
-);
-layerId = "0717401B-DDB5-4983-85F2-A81AFE530D5E";
-shapes = (
-{
-angle = -12.67678;
-pos = (-363,222);
-ref = "Nukta-khoj";
-},
-{
-ref = "eMatra-khoj";
-}
-);
-width = 0;
-},
-{
-anchors = (
-{
-name = _top;
-pos = (0,600);
-}
-);
-layerId = "A430B39A-257A-41FC-BEA9-652C696FFEF7";
-shapes = (
-{
-angle = -15.21431;
-pos = (-446,263);
-ref = "Nukta-khoj";
-},
-{
-ref = "eMatra-khoj";
-}
-);
-width = 0;
-}
-);
-script = khoj;
-subCategory = Nonspacing;
-},
-{
-category = Mark;
-glyphname = "Nukta_shadda_eMatra-khoj";
-lastChange = "2023-06-05 09:48:09 +0000";
-layers = (
-{
-anchors = (
-{
-name = _top;
-pos = (0,600);
-}
-);
-layerId = "0717401B-DDB5-4983-85F2-A81AFE530D5E";
-shapes = (
-{
-ref = "eMatra-khoj";
-},
-{
-pos = (-70,198);
-ref = "Nukta_shadda-khoj";
-}
-);
-width = 0;
-},
-{
-anchors = (
-{
-name = _top;
-pos = (0,600);
-}
-);
-layerId = "A430B39A-257A-41FC-BEA9-652C696FFEF7";
-shapes = (
-{
-ref = "eMatra-khoj";
-},
-{
-pos = (-97,215);
-ref = "Nukta_shadda-khoj";
-}
-);
-width = 0;
-}
-);
-script = khoj;
-subCategory = Nonspacing;
-},
-{
-category = Mark;
 glyphname = "eMatra-khoj.alt";
 lastChange = "2023-06-05 09:48:09 +0000";
 layers = (
@@ -64598,153 +64486,6 @@ subCategory = Nonspacing;
 },
 {
 category = Mark;
-glyphname = "eMatra_shadda-khoj.alt";
-lastChange = "2023-06-05 09:48:09 +0000";
-layers = (
-{
-anchors = (
-{
-name = _top;
-pos = (0,600);
-}
-);
-layerId = "0717401B-DDB5-4983-85F2-A81AFE530D5E";
-shapes = (
-{
-alignment = -1;
-pos = (-2,194);
-ref = "Shadda-khoj";
-},
-{
-ref = "eMatra-khoj.alt";
-}
-);
-width = 0;
-},
-{
-anchors = (
-{
-name = _top;
-pos = (0,600);
-}
-);
-layerId = "A430B39A-257A-41FC-BEA9-652C696FFEF7";
-shapes = (
-{
-alignment = -1;
-pos = (13,214);
-ref = "Shadda-khoj";
-},
-{
-ref = "eMatra-khoj.alt";
-}
-);
-width = 0;
-}
-);
-script = khoj;
-subCategory = Nonspacing;
-},
-{
-category = Mark;
-glyphname = "Nukta_eMatra-khoj.alt";
-lastChange = "2023-06-05 09:48:09 +0000";
-layers = (
-{
-anchors = (
-{
-name = _top;
-pos = (0,600);
-}
-);
-layerId = "0717401B-DDB5-4983-85F2-A81AFE530D5E";
-shapes = (
-{
-angle = -44.39957;
-pos = (-641,534);
-ref = "Nukta-khoj";
-},
-{
-ref = "eMatra-khoj.alt";
-}
-);
-width = 0;
-},
-{
-anchors = (
-{
-name = _top;
-pos = (0,600);
-}
-);
-layerId = "A430B39A-257A-41FC-BEA9-652C696FFEF7";
-shapes = (
-{
-angle = -47.0768;
-pos = (-677,571);
-ref = "Nukta-khoj";
-},
-{
-ref = "eMatra-khoj.alt";
-}
-);
-width = 0;
-}
-);
-script = khoj;
-subCategory = Nonspacing;
-},
-{
-category = Mark;
-glyphname = "Nukta_shadda_eMatra-khoj.alt";
-lastChange = "2023-06-05 09:48:09 +0000";
-layers = (
-{
-anchors = (
-{
-name = _top;
-pos = (0,600);
-}
-);
-layerId = "0717401B-DDB5-4983-85F2-A81AFE530D5E";
-shapes = (
-{
-alignment = -1;
-pos = (-2,214);
-ref = "Nukta_shadda-khoj";
-},
-{
-ref = "eMatra-khoj.alt";
-}
-);
-width = 0;
-},
-{
-anchors = (
-{
-name = _top;
-pos = (0,600);
-}
-);
-layerId = "A430B39A-257A-41FC-BEA9-652C696FFEF7";
-shapes = (
-{
-alignment = -1;
-pos = (13,234);
-ref = "Nukta_shadda-khoj";
-},
-{
-ref = "eMatra-khoj.alt";
-}
-);
-width = 0;
-}
-);
-script = khoj;
-subCategory = Nonspacing;
-},
-{
-category = Mark;
 glyphname = "aiMatra-khoj";
 lastChange = "2023-06-05 09:48:09 +0000";
 layers = (
@@ -64871,9 +64612,9 @@ subCategory = Nonspacing;
 unicode = 70193;
 },
 {
-category = "";
+category = Mark;
 glyphname = "aiMatra_anusvara-khoj";
-lastChange = "2023-06-05 09:48:09 +0000";
+lastChange = "2023-07-27 16:18:04 +0000";
 layers = (
 {
 anchors = (
@@ -65144,160 +64885,21 @@ script = khoj;
 subCategory = Nonspacing;
 },
 {
-category = Mark;
-glyphname = "aiMatra_shadda-khoj";
-lastChange = "2023-06-05 09:48:09 +0000";
-layers = (
-{
-anchors = (
-{
-name = _top;
-pos = (0,600);
-}
-);
-layerId = "0717401B-DDB5-4983-85F2-A81AFE530D5E";
-shapes = (
-{
-alignment = -1;
-ref = "aiMatra-khoj";
-},
-{
-alignment = -1;
-pos = (-95,285);
-ref = "Shadda-khoj";
-}
-);
-width = 0;
-},
-{
-anchors = (
-{
-name = _top;
-pos = (0,600);
-}
-);
-layerId = "A430B39A-257A-41FC-BEA9-652C696FFEF7";
-shapes = (
-{
-alignment = -1;
-ref = "aiMatra-khoj";
-},
-{
-alignment = -1;
-pos = (-115,315);
-ref = "Shadda-khoj";
-}
-);
-width = 0;
-}
-);
-script = khoj;
-subCategory = Nonspacing;
-},
-{
-category = Mark;
-glyphname = "Nukta_aiMatra-khoj";
-lastChange = "2023-06-05 09:48:09 +0000";
-layers = (
-{
-anchors = (
-{
-name = _top;
-pos = (0,600);
-}
-);
-layerId = "0717401B-DDB5-4983-85F2-A81AFE530D5E";
-shapes = (
-{
-alignment = 1;
-ref = "aiMatra-khoj";
-},
-{
-angle = -19.66257;
-pos = (-203,346);
-ref = "Nukta-khoj";
-}
-);
-width = 0;
-},
-{
-anchors = (
-{
-name = _top;
-pos = (0,600);
-}
-);
-layerId = "A430B39A-257A-41FC-BEA9-652C696FFEF7";
-shapes = (
-{
-alignment = 1;
-ref = "aiMatra-khoj";
-},
-{
-angle = -19.66257;
-pos = (-210,325);
-ref = "Nukta-khoj";
-}
-);
-width = 0;
-}
-);
-script = khoj;
-subCategory = Nonspacing;
-},
-{
-category = Mark;
-glyphname = "Nukta_shadda_aiMatra-khoj";
-lastChange = "2023-06-05 09:48:09 +0000";
-layers = (
-{
-anchors = (
-{
-name = _top;
-pos = (0,600);
-}
-);
-layerId = "0717401B-DDB5-4983-85F2-A81AFE530D5E";
-shapes = (
-{
-pos = (-95,305);
-ref = "Nukta_shadda-khoj";
-},
-{
-ref = "aiMatra-khoj";
-}
-);
-width = 0;
-},
-{
-anchors = (
-{
-name = _top;
-pos = (0,600);
-}
-);
-layerId = "A430B39A-257A-41FC-BEA9-652C696FFEF7";
-shapes = (
-{
-pos = (-116,335);
-ref = "Nukta_shadda-khoj";
-},
-{
-ref = "aiMatra-khoj";
-}
-);
-width = 0;
-}
-);
-script = khoj;
-subCategory = Nonspacing;
-},
-{
 category = Letter;
 glyphname = "oMatra-khoj";
-lastChange = "2023-06-05 09:48:09 +0000";
+lastChange = "2023-07-27 15:53:05 +0000";
 layers = (
 {
+anchors = (
+{
+name = nukta;
+pos = (120,824);
+},
+{
+name = top;
+pos = (214,713);
+}
+);
 layerId = "0717401B-DDB5-4983-85F2-A81AFE530D5E";
 shapes = (
 {
@@ -65311,6 +64913,16 @@ ref = "eMatra-khoj";
 width = 271;
 },
 {
+anchors = (
+{
+name = nukta;
+pos = (140,845);
+},
+{
+name = top;
+pos = (234,734);
+}
+);
 layerId = "A430B39A-257A-41FC-BEA9-652C696FFEF7";
 shapes = (
 {
@@ -65432,114 +65044,23 @@ script = khoj;
 subCategory = Other;
 },
 {
-glyphname = "oMatra_shadda-khoj";
-lastChange = "2023-06-05 09:48:09 +0000";
-layers = (
-{
-layerId = "0717401B-DDB5-4983-85F2-A81AFE530D5E";
-shapes = (
-{
-ref = "aaMatra-khoj";
-},
-{
-pos = (158,0);
-ref = "eMatra_shadda-khoj";
-}
-);
-width = 271;
-},
-{
-layerId = "A430B39A-257A-41FC-BEA9-652C696FFEF7";
-shapes = (
-{
-ref = "aaMatra-khoj";
-},
-{
-pos = (190,13);
-ref = "eMatra_shadda-khoj";
-}
-);
-width = 295;
-}
-);
-script = khoj;
-},
-{
-glyphname = "Nukta_oMatra-khoj";
-lastChange = "2023-06-05 09:48:09 +0000";
-layers = (
-{
-layerId = "0717401B-DDB5-4983-85F2-A81AFE530D5E";
-shapes = (
-{
-ref = "aaMatra-khoj";
-},
-{
-pos = (158,0);
-ref = "Nukta_eMatra-khoj";
-}
-);
-width = 271;
-},
-{
-layerId = "A430B39A-257A-41FC-BEA9-652C696FFEF7";
-shapes = (
-{
-ref = "aaMatra-khoj";
-},
-{
-pos = (190,13);
-ref = "Nukta_eMatra-khoj";
-}
-);
-width = 295;
-}
-);
-script = khoj;
-},
-{
-glyphname = "Nukta_shadda_oMatra-khoj";
-lastChange = "2023-06-05 09:48:09 +0000";
-layers = (
-{
-layerId = "0717401B-DDB5-4983-85F2-A81AFE530D5E";
-shapes = (
-{
-ref = "aaMatra-khoj";
-},
-{
-pos = (158,0);
-ref = "Nukta_shadda_eMatra-khoj";
-}
-);
-width = 271;
-},
-{
-layerId = "A430B39A-257A-41FC-BEA9-652C696FFEF7";
-shapes = (
-{
-ref = "aaMatra-khoj";
-},
-{
-pos = (190,13);
-ref = "Nukta_shadda_eMatra-khoj";
-}
-);
-width = 295;
-}
-);
-script = khoj;
-},
-{
 category = Letter;
 glyphname = "auMatra-khoj";
-lastChange = "2023-06-05 09:48:09 +0000";
+lastChange = "2023-07-27 14:34:42 +0000";
 layers = (
 {
 anchors = (
 {
 name = _right;
 pos = (73,356);
+},
+{
+name = nukta;
+pos = (140,945);
+},
+{
+name = top;
+pos = (234,834);
 }
 );
 layerId = "0717401B-DDB5-4983-85F2-A81AFE530D5E";
@@ -65559,6 +65080,14 @@ anchors = (
 {
 name = _right;
 pos = (94,356);
+},
+{
+name = nukta;
+pos = (236,854);
+},
+{
+name = top;
+pos = (234,834);
 }
 );
 layerId = "A430B39A-257A-41FC-BEA9-652C696FFEF7";
@@ -65576,6 +65105,7 @@ width = 295;
 );
 note = kj_vs_AU;
 script = khoj;
+subCategory = Other;
 unicode = 70195;
 },
 {
@@ -65680,105 +65210,6 @@ width = 295;
 );
 script = khoj;
 subCategory = Other;
-},
-{
-glyphname = "auMatra_shadda-khoj";
-lastChange = "2023-06-05 09:48:09 +0000";
-layers = (
-{
-layerId = "0717401B-DDB5-4983-85F2-A81AFE530D5E";
-shapes = (
-{
-ref = "aaMatra-khoj";
-},
-{
-pos = (158,0);
-ref = "aiMatra_shadda-khoj";
-}
-);
-width = 271;
-},
-{
-layerId = "A430B39A-257A-41FC-BEA9-652C696FFEF7";
-shapes = (
-{
-ref = "aaMatra-khoj";
-},
-{
-pos = (190,13);
-ref = "aiMatra_shadda-khoj";
-}
-);
-width = 295;
-}
-);
-script = khoj;
-},
-{
-glyphname = "Nukta_auMatra-khoj";
-lastChange = "2023-06-05 09:48:09 +0000";
-layers = (
-{
-layerId = "0717401B-DDB5-4983-85F2-A81AFE530D5E";
-shapes = (
-{
-ref = "aaMatra-khoj";
-},
-{
-pos = (158,0);
-ref = "Nukta_aiMatra-khoj";
-}
-);
-width = 271;
-},
-{
-layerId = "A430B39A-257A-41FC-BEA9-652C696FFEF7";
-shapes = (
-{
-ref = "aaMatra-khoj";
-},
-{
-pos = (190,13);
-ref = "Nukta_aiMatra-khoj";
-}
-);
-width = 295;
-}
-);
-script = khoj;
-},
-{
-glyphname = "Nukta_shadda_auMatra-khoj";
-lastChange = "2023-06-05 09:48:09 +0000";
-layers = (
-{
-layerId = "0717401B-DDB5-4983-85F2-A81AFE530D5E";
-shapes = (
-{
-ref = "aaMatra-khoj";
-},
-{
-pos = (158,0);
-ref = "Nukta_shadda_aiMatra-khoj";
-}
-);
-width = 271;
-},
-{
-layerId = "A430B39A-257A-41FC-BEA9-652C696FFEF7";
-shapes = (
-{
-ref = "aaMatra-khoj";
-},
-{
-pos = (190,13);
-ref = "Nukta_shadda_aiMatra-khoj";
-}
-);
-width = 295;
-}
-);
-script = khoj;
 },
 {
 category = Mark;
@@ -67867,13 +67298,17 @@ subCategory = Nonspacing;
 {
 category = Mark;
 glyphname = "Nukta-khoj";
-lastChange = "2023-06-05 09:48:09 +0000";
+lastChange = "2023-07-27 15:58:51 +0000";
 layers = (
 {
 anchors = (
 {
 name = _nukta;
 pos = (0,600);
+},
+{
+name = top;
+pos = (-1,981);
 }
 );
 layerId = "0717401B-DDB5-4983-85F2-A81AFE530D5E";
@@ -67937,6 +67372,10 @@ anchors = (
 {
 name = _nukta;
 pos = (0,622);
+},
+{
+name = top;
+pos = (-6,991);
 }
 );
 layerId = "A430B39A-257A-41FC-BEA9-652C696FFEF7";
@@ -68004,13 +67443,21 @@ unicode = 70198;
 {
 category = Mark;
 glyphname = "Shadda-khoj";
-lastChange = "2023-06-05 09:48:09 +0000";
+lastChange = "2023-07-27 16:02:15 +0000";
 layers = (
 {
 anchors = (
 {
 name = _nukta;
 pos = (-1,600);
+},
+{
+name = _top;
+pos = (0,600);
+},
+{
+name = nukta;
+pos = (-4,871);
 }
 );
 layerId = "0717401B-DDB5-4983-85F2-A81AFE530D5E";
@@ -68058,6 +67505,14 @@ anchors = (
 {
 name = _nukta;
 pos = (0,613);
+},
+{
+name = _top;
+pos = (0,613);
+},
+{
+name = nukta;
+pos = (-4,907);
 }
 );
 layerId = "A430B39A-257A-41FC-BEA9-652C696FFEF7";
@@ -68109,13 +67564,17 @@ unicode = 70199;
 {
 category = Mark;
 glyphname = "Sukun-khoj";
-lastChange = "2023-06-05 09:48:09 +0000";
+lastChange = "2023-07-27 16:09:39 +0000";
 layers = (
 {
 anchors = (
 {
 name = _nukta;
 pos = (0,600);
+},
+{
+name = nukta;
+pos = (-3,899);
 }
 );
 layerId = "0717401B-DDB5-4983-85F2-A81AFE530D5E";
@@ -68153,8 +67612,8 @@ width = 0;
 {
 anchors = (
 {
-name = _nukta;
-pos = (0,613);
+name = nukta;
+pos = (-3,979);
 }
 );
 layerId = "A430B39A-257A-41FC-BEA9-652C696FFEF7";
@@ -68197,161 +67656,18 @@ unicode = 70206;
 },
 {
 category = Mark;
-glyphname = "Nukta_shadda-khoj";
-lastChange = "2023-06-05 09:48:09 +0000";
-layers = (
-{
-anchors = (
-{
-name = _nukta;
-pos = (-1,600);
-}
-);
-layerId = "0717401B-DDB5-4983-85F2-A81AFE530D5E";
-shapes = (
-{
-pos = (0,-20);
-ref = "Shadda-khoj";
-},
-{
-pos = (0,220);
-ref = "Nukta-khoj";
-}
-);
-width = 0;
-},
-{
-anchors = (
-{
-name = _nukta;
-pos = (-1,600);
-}
-);
-layerId = "A430B39A-257A-41FC-BEA9-652C696FFEF7";
-shapes = (
-{
-pos = (0,-20);
-ref = "Shadda-khoj";
-},
-{
-pos = (0,220);
-ref = "Nukta-khoj";
-}
-);
-width = 0;
-}
-);
-script = khoj;
-subCategory = Nonspacing;
-},
-{
-category = Mark;
-glyphname = "Nukta_sukun-khoj";
-lastChange = "2023-06-05 09:48:09 +0000";
-layers = (
-{
-anchors = (
-{
-name = _nukta;
-pos = (-1,600);
-}
-);
-layerId = "0717401B-DDB5-4983-85F2-A81AFE530D5E";
-shapes = (
-{
-pos = (0,260);
-ref = "Nukta-khoj";
-},
-{
-pos = (13,-55);
-ref = "Sukun-khoj";
-}
-);
-width = 0;
-},
-{
-anchors = (
-{
-name = _nukta;
-pos = (-1,600);
-}
-);
-layerId = "A430B39A-257A-41FC-BEA9-652C696FFEF7";
-shapes = (
-{
-pos = (-8,260);
-ref = "Nukta-khoj";
-},
-{
-pos = (13,-55);
-ref = "Sukun-khoj";
-}
-);
-width = 0;
-}
-);
-script = khoj;
-subCategory = Nonspacing;
-},
-{
-category = Mark;
-glyphname = "Shadda_sukun-khoj";
-lastChange = "2023-06-05 09:48:09 +0000";
-layers = (
-{
-anchors = (
-{
-name = _nukta;
-pos = (-1,600);
-}
-);
-layerId = "0717401B-DDB5-4983-85F2-A81AFE530D5E";
-shapes = (
-{
-pos = (0,-20);
-ref = "Shadda-khoj";
-},
-{
-pos = (-5,212);
-ref = "Sukun-khoj";
-}
-);
-width = 0;
-},
-{
-anchors = (
-{
-name = _nukta;
-pos = (-1,600);
-}
-);
-layerId = "A430B39A-257A-41FC-BEA9-652C696FFEF7";
-shapes = (
-{
-pos = (0,-20);
-ref = "Shadda-khoj";
-},
-{
-pos = (-5,242);
-ref = "Sukun-khoj";
-}
-);
-width = 0;
-}
-);
-script = khoj;
-subCategory = Nonspacing;
-},
-{
-category = Mark;
 glyphname = "Nukta-khoj.alt";
-lastChange = "2023-06-05 09:48:09 +0000";
+lastChange = "2023-07-27 13:00:48 +0000";
 layers = (
 {
 anchors = (
 {
 name = _nukta;
 pos = (0,600);
+},
+{
+name = top;
+pos = (333,695);
 }
 );
 layerId = "0717401B-DDB5-4983-85F2-A81AFE530D5E";
@@ -68369,6 +67685,10 @@ anchors = (
 {
 name = _nukta;
 pos = (0,600);
+},
+{
+name = top;
+pos = (363,675);
 }
 );
 layerId = "A430B39A-257A-41FC-BEA9-652C696FFEF7";
