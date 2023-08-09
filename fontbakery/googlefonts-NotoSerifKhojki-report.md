@@ -75,8 +75,6 @@ Use -F or --full-lists to disable shortening of long lists.
 
 	- dblsectionmark.alt
 
-	- rakar_rVocalicMatra
-
 	- sha_eMatrakhoj
 
 	- sha_iMatrakhoj
@@ -123,7 +121,7 @@ The following glyphs do not have the recommended number of contours:
 The following math glyphs have a different width, though:
 
 Width = 558:
-multiply, plus
+plus, multiply
  [code: width-outliers]
 </div></details><details><summary>⚠ <b>WARN:</b> Check GDEF mark glyph class doesn't have characters that are not marks. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_non_mark_chars">com.google.fonts/check/gdef_non_mark_chars</a>)</summary><div>
 
@@ -239,8 +237,6 @@ Use -F or --full-lists to disable shortening of long lists.
 
 	- dblsectionmark.alt
 
-	- rakar_rVocalicMatra
-
 	- sha_eMatrakhoj
 
 	- sha_iMatrakhoj
@@ -287,7 +283,7 @@ The following glyphs do not have the recommended number of contours:
 The following math glyphs have a different width, though:
 
 Width = 558:
-multiply, plus
+plus, multiply
  [code: width-outliers]
 </div></details><details><summary>⚠ <b>WARN:</b> Check GDEF mark glyph class doesn't have characters that are not marks. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_non_mark_chars">com.google.fonts/check/gdef_non_mark_chars</a>)</summary><div>
 
@@ -387,8 +383,6 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-misalig
 
 	- dblsectionmark.alt
 
-	- rakar_rVocalicMatra
-
 	- sha_eMatrakhoj
 
 	- sha_iMatrakhoj
@@ -408,21 +402,21 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-misalig
 </div></details><details><summary>⚠ <b>WARN:</b> Detect any interpolation issues in the font. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/interpolation_issues">com.google.fonts/check/interpolation_issues</a>)</summary><div>
 
 
-* ⚠ **WARN** Interpolation issues were found in the font: 	- Contour 1 start point differs in glyph 'nna_iiMatrakhoj' between location <fontTools.ttLib.ttGlyphSet._TTGlyphSetGlyf object at 0x7fa2e28a4bd0> and location <fontTools.ttLib.ttGlyphSet._TTGlyphSetGlyf object at 0x7fa2e28a5410>
+* ⚠ **WARN** Interpolation issues were found in the font: 	- Contour 1 start point differs in glyph 'dd_ra_iMatrakhoj' between location <fontTools.ttLib.ttGlyphSet._TTGlyphSetGlyf object at 0x7efdb155cbd0> and location <fontTools.ttLib.ttGlyphSet._TTGlyphSetGlyf object at 0x7efdb3025750>
 
-	- Contour 0 start point differs in glyph 'nn_rakhoj' between location <fontTools.ttLib.ttGlyphSet._TTGlyphSetGlyf object at 0x7fa2e28a4bd0> and location <fontTools.ttLib.ttGlyphSet._TTGlyphSetGlyf object at 0x7fa2e28a5410>
+	- Contour 0 start point differs in glyph 'nn_rakhoj' between location <fontTools.ttLib.ttGlyphSet._TTGlyphSetGlyf object at 0x7efdb155cbd0> and location <fontTools.ttLib.ttGlyphSet._TTGlyphSetGlyf object at 0x7efdb3025750>
 
-	- Contour 1 start point differs in glyph 'dda_iiMatrakhoj' between location <fontTools.ttLib.ttGlyphSet._TTGlyphSetGlyf object at 0x7fa2e28a4bd0> and location <fontTools.ttLib.ttGlyphSet._TTGlyphSetGlyf object at 0x7fa2e28a5410>
+	- Contour 1 start point differs in glyph 'nna_iiMatrakhoj' between location <fontTools.ttLib.ttGlyphSet._TTGlyphSetGlyf object at 0x7efdb155cbd0> and location <fontTools.ttLib.ttGlyphSet._TTGlyphSetGlyf object at 0x7efdb3025750>
 
-	- Contour 1 start point differs in glyph 'dd_ra_iMatrakhoj' between location <fontTools.ttLib.ttGlyphSet._TTGlyphSetGlyf object at 0x7fa2e28a4bd0> and location <fontTools.ttLib.ttGlyphSet._TTGlyphSetGlyf object at 0x7fa2e28a5410>
+	- Contour 0 start point differs in glyph 'dd_rakhoj' between location <fontTools.ttLib.ttGlyphSet._TTGlyphSetGlyf object at 0x7efdb155cbd0> and location <fontTools.ttLib.ttGlyphSet._TTGlyphSetGlyf object at 0x7efdb3025750>
 
-	- Contour 1 start point differs in glyph 'dd_ra_iiMatrakhoj' between location <fontTools.ttLib.ttGlyphSet._TTGlyphSetGlyf object at 0x7fa2e28a4bd0> and location <fontTools.ttLib.ttGlyphSet._TTGlyphSetGlyf object at 0x7fa2e28a5410>
+	- Contour 1 start point differs in glyph 'nn_ra_iMatrakhoj' between location <fontTools.ttLib.ttGlyphSet._TTGlyphSetGlyf object at 0x7efdb155cbd0> and location <fontTools.ttLib.ttGlyphSet._TTGlyphSetGlyf object at 0x7efdb3025750>
 
-	- Contour 1 start point differs in glyph 'nn_ra_iMatrakhoj' between location <fontTools.ttLib.ttGlyphSet._TTGlyphSetGlyf object at 0x7fa2e28a4bd0> and location <fontTools.ttLib.ttGlyphSet._TTGlyphSetGlyf object at 0x7fa2e28a5410>
+	- Contour 1 start point differs in glyph 'dda_iiMatrakhoj' between location <fontTools.ttLib.ttGlyphSet._TTGlyphSetGlyf object at 0x7efdb155cbd0> and location <fontTools.ttLib.ttGlyphSet._TTGlyphSetGlyf object at 0x7efdb3025750>
 
-	- Contour 0 start point differs in glyph 'dd_rakhoj' between location <fontTools.ttLib.ttGlyphSet._TTGlyphSetGlyf object at 0x7fa2e28a4bd0> and location <fontTools.ttLib.ttGlyphSet._TTGlyphSetGlyf object at 0x7fa2e28a5410>
+	- Contour 1 start point differs in glyph 'nn_ra_iiMatrakhoj' between location <fontTools.ttLib.ttGlyphSet._TTGlyphSetGlyf object at 0x7efdb155cbd0> and location <fontTools.ttLib.ttGlyphSet._TTGlyphSetGlyf object at 0x7efdb3025750>
 
-	- Contour 1 start point differs in glyph 'nn_ra_iiMatrakhoj' between location <fontTools.ttLib.ttGlyphSet._TTGlyphSetGlyf object at 0x7fa2e28a4bd0> and location <fontTools.ttLib.ttGlyphSet._TTGlyphSetGlyf object at 0x7fa2e28a5410> [code: interpolation-issues]
+	- Contour 1 start point differs in glyph 'dd_ra_iiMatrakhoj' between location <fontTools.ttLib.ttGlyphSet._TTGlyphSetGlyf object at 0x7efdb155cbd0> and location <fontTools.ttLib.ttGlyphSet._TTGlyphSetGlyf object at 0x7efdb3025750> [code: interpolation-issues]
 </div></details><details><summary>⚠ <b>WARN:</b> Check math signs have the same width. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/math_signs_width">com.google.fonts/check/math_signs_width</a>)</summary><div>
 
 
@@ -430,7 +424,7 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-misalig
 The following math glyphs have a different width, though:
 
 Width = 558:
-multiply, plus
+plus, multiply
  [code: width-outliers]
 </div></details><details><summary>⚠ <b>WARN:</b> Check GDEF mark glyph class doesn't have characters that are not marks. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_non_mark_chars">com.google.fonts/check/gdef_non_mark_chars</a>)</summary><div>
 
