@@ -8,7 +8,8 @@ DisplayStrings = (
 "",
 "",
 "𑈶",
-"𑈾"
+"𑈾",
+"/rakar_umatra . 𑈯"
 );
 axes = (
 {
@@ -1012,10 +1013,11 @@ lookup YakarVowels {
 	sub yakar-khoj uMatra-khoj by yakar_uMatra-khoj;
 } YakarVowels;
 
+lookupflag 0;
 sub ka-khoj halant-khoj sa-khoj Nukta-khoj by k_ssa-khoj;
 
 lookup AtomicLigatures {
-	lookupflag UseMarkFilteringSet [halant-khoj rakar.alt];
+	lookupflag UseMarkFilteringSet [halant-khoj rakar.alt uMatra-khoj];
 	sub ga-khoj halant-khoj na-khoj by g_na-khoj;
 	sub ja-khoj halant-khoj nya-khoj by g_na-khoj;
 	sub ta-khoj halant-khoj ra-khoj by t_ra-khoj;
@@ -1320,6 +1322,11 @@ value = "";
 );
 notes = "Alternate Virama";
 tag = ss03;
+},
+{
+code = "sub rakar-gujarati uMatra-khoj by rakar_umatra;
+sub rakar-gujarati rVocalicMatra-khoj by rakar_rVocalicMatra;";
+tag = blws;
 }
 );
 fontMaster = (
@@ -65417,12 +65424,16 @@ subCategory = Nonspacing;
 {
 category = Mark;
 glyphname = "rakar-gujarati";
-lastChange = "2023-06-05 09:48:09 +0000";
+lastChange = "2023-08-09 15:06:19 +0000";
 layers = (
 {
 anchors = (
 {
 name = _rakar;
+},
+{
+name = bottom;
+pos = (28,-75);
 }
 );
 layerId = "0717401B-DDB5-4983-85F2-A81AFE530D5E";
@@ -65447,6 +65458,10 @@ width = 0;
 anchors = (
 {
 name = _rakar;
+},
+{
+name = bottom;
+pos = (48,-105);
 }
 );
 layerId = "A430B39A-257A-41FC-BEA9-652C696FFEF7";
