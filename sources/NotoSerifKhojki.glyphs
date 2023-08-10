@@ -9,7 +9,7 @@ DisplayStrings = (
 "",
 "𑈶",
 "𑈾",
-"/rakar_umatra . 𑈯"
+"/rakar_umatra . 𑈯𑈰"
 );
 axes = (
 {
@@ -24,7 +24,7 @@ name = VOWELS;
 },
 {
 code = "ka_iMatra-khoj qa_iMatra-khoj k_ssa_iMatra-khoj k_ssa_ra_iMatra-khoj kha_iMatra-khoj kh_ra_iMatra-khoj ga_iMatra-khoj g_ra_iMatra-khoj g_na_iMatra-khoj g_na_ra_iMatra-khoj gga_iMatra-khoj gg_ra_iMatra-khoj gha_iMatra-khoj nga_iMatra-khoj ca_iMatra-khoj c_ra_iMatra-khoj cha_iMatra-khoj ja_iMatra-khoj j_ra_iMatra-khoj jja_iMatra-khoj jj_ra_iMatra-khoj nya_iMatra-khoj tta_iMatra-khoj ttha_iMatra-khoj dda_iMatra-khoj dd_ra_iMatra-khoj ddha_iMatra-khoj nna_iMatra-khoj nn_ra_iMatra-khoj ta_iMatra-khoj t_ra_iMatra-khoj tha_iMatra-khoj da_iMatra-khoj d_ra_iMatra-khoj ddda_iMatra-khoj dha_iMatra-khoj dh_ra_iMatra-khoj na_iMatra-khoj n_ra_iMatra-khoj pa_iMatra-khoj pha_iMatra-khoj ba_iMatra-khoj b_ra_iMatra-khoj bba_iMatra-khoj bb_ra_iMatra-khoj bha_iMatra-khoj bh_ra_iMatra-khoj ma_iMatra-khoj m_ra_iMatra-khoj ya_iMatra-khoj y_ra_iMatra-khoj ra_iMatra-khoj la_iMatra-khoj l_ra_iMatra-khoj va_iMatra-khoj v_ra_iMatra-khoj sa_iMatra-khoj s_ra_iMatra-khoj sha_iMatra-khoj ha_iMatra-khoj h_ra_iMatra-khoj lla_iMatra-khoj yakar_iMatra-khoj 
-";
+iMatra-khoj";
 name = IMATRA;
 },
 {
@@ -1280,11 +1280,6 @@ lookup abvs01 {
 	sub reph-gujarati auMatra-khoj by auMatra_reph-khoj;
 	sub auMatra-khoj Anusvara-khoj by auMatra_anusvara-khoj;
 } abvs01;
-
-lookup altEMatra {
-	sub @IMATRA @BASES [eMatra-khoj eMatra_anusvara-khoj eMatra_reph-khoj eMatra_reph_anusvara-khoj  ]' by [eMatra-khoj.alt eMatra_anusvara-khoj.alt eMatra_reph-khoj.alt eMatra_reph_anusvara-khoj.alt ];
-	sub @IMATRA [Anusvara-khoj Anusvara-khoj.alt Shadda-khoj Nukta-khoj Sukun-khoj  Nukta-khoj.alt ] @BASES [eMatra-khoj eMatra_anusvara-khoj eMatra_reph-khoj eMatra_reph_anusvara-khoj  ]' by [eMatra-khoj.alt eMatra_anusvara-khoj.alt eMatra_reph-khoj.alt eMatra_reph_anusvara-khoj.alt  ];
-} altEMatra;
 ";
 tag = abvs;
 },
@@ -1293,6 +1288,12 @@ code = "lookup YakarAlts {
 	sub [kha-khoj ga-khoj gga-khoj gha-khoj nga-khoj ca-khoj cha-khoj ja-khoj jja-khoj nya-khoj tta-khoj ttha-khoj dda-khoj ddha-khoj ta-khoj tha-khoj dha-khoj na-khoj pa-khoj ba-khoj bba-khoj bha-khoj ma-khoj ya-khoj ra-khoj la-khoj va-khoj sa-khoj lla-khoj ] yakar_uMatra-khoj' by yakar_uMatra-khoj.alt;
 	sub [ka-khoj qa-khoj da-khoj ddda-khoj ha-khoj nna-khoj pha-khoj d_ra-khoj ] yakar_uMatra-khoj' by yakar_uMatra-khoj.alt2;
 } YakarAlts;
+
+
+lookup altEMatra {
+	lookupflag UseMarkFilteringSet [eMatra-khoj eMatra_anusvara-khoj eMatra_reph-khoj eMatra_reph_anusvara-khoj];
+	sub [e-khoj @IMATRA] @BASES [eMatra-khoj eMatra_anusvara-khoj eMatra_reph-khoj eMatra_reph_anusvara-khoj  ]' by [eMatra-khoj.alt eMatra_anusvara-khoj.alt eMatra_reph-khoj.alt eMatra_reph_anusvara-khoj.alt ];
+} altEMatra;
 ";
 tag = psts;
 },
@@ -4908,7 +4909,7 @@ category = Letter;
 glyphname = "ai-khoj";
 kernLeft = A;
 kernRight = NNA;
-lastChange = "2023-06-05 09:48:09 +0000";
+lastChange = "2023-08-09 15:13:53 +0000";
 layers = (
 {
 anchors = (
