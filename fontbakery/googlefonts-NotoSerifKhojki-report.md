@@ -402,21 +402,21 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-misalig
 </div></details><details><summary>⚠ <b>WARN:</b> Detect any interpolation issues in the font. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/interpolation_issues">com.google.fonts/check/interpolation_issues</a>)</summary><div>
 
 
-* ⚠ **WARN** Interpolation issues were found in the font: 	- Contour 1 start point differs in glyph 'dd_ra_iMatrakhoj' between location <fontTools.ttLib.ttGlyphSet._TTGlyphSetGlyf object at 0x7f5c16dfba90> and location <fontTools.ttLib.ttGlyphSet._TTGlyphSetGlyf object at 0x7f5c18392c10>
+* ⚠ **WARN** Interpolation issues were found in the font: 	- Contour 1 start point differs in glyph 'nna_iiMatrakhoj' between location <fontTools.ttLib.ttGlyphSet._TTGlyphSetGlyf object at 0x7facfb3236d0> and location <fontTools.ttLib.ttGlyphSet._TTGlyphSetGlyf object at 0x7facfb952550>
 
-	- Contour 1 start point differs in glyph 'dd_ra_iiMatrakhoj' between location <fontTools.ttLib.ttGlyphSet._TTGlyphSetGlyf object at 0x7f5c16dfba90> and location <fontTools.ttLib.ttGlyphSet._TTGlyphSetGlyf object at 0x7f5c18392c10>
+	- Contour 1 start point differs in glyph 'nn_ra_iMatrakhoj' between location <fontTools.ttLib.ttGlyphSet._TTGlyphSetGlyf object at 0x7facfb3236d0> and location <fontTools.ttLib.ttGlyphSet._TTGlyphSetGlyf object at 0x7facfb952550>
 
-	- Contour 1 start point differs in glyph 'nn_ra_iMatrakhoj' between location <fontTools.ttLib.ttGlyphSet._TTGlyphSetGlyf object at 0x7f5c16dfba90> and location <fontTools.ttLib.ttGlyphSet._TTGlyphSetGlyf object at 0x7f5c18392c10>
+	- Contour 1 start point differs in glyph 'dda_iiMatrakhoj' between location <fontTools.ttLib.ttGlyphSet._TTGlyphSetGlyf object at 0x7facfb3236d0> and location <fontTools.ttLib.ttGlyphSet._TTGlyphSetGlyf object at 0x7facfb952550>
 
-	- Contour 1 start point differs in glyph 'dda_iiMatrakhoj' between location <fontTools.ttLib.ttGlyphSet._TTGlyphSetGlyf object at 0x7f5c16dfba90> and location <fontTools.ttLib.ttGlyphSet._TTGlyphSetGlyf object at 0x7f5c18392c10>
+	- Contour 1 start point differs in glyph 'dd_ra_iMatrakhoj' between location <fontTools.ttLib.ttGlyphSet._TTGlyphSetGlyf object at 0x7facfb3236d0> and location <fontTools.ttLib.ttGlyphSet._TTGlyphSetGlyf object at 0x7facfb952550>
 
-	- Contour 1 start point differs in glyph 'nn_ra_iiMatrakhoj' between location <fontTools.ttLib.ttGlyphSet._TTGlyphSetGlyf object at 0x7f5c16dfba90> and location <fontTools.ttLib.ttGlyphSet._TTGlyphSetGlyf object at 0x7f5c18392c10>
+	- Contour 0 start point differs in glyph 'nn_rakhoj' between location <fontTools.ttLib.ttGlyphSet._TTGlyphSetGlyf object at 0x7facfb3236d0> and location <fontTools.ttLib.ttGlyphSet._TTGlyphSetGlyf object at 0x7facfb952550>
 
-	- Contour 1 start point differs in glyph 'nna_iiMatrakhoj' between location <fontTools.ttLib.ttGlyphSet._TTGlyphSetGlyf object at 0x7f5c16dfba90> and location <fontTools.ttLib.ttGlyphSet._TTGlyphSetGlyf object at 0x7f5c18392c10>
+	- Contour 0 start point differs in glyph 'dd_rakhoj' between location <fontTools.ttLib.ttGlyphSet._TTGlyphSetGlyf object at 0x7facfb3236d0> and location <fontTools.ttLib.ttGlyphSet._TTGlyphSetGlyf object at 0x7facfb952550>
 
-	- Contour 0 start point differs in glyph 'nn_rakhoj' between location <fontTools.ttLib.ttGlyphSet._TTGlyphSetGlyf object at 0x7f5c16dfba90> and location <fontTools.ttLib.ttGlyphSet._TTGlyphSetGlyf object at 0x7f5c18392c10>
+	- Contour 1 start point differs in glyph 'dd_ra_iiMatrakhoj' between location <fontTools.ttLib.ttGlyphSet._TTGlyphSetGlyf object at 0x7facfb3236d0> and location <fontTools.ttLib.ttGlyphSet._TTGlyphSetGlyf object at 0x7facfb952550>
 
-	- Contour 0 start point differs in glyph 'dd_rakhoj' between location <fontTools.ttLib.ttGlyphSet._TTGlyphSetGlyf object at 0x7f5c16dfba90> and location <fontTools.ttLib.ttGlyphSet._TTGlyphSetGlyf object at 0x7f5c18392c10> [code: interpolation-issues]
+	- Contour 1 start point differs in glyph 'nn_ra_iiMatrakhoj' between location <fontTools.ttLib.ttGlyphSet._TTGlyphSetGlyf object at 0x7facfb3236d0> and location <fontTools.ttLib.ttGlyphSet._TTGlyphSetGlyf object at 0x7facfb952550> [code: interpolation-issues]
 </div></details><details><summary>⚠ <b>WARN:</b> Check math signs have the same width. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/math_signs_width">com.google.fonts/check/math_signs_width</a>)</summary><div>
 
 
