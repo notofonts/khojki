@@ -1,12 +1,10 @@
 {
-.appVersion = "3208";
+.appVersion = "3205";
 .formatVersion = 3;
 DisplayStrings = (
 "𑈿/qa_iMatra-khoj/qa_iiMatra-khoj/qa_uMatra-khoj/q_ra_uMatra-khoj 
 𑈈/ka_iMatra-khoj/ka_iiMatra-khoj/ka_uMatra-khoj/k_ra_uMatra-khoj",
 "𑈷 ",
-"",
-"",
 "𑈶",
 "𑈾",
 "/rakar_umatra . 𑈯𑈰"
@@ -1305,10 +1303,9 @@ code = "lookup AltMarks {
 labels = (
 {
 language = dflt;
-value = "";
+value = "Alternate Anusvara and Nukta";
 }
 );
-notes = "Alternate Anusvara and Nukta";
 tag = ss02;
 },
 {
@@ -1318,10 +1315,9 @@ code = "lookup AltVirama {
 labels = (
 {
 language = dflt;
-value = "";
+value = "Alternate Virama";
 }
 );
-notes = "Alternate Virama";
 tag = ss03;
 },
 {
