@@ -1,7 +1,8 @@
 {
-.appVersion = "3208";
+.appVersion = "3316";
 DisplayStrings = (
-"/Anusvara.alt"
+"/kj_Ishort/kj_I/kj_U/kj_E/kj_AI/kj_O/kj_AU/kj_KA/kj_QA/kj_KHA/kj_GA/kj_GGA/uni11241/kj_GHA/kj_NGA/kj_CA/kj_CHA/kj_vs_U.ns/space/space/uni11241/kj_JA/kj_JJA/kj_NYA/kj_TTA/kj_TTHA/kj_DDA/uni11241/kj_DDHA/kj_NNA/kj_TA",
+"/RA.alt"
 );
 classes = (
 {
@@ -253,12 +254,12 @@ name = licenseURL;
 value = "https://scripts.sil.org/OFL";
 },
 {
-name = vendorID;
-value = GOOG;
-},
-{
 name = trademark;
 value = "Noto is a trademark of Google Inc.";
+},
+{
+name = vendorID;
+value = GOOG;
 },
 {
 name = versionString;
@@ -447,7 +448,7 @@ nodes = (
 width = 600;
 }
 );
-note = ".notdef";
+note = .notdef;
 },
 {
 glyphname = NULL;
@@ -834,7 +835,7 @@ category = Letter;
 },
 {
 glyphname = uni0AE6;
-lastChange = "2023-06-26 11:59:38 +0000";
+lastChange = "2024-08-09 13:18:34 +0000";
 layers = (
 {
 layerId = "0717401B-DDB5-4983-85F2-A81AFE530D5E";
@@ -9637,8 +9638,9 @@ category = Letter;
 subCategory = Spacing;
 },
 {
+color = 11;
 glyphname = kj_Ishort;
-lastChange = "2023-06-26 12:10:35 +0000";
+lastChange = "2024-08-09 13:14:58 +0000";
 layers = (
 {
 anchors = (
@@ -17522,6 +17524,79 @@ width = 0;
 }
 );
 category = Mark;
+},
+{
+color = 4;
+glyphname = uni11241;
+lastChange = "2024-09-04 10:32:48 +0000";
+layers = (
+{
+anchors = (
+{
+name = _Anchor13;
+position = "{-273, 0}";
+}
+);
+guideLines = (
+{
+angle = 90;
+position = "{-273, -98}";
+},
+{
+position = "{199, -37}";
+},
+{
+position = "{199, -331}";
+}
+);
+layerId = "0717401B-DDB5-4983-85F2-A81AFE530D5E";
+paths = (
+{
+closed = 1;
+nodes = (
+"-179 -335 OFFCURVE",
+"-133 -311 OFFCURVE",
+"-112 -285 CURVE SMOOTH",
+"-103 -274 OFFCURVE",
+"-101 -267 OFFCURVE",
+"-101 -258 CURVE SMOOTH",
+"-101 -237 OFFCURVE",
+"-120 -204 OFFCURVE",
+"-142 -204 CURVE SMOOTH",
+"-149 -204 OFFCURVE",
+"-155 -209 OFFCURVE",
+"-165 -218 CURVE SMOOTH",
+"-185 -236 OFFCURVE",
+"-214 -256 OFFCURVE",
+"-259 -256 CURVE SMOOTH",
+"-313 -256 OFFCURVE",
+"-346 -231 OFFCURVE",
+"-346 -187 CURVE SMOOTH",
+"-346 -136 OFFCURVE",
+"-305 -109 OFFCURVE",
+"-251 -109 CURVE SMOOTH",
+"-226 -109 OFFCURVE",
+"-217 -115 OFFCURVE",
+"-207 -115 CURVE SMOOTH",
+"-198 -115 OFFCURVE",
+"-193 -111 OFFCURVE",
+"-193 -102 CURVE SMOOTH",
+"-193 -76 OFFCURVE",
+"-235 -47 OFFCURVE",
+"-286 -47 CURVE SMOOTH",
+"-361 -47 OFFCURVE",
+"-422 -95 OFFCURVE",
+"-422 -180 CURVE SMOOTH",
+"-422 -273 OFFCURVE",
+"-336 -335 OFFCURVE",
+"-240 -335 CURVE SMOOTH"
+);
+}
+);
+width = 0;
+}
+);
+unicode = 11241;
 }
 );
 instances = (
