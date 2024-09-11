@@ -1,7 +1,8 @@
 {
-.appVersion = "3208";
+.appVersion = "3316";
 DisplayStrings = (
-"/Anusvara.alt"
+"/kj_E/uni11241/kj_AI/RA.alt/kj_O",
+"/RA.alt"
 );
 classes = (
 {
@@ -253,12 +254,12 @@ name = licenseURL;
 value = "https://openfontlicense.org";
 },
 {
-name = vendorID;
-value = GOOG;
-},
-{
 name = trademark;
 value = "Noto is a trademark of Google Inc.";
+},
+{
+name = vendorID;
+value = GOOG;
 },
 {
 name = versionString;
@@ -447,7 +448,7 @@ nodes = (
 width = 600;
 }
 );
-note = ".notdef";
+note = .notdef;
 },
 {
 glyphname = NULL;
@@ -834,7 +835,7 @@ category = Letter;
 },
 {
 glyphname = uni0AE6;
-lastChange = "2023-06-26 11:59:38 +0000";
+lastChange = "2024-08-09 13:18:34 +0000";
 layers = (
 {
 layerId = "0717401B-DDB5-4983-85F2-A81AFE530D5E";
@@ -9637,8 +9638,9 @@ category = Letter;
 subCategory = Spacing;
 },
 {
+color = 11;
 glyphname = kj_Ishort;
-lastChange = "2023-06-26 12:10:35 +0000";
+lastChange = "2024-08-09 13:14:58 +0000";
 layers = (
 {
 anchors = (
@@ -17522,6 +17524,79 @@ width = 0;
 }
 );
 category = Mark;
+},
+{
+color = 4;
+glyphname = uni11241;
+lastChange = "2024-09-04 10:44:07 +0000";
+layers = (
+{
+anchors = (
+{
+name = _Anchor13;
+position = "{-273, 0}";
+}
+);
+guideLines = (
+{
+angle = 90;
+position = "{-273, -98}";
+},
+{
+position = "{199, -37}";
+},
+{
+position = "{199, -331}";
+}
+);
+layerId = "0717401B-DDB5-4983-85F2-A81AFE530D5E";
+paths = (
+{
+closed = 1;
+nodes = (
+"-183 -362 OFFCURVE",
+"-135 -337 OFFCURVE",
+"-112 -312 CURVE SMOOTH",
+"-102 -301 OFFCURVE",
+"-101 -294 OFFCURVE",
+"-101 -285 CURVE SMOOTH",
+"-101 -260 OFFCURVE",
+"-116 -231 OFFCURVE",
+"-142 -231 CURVE SMOOTH",
+"-149 -231 OFFCURVE",
+"-155 -236 OFFCURVE",
+"-165 -245 CURVE SMOOTH",
+"-185 -263 OFFCURVE",
+"-207 -283 OFFCURVE",
+"-257 -283 CURVE SMOOTH",
+"-313 -283 OFFCURVE",
+"-346 -258 OFFCURVE",
+"-346 -214 CURVE SMOOTH",
+"-346 -163 OFFCURVE",
+"-305 -136 OFFCURVE",
+"-251 -136 CURVE SMOOTH",
+"-226 -136 OFFCURVE",
+"-217 -142 OFFCURVE",
+"-207 -142 CURVE SMOOTH",
+"-198 -142 OFFCURVE",
+"-193 -138 OFFCURVE",
+"-193 -129 CURVE SMOOTH",
+"-193 -103 OFFCURVE",
+"-238 -74 OFFCURVE",
+"-291 -74 CURVE SMOOTH",
+"-377 -74 OFFCURVE",
+"-422 -131 OFFCURVE",
+"-422 -209 CURVE SMOOTH",
+"-422 -299 OFFCURVE",
+"-349 -362 OFFCURVE",
+"-242 -362 CURVE SMOOTH"
+);
+}
+);
+width = 0;
+}
+);
+unicode = 11241;
 }
 );
 instances = (
