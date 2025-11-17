@@ -1,5 +1,5 @@
 {
-.appVersion = "3316";
+.appVersion = "3431";
 DisplayStrings = (
 "/kj_E/uni11241/kj_AI/RA.alt/kj_O",
 "/RA.alt"
@@ -264,19 +264,6 @@ value = GOOG;
 {
 name = versionString;
 value = "Version 2.005";
-},
-{
-name = Axes;
-value = (
-{
-Name = Weight;
-Tag = wght;
-},
-{
-Name = Width;
-Tag = wdth;
-}
-);
 }
 );
 date = "2018-08-30 17:09:44 +0000";
@@ -414,7 +401,6 @@ id = "0717401B-DDB5-4983-85F2-A81AFE530D5E";
 verticalStems = (
 84
 );
-widthValue = 5;
 xHeight = 545;
 }
 );
